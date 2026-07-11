@@ -1,0 +1,6190 @@
+[
+  {
+    "alert_id": "alert_h00001",
+    "agent_id": "agent_03",
+    "provider": "Rocket",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-11T18:00:00",
+    "alert_type": "unusual_activity",
+    "severity": "low",
+    "evidence": [
+      "5 cash_outs, avg 4,789 BDT, 2 account(s), 5-minute window"
+    ],
+    "confidence": 0.3847480513272255,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "risk_team",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-11T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00002",
+    "agent_id": "agent_16",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-12T11:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -2,022 BDT/hour, time_to_shortage 439 minutes, confidence 42%"
+    ],
+    "confidence": 0.4199893016235173,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-12T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00003",
+    "agent_id": "agent_08",
+    "provider": "bKash",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-12T12:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -1,862 BDT/hour, time_to_shortage 470 minutes, confidence 59%"
+    ],
+    "confidence": 0.5924227395262098,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-12T12:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00004",
+    "agent_id": "agent_11",
+    "provider": null,
+    "area": "Zindabazar",
+    "timestamp": "2026-01-12T13:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "high",
+    "evidence": [
+      "burn_rate -13,707 BDT/hour, time_to_shortage 34 minutes, confidence 52%"
+    ],
+    "confidence": 0.5248964127423588,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "request_replenishment_support",
+    "display_status": "constrained \u2014 replenishment requested",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-12T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00005",
+    "agent_id": "agent_15",
+    "provider": null,
+    "area": "Chowhatta",
+    "timestamp": "2026-01-12T17:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -3,681 BDT/hour, time_to_shortage 362 minutes, confidence 41%"
+    ],
+    "confidence": 0.40899664149730136,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-12T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00006",
+    "agent_id": "agent_16",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-12T19:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "medium",
+    "evidence": [
+      "burn_rate -2,352 BDT/hour, time_to_shortage 187 minutes, confidence 37%"
+    ],
+    "confidence": 0.37286815779212784,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-12T19:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00007",
+    "agent_id": "agent_09",
+    "provider": null,
+    "area": "Shibganj",
+    "timestamp": "2026-01-13T09:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "medium",
+    "evidence": [
+      "burn_rate -4,645 BDT/hour, time_to_shortage 98 minutes, confidence 53%"
+    ],
+    "confidence": 0.5312726910752272,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T09:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00008",
+    "agent_id": "agent_12",
+    "provider": null,
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-13T13:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "medium",
+    "evidence": [
+      "burn_rate -4,461 BDT/hour, time_to_shortage 115 minutes, confidence 72%"
+    ],
+    "confidence": 0.7170621679871673,
+    "confidence_label": "high",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00009",
+    "agent_id": "agent_13",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-13T13:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -3,422 BDT/hour, time_to_shortage 269 minutes, confidence 56%"
+    ],
+    "confidence": 0.5622090865493883,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00010",
+    "agent_id": "agent_18",
+    "provider": "bKash",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-13T13:00:00",
+    "alert_type": "unusual_activity",
+    "severity": "low",
+    "evidence": [
+      "4 cash_outs, avg 2,584 BDT, 3 account(s), 6-minute window"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "risk_team",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00011",
+    "agent_id": "agent_03",
+    "provider": null,
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-13T15:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -2,634 BDT/hour, time_to_shortage 281 minutes, confidence 45%"
+    ],
+    "confidence": 0.4478139554112927,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T15:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00012",
+    "agent_id": "agent_05",
+    "provider": null,
+    "area": "Chowhatta",
+    "timestamp": "2026-01-13T15:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "medium",
+    "evidence": [
+      "burn_rate -7,147 BDT/hour, time_to_shortage 142 minutes, confidence 71%"
+    ],
+    "confidence": 0.7051604006414934,
+    "confidence_label": "high",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T15:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00013",
+    "agent_id": "agent_12",
+    "provider": null,
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-13T18:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "medium",
+    "evidence": [
+      "burn_rate -2,558 BDT/hour, time_to_shortage 164 minutes, confidence 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00014",
+    "agent_id": "agent_14",
+    "provider": "bKash",
+    "area": "Shibganj",
+    "timestamp": "2026-01-13T18:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -2,134 BDT/hour, time_to_shortage 421 minutes, confidence 58%"
+    ],
+    "confidence": 0.580583231619896,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00015",
+    "agent_id": "agent_15",
+    "provider": null,
+    "area": "Chowhatta",
+    "timestamp": "2026-01-13T19:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -3,245 BDT/hour, time_to_shortage 279 minutes, confidence 64%"
+    ],
+    "confidence": 0.635724857497981,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T19:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00016",
+    "agent_id": "agent_11",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-13T19:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -1,855 BDT/hour, time_to_shortage 436 minutes, confidence 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T19:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00017",
+    "agent_id": "agent_11",
+    "provider": null,
+    "area": "Zindabazar",
+    "timestamp": "2026-01-13T21:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "high",
+    "evidence": [
+      "burn_rate -964 BDT/hour, time_to_shortage 0 minutes, confidence 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "request_replenishment_support",
+    "display_status": "constrained \u2014 replenishment requested",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T21:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00018",
+    "agent_id": "agent_15",
+    "provider": null,
+    "area": "Chowhatta",
+    "timestamp": "2026-01-13T22:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -3,343 BDT/hour, time_to_shortage 273 minutes, confidence 59%"
+    ],
+    "confidence": 0.5936434047454607,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T22:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00019",
+    "agent_id": "agent_05",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T00:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T00:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00020",
+    "agent_id": "agent_18",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T02:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T02:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00021",
+    "agent_id": "agent_08",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T03:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 33%"
+    ],
+    "confidence": 0.32916666666666666,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T03:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00022",
+    "agent_id": "agent_10",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T04:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 47%"
+    ],
+    "confidence": 0.47240007752619945,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T04:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00023",
+    "agent_id": "agent_11",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T05:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 7%"
+    ],
+    "confidence": 0.06666666666666671,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T05:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00024",
+    "agent_id": "agent_10",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T06:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 23%"
+    ],
+    "confidence": 0.22695533849755933,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T06:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00025",
+    "agent_id": "agent_13",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T07:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 20%"
+    ],
+    "confidence": 0.20416666666666666,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T07:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00026",
+    "agent_id": "agent_11",
+    "provider": null,
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T08:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -2,995 BDT/hour, time_to_shortage 307 minutes, confidence 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00027",
+    "agent_id": "agent_06",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T08:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "medium",
+    "evidence": [
+      "burn_rate -1,994 BDT/hour, time_to_shortage 184 minutes, confidence 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00028",
+    "agent_id": "agent_12",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T08:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 18%"
+    ],
+    "confidence": 0.1833333333333334,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00029",
+    "agent_id": "agent_14",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T08:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00030",
+    "agent_id": "agent_15",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T08:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 25%"
+    ],
+    "confidence": 0.24583333333333335,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00031",
+    "agent_id": "agent_19",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T08:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 5%"
+    ],
+    "confidence": 0.05,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00032",
+    "agent_id": "agent_04",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T09:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 20%"
+    ],
+    "confidence": 0.20416666666666666,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T09:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00033",
+    "agent_id": "agent_08",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T09:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T09:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00034",
+    "agent_id": "agent_11",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T09:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 40%"
+    ],
+    "confidence": 0.4043674325284245,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T09:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00035",
+    "agent_id": "agent_16",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T09:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T09:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00036",
+    "agent_id": "agent_18",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T09:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 29%"
+    ],
+    "confidence": 0.28750000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T09:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00037",
+    "agent_id": "agent_01",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T10:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T10:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00038",
+    "agent_id": "agent_05",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T10:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T10:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00039",
+    "agent_id": "agent_06",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T10:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T10:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00040",
+    "agent_id": "agent_10",
+    "provider": "bKash",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T10:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -4,137 BDT/hour, time_to_shortage 381 minutes, confidence 55%"
+    ],
+    "confidence": 0.5547230286747371,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T10:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00041",
+    "agent_id": "agent_16",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T10:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "medium",
+    "evidence": [
+      "burn_rate -2,511 BDT/hour, time_to_shortage 195 minutes, confidence 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T10:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00042",
+    "agent_id": "agent_17",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T10:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T10:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00043",
+    "agent_id": "agent_02",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T11:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "4 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 39%"
+    ],
+    "confidence": 0.3911986440419614,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00044",
+    "agent_id": "agent_02",
+    "provider": "bKash",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T11:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -1,149 BDT/hour, time_to_shortage 283 minutes, confidence 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00045",
+    "agent_id": "agent_03",
+    "provider": "bKash",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T11:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -5,180 BDT/hour, time_to_shortage 394 minutes, confidence 69%"
+    ],
+    "confidence": 0.6889343212913122,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00046",
+    "agent_id": "agent_04",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T11:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00047",
+    "agent_id": "agent_07",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T11:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00048",
+    "agent_id": "agent_09",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T11:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 18%"
+    ],
+    "confidence": 0.1833333333333334,
+    "confidence_label": "low",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00049",
+    "agent_id": "agent_11",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T11:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00050",
+    "agent_id": "agent_14",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T11:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00051",
+    "agent_id": "agent_15",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T11:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00052",
+    "agent_id": "agent_17",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T11:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00053",
+    "agent_id": "agent_20",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T11:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 18%"
+    ],
+    "confidence": 0.1833333333333334,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00054",
+    "agent_id": "agent_09",
+    "provider": null,
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T12:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "high",
+    "evidence": [
+      "burn_rate -42 BDT/hour, time_to_shortage 0 minutes, confidence 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "request_replenishment_support",
+    "display_status": "constrained \u2014 replenishment requested",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T12:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00055",
+    "agent_id": "agent_03",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T12:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T12:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00056",
+    "agent_id": "agent_07",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T12:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T12:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00057",
+    "agent_id": "agent_08",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T12:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T12:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00058",
+    "agent_id": "agent_12",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T12:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T12:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00059",
+    "agent_id": "agent_13",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T12:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 39%"
+    ],
+    "confidence": 0.3868700701520859,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T12:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00060",
+    "agent_id": "agent_16",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T12:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T12:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00061",
+    "agent_id": "agent_20",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T12:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T12:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00062",
+    "agent_id": "agent_01",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T13:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00063",
+    "agent_id": "agent_03",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T13:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00064",
+    "agent_id": "agent_07",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T13:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00065",
+    "agent_id": "agent_08",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T13:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00066",
+    "agent_id": "agent_09",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T13:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 47%"
+    ],
+    "confidence": 0.4748737464162783,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00067",
+    "agent_id": "agent_12",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T13:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00068",
+    "agent_id": "agent_12",
+    "provider": "Rocket",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T13:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -3,928 BDT/hour, time_to_shortage 409 minutes, confidence 46%"
+    ],
+    "confidence": 0.45978938786275875,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00069",
+    "agent_id": "agent_13",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T13:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00070",
+    "agent_id": "agent_14",
+    "provider": "bKash",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T13:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "medium",
+    "evidence": [
+      "burn_rate -2,046 BDT/hour, time_to_shortage 161 minutes, confidence 48%"
+    ],
+    "confidence": 0.48179051383382115,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00071",
+    "agent_id": "agent_16",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T13:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 45%"
+    ],
+    "confidence": 0.45109161672640535,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00072",
+    "agent_id": "agent_17",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T13:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00073",
+    "agent_id": "agent_20",
+    "provider": null,
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T14:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -2,992 BDT/hour, time_to_shortage 270 minutes, confidence 57%"
+    ],
+    "confidence": 0.5704773122130441,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T14:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00074",
+    "agent_id": "agent_01",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T14:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T14:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00075",
+    "agent_id": "agent_10",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T14:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T14:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00076",
+    "agent_id": "agent_13",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T14:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T14:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00077",
+    "agent_id": "agent_17",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T14:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T14:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00078",
+    "agent_id": "agent_01",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T15:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T15:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00079",
+    "agent_id": "agent_03",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T15:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T15:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00080",
+    "agent_id": "agent_07",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T15:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T15:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00081",
+    "agent_id": "agent_09",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T15:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T15:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00082",
+    "agent_id": "agent_10",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T15:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T15:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00083",
+    "agent_id": "agent_11",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T15:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T15:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00084",
+    "agent_id": "agent_17",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T15:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T15:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00085",
+    "agent_id": "agent_18",
+    "provider": "bKash",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T15:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "high",
+    "evidence": [
+      "burn_rate -4,790 BDT/hour, time_to_shortage 27 minutes, confidence 56%"
+    ],
+    "confidence": 0.5627514528604045,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "request_replenishment_support",
+    "display_status": "constrained \u2014 replenishment requested",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T15:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00086",
+    "agent_id": "agent_17",
+    "provider": null,
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T16:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "medium",
+    "evidence": [
+      "burn_rate -3,186 BDT/hour, time_to_shortage 233 minutes, confidence 59%"
+    ],
+    "confidence": 0.5937209681911548,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00087",
+    "agent_id": "agent_02",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T16:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00088",
+    "agent_id": "agent_04",
+    "provider": "bKash",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T16:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -3,663 BDT/hour, time_to_shortage 270 minutes, confidence 60%"
+    ],
+    "confidence": 0.5953392258434547,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00089",
+    "agent_id": "agent_06",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T16:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00090",
+    "agent_id": "agent_12",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T16:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 48%"
+    ],
+    "confidence": 0.4782404441710088,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00091",
+    "agent_id": "agent_15",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T16:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 42%"
+    ],
+    "confidence": 0.4151023048728732,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00092",
+    "agent_id": "agent_18",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T16:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 18%"
+    ],
+    "confidence": 0.18154133976258147,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00093",
+    "agent_id": "agent_19",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T16:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00094",
+    "agent_id": "agent_15",
+    "provider": null,
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T17:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -3,127 BDT/hour, time_to_shortage 432 minutes, confidence 66%"
+    ],
+    "confidence": 0.6569653924735611,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00095",
+    "agent_id": "agent_01",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T17:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00096",
+    "agent_id": "agent_03",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T17:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00097",
+    "agent_id": "agent_06",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T17:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00098",
+    "agent_id": "agent_06",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T17:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "high",
+    "evidence": [
+      "burn_rate -2,450 BDT/hour, time_to_shortage 0 minutes, confidence 60%"
+    ],
+    "confidence": 0.5971489954390101,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "request_replenishment_support",
+    "display_status": "constrained \u2014 replenishment requested",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00099",
+    "agent_id": "agent_09",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T17:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00100",
+    "agent_id": "agent_10",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T17:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00101",
+    "agent_id": "agent_13",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T17:00:00",
+    "alert_type": "unusual_activity",
+    "severity": "low",
+    "evidence": [
+      "3 cash_outs, avg 2,550 BDT, 2 account(s), 2-minute window"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "risk_team",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00102",
+    "agent_id": "agent_13",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T17:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "risk_team",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00103",
+    "agent_id": "agent_17",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T17:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00104",
+    "agent_id": "agent_18",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T17:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 38%"
+    ],
+    "confidence": 0.37812174225985323,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00105",
+    "agent_id": "agent_09",
+    "provider": null,
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T18:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "high",
+    "evidence": [
+      "burn_rate -5,644 BDT/hour, time_to_shortage 0 minutes, confidence 60%"
+    ],
+    "confidence": 0.5956191506489112,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "request_replenishment_support",
+    "display_status": "constrained \u2014 replenishment requested",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00106",
+    "agent_id": "agent_01",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T18:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00107",
+    "agent_id": "agent_05",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T18:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 27%"
+    ],
+    "confidence": 0.2666666666666667,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00108",
+    "agent_id": "agent_06",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T18:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 59%"
+    ],
+    "confidence": 0.590352173328349,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00109",
+    "agent_id": "agent_08",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T18:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "4 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00110",
+    "agent_id": "agent_09",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T18:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 38%"
+    ],
+    "confidence": 0.38339152245505764,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00111",
+    "agent_id": "agent_10",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T18:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 36%"
+    ],
+    "confidence": 0.3575637297246153,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00112",
+    "agent_id": "agent_11",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T18:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00113",
+    "agent_id": "agent_13",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T18:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 42%"
+    ],
+    "confidence": 0.42000136452044873,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00114",
+    "agent_id": "agent_14",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T18:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00115",
+    "agent_id": "agent_16",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T18:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00116",
+    "agent_id": "agent_18",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T18:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 49%"
+    ],
+    "confidence": 0.486785879935365,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00117",
+    "agent_id": "agent_20",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T18:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00118",
+    "agent_id": "agent_13",
+    "provider": null,
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T19:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "medium",
+    "evidence": [
+      "burn_rate -4,708 BDT/hour, time_to_shortage 236 minutes, confidence 55%"
+    ],
+    "confidence": 0.5540941259839149,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T19:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00119",
+    "agent_id": "agent_01",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T19:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T19:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00120",
+    "agent_id": "agent_07",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T19:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T19:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00121",
+    "agent_id": "agent_08",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T19:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 39%"
+    ],
+    "confidence": 0.38881791551165584,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T19:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00122",
+    "agent_id": "agent_09",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T19:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T19:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00123",
+    "agent_id": "agent_10",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T19:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T19:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00124",
+    "agent_id": "agent_10",
+    "provider": "Rocket",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T19:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -2,151 BDT/hour, time_to_shortage 323 minutes, confidence 46%"
+    ],
+    "confidence": 0.45995481056394355,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T19:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00125",
+    "agent_id": "agent_13",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T19:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "4 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 40%"
+    ],
+    "confidence": 0.3963165932908826,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T19:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00126",
+    "agent_id": "agent_15",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T19:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 46%"
+    ],
+    "confidence": 0.4588870443363651,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T19:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00127",
+    "agent_id": "agent_16",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T19:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T19:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00128",
+    "agent_id": "agent_16",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T19:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -1,436 BDT/hour, time_to_shortage 314 minutes, confidence 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T19:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00129",
+    "agent_id": "agent_08",
+    "provider": null,
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T20:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -3,307 BDT/hour, time_to_shortage 392 minutes, confidence 64%"
+    ],
+    "confidence": 0.6350153977582074,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T20:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00130",
+    "agent_id": "agent_15",
+    "provider": null,
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T20:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "medium",
+    "evidence": [
+      "burn_rate -5,338 BDT/hour, time_to_shortage 119 minutes, confidence 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T20:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00131",
+    "agent_id": "agent_01",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T20:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T20:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00132",
+    "agent_id": "agent_02",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T20:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T20:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00133",
+    "agent_id": "agent_06",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T20:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T20:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00134",
+    "agent_id": "agent_06",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T20:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "medium",
+    "evidence": [
+      "burn_rate -397 BDT/hour, time_to_shortage 86 minutes, confidence 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T20:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00135",
+    "agent_id": "agent_09",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T20:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T20:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00136",
+    "agent_id": "agent_11",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T20:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T20:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00137",
+    "agent_id": "agent_11",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T20:00:00",
+    "alert_type": "liquidity_shortage",
+    "severity": "low",
+    "evidence": [
+      "burn_rate -1,928 BDT/hour, time_to_shortage 313 minutes, confidence 57%"
+    ],
+    "confidence": 0.5696097651601226,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T20:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00138",
+    "agent_id": "agent_17",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T20:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T20:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00139",
+    "agent_id": "agent_07",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T21:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T21:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00140",
+    "agent_id": "agent_08",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T21:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T21:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00141",
+    "agent_id": "agent_14",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T21:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T21:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00142",
+    "agent_id": "agent_15",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T21:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 45%"
+    ],
+    "confidence": 0.45337418195024765,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T21:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00143",
+    "agent_id": "agent_16",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T21:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T21:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00144",
+    "agent_id": "agent_17",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T21:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T21:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00145",
+    "agent_id": "agent_02",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T22:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T22:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00146",
+    "agent_id": "agent_06",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T22:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 44%"
+    ],
+    "confidence": 0.44387317880821925,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T22:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00147",
+    "agent_id": "agent_08",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T22:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T22:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00148",
+    "agent_id": "agent_09",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T22:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T22:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00149",
+    "agent_id": "agent_15",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T22:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "4 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 53%"
+    ],
+    "confidence": 0.5266474216527901,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T22:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00150",
+    "agent_id": "agent_17",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T22:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T22:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00151",
+    "agent_id": "agent_20",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T22:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 41%"
+    ],
+    "confidence": 0.4139932078769623,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T22:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00152",
+    "agent_id": "agent_02",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T23:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 48%"
+    ],
+    "confidence": 0.48100526812672156,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T23:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00153",
+    "agent_id": "agent_05",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-14T23:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T23:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00154",
+    "agent_id": "agent_11",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T23:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T23:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00155",
+    "agent_id": "agent_12",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-14T23:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T23:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00156",
+    "agent_id": "agent_14",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T23:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+    ],
+    "confidence": 0.15000000000000002,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T23:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00157",
+    "agent_id": "agent_01",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T00:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "4 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T00:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00158",
+    "agent_id": "agent_06",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T00:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T00:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00159",
+    "agent_id": "agent_10",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T00:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 33%"
+    ],
+    "confidence": 0.32916666666666666,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T00:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00160",
+    "agent_id": "agent_12",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T00:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T00:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00161",
+    "agent_id": "agent_13",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-15T00:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 47%"
+    ],
+    "confidence": 0.46744684249145346,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T00:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00162",
+    "agent_id": "agent_14",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-15T00:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T00:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00163",
+    "agent_id": "agent_15",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T00:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 41%"
+    ],
+    "confidence": 0.40662203144417947,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T00:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00164",
+    "agent_id": "agent_17",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T00:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T00:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00165",
+    "agent_id": "agent_02",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T01:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 47%"
+    ],
+    "confidence": 0.4673400719511129,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T01:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00166",
+    "agent_id": "agent_08",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-15T01:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T01:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00167",
+    "agent_id": "agent_09",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-15T01:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T01:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00168",
+    "agent_id": "agent_15",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T01:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T01:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00169",
+    "agent_id": "agent_16",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T01:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T01:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00170",
+    "agent_id": "agent_18",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-15T01:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 48%"
+    ],
+    "confidence": 0.4795209252625631,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T01:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00171",
+    "agent_id": "agent_02",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T02:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T02:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00172",
+    "agent_id": "agent_05",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T02:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T02:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00173",
+    "agent_id": "agent_16",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T02:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T02:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00174",
+    "agent_id": "agent_17",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T02:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T02:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00175",
+    "agent_id": "agent_18",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-15T02:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 46%"
+    ],
+    "confidence": 0.46408854698082297,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T02:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00176",
+    "agent_id": "agent_02",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T03:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T03:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00177",
+    "agent_id": "agent_07",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T03:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 31%"
+    ],
+    "confidence": 0.3083333333333334,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T03:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00178",
+    "agent_id": "agent_12",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T03:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T03:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00179",
+    "agent_id": "agent_18",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-15T03:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 40%"
+    ],
+    "confidence": 0.3956714010899512,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T03:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00180",
+    "agent_id": "agent_09",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-15T04:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T04:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00181",
+    "agent_id": "agent_11",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T04:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 33%"
+    ],
+    "confidence": 0.32916666666666666,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T04:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00182",
+    "agent_id": "agent_13",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-15T04:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 37%"
+    ],
+    "confidence": 0.3717265285226536,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T04:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00183",
+    "agent_id": "agent_16",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T04:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T04:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00184",
+    "agent_id": "agent_17",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T04:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T04:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00185",
+    "agent_id": "agent_18",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-15T04:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 41%"
+    ],
+    "confidence": 0.412080725572365,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T04:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00186",
+    "agent_id": "agent_01",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T05:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 33%"
+    ],
+    "confidence": 0.32916666666666666,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T05:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00187",
+    "agent_id": "agent_05",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T05:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T05:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00188",
+    "agent_id": "agent_06",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T05:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 33%"
+    ],
+    "confidence": 0.32916666666666666,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T05:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00189",
+    "agent_id": "agent_07",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T05:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T05:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00190",
+    "agent_id": "agent_11",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T05:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T05:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00191",
+    "agent_id": "agent_13",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-15T05:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T05:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00192",
+    "agent_id": "agent_19",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-15T05:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 27%"
+    ],
+    "confidence": 0.2666666666666667,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T05:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00193",
+    "agent_id": "agent_04",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-15T06:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 23%"
+    ],
+    "confidence": 0.22500000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T06:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00194",
+    "agent_id": "agent_06",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T06:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T06:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00195",
+    "agent_id": "agent_10",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T06:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 34%"
+    ],
+    "confidence": 0.3372314085179206,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T06:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00196",
+    "agent_id": "agent_11",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T06:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T06:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00197",
+    "agent_id": "agent_13",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-15T06:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T06:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00198",
+    "agent_id": "agent_15",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T06:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 40%"
+    ],
+    "confidence": 0.3978414981124085,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T06:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00199",
+    "agent_id": "agent_16",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T06:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T06:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00200",
+    "agent_id": "agent_20",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T06:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 42%"
+    ],
+    "confidence": 0.42492469187367127,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T06:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00201",
+    "agent_id": "agent_01",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T07:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "4 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T07:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00202",
+    "agent_id": "agent_03",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-15T07:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 14%"
+    ],
+    "confidence": 0.14166666666666666,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T07:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00203",
+    "agent_id": "agent_16",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T07:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T07:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00204",
+    "agent_id": "agent_17",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T07:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 37%"
+    ],
+    "confidence": 0.37304118131381164,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T07:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00205",
+    "agent_id": "agent_20",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T07:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T07:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00206",
+    "agent_id": "agent_02",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T08:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 33%"
+    ],
+    "confidence": 0.32916666666666666,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00207",
+    "agent_id": "agent_05",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T08:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00208",
+    "agent_id": "agent_06",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T08:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00209",
+    "agent_id": "agent_08",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-15T08:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 29%"
+    ],
+    "confidence": 0.28750000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00210",
+    "agent_id": "agent_09",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-15T08:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00211",
+    "agent_id": "agent_12",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T08:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 33%"
+    ],
+    "confidence": 0.32916666666666666,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00212",
+    "agent_id": "agent_15",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T08:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00213",
+    "agent_id": "agent_20",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T08:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00214",
+    "agent_id": "agent_07",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T09:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T09:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00215",
+    "agent_id": "agent_15",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T09:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T09:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00216",
+    "agent_id": "agent_17",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T09:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T09:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00217",
+    "agent_id": "agent_01",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T10:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T10:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00218",
+    "agent_id": "agent_02",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T10:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T10:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00219",
+    "agent_id": "agent_07",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T10:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T10:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00220",
+    "agent_id": "agent_11",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T10:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T10:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00221",
+    "agent_id": "agent_12",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T10:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 59%"
+    ],
+    "confidence": 0.5919942324621135,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T10:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00222",
+    "agent_id": "agent_13",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-15T10:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T10:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00223",
+    "agent_id": "agent_02",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T11:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00224",
+    "agent_id": "agent_05",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T11:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00225",
+    "agent_id": "agent_14",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-15T11:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 40%"
+    ],
+    "confidence": 0.4041666666666667,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00226",
+    "agent_id": "agent_19",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-15T11:00:00",
+    "alert_type": "data_quality",
+    "severity": "medium",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 51%"
+    ],
+    "confidence": 0.5083333333333334,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "recommended_owner": "field_officer",
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00227",
+    "agent_id": "agent_20",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T11:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00228",
+    "agent_id": "agent_11",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T12:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T12:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00229",
+    "agent_id": "agent_14",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-15T12:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.3510012240180442,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T12:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00230",
+    "agent_id": "agent_20",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T12:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T12:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00231",
+    "agent_id": "agent_01",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T13:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00232",
+    "agent_id": "agent_07",
+    "provider": "Nagad",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-15T13:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00233",
+    "agent_id": "agent_05",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T14:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T14:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00234",
+    "agent_id": "agent_11",
+    "provider": "Nagad",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-15T14:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T14:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00235",
+    "agent_id": "agent_03",
+    "provider": "Nagad",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-15T16:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 25%"
+    ],
+    "confidence": 0.24583333333333335,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00236",
+    "agent_id": "agent_09",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-15T16:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 27%"
+    ],
+    "confidence": 0.2666666666666667,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00237",
+    "agent_id": "agent_20",
+    "provider": "Nagad",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-15T16:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_h00238",
+    "agent_id": "agent_04",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-15T17:00:00",
+    "alert_type": "data_quality",
+    "severity": "high",
+    "evidence": [
+      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 20%"
+    ],
+    "confidence": 0.20416666666666666,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "recommended_owner": "field_officer",
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-15T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  }
+]

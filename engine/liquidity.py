@@ -87,9 +87,19 @@ def compute_forecast(df, group_cols, before_col, after_col, safety_fraction):
     agg = _staleness_minutes(agg, group_cols)
     agg = agg.sort_values(group_cols + ["hour_slot"], kind="stable")
 
-    # relative safety threshold: a fraction of this agent's own rolling peak
-    # balance so far (causal -- no lookahead), not a flat platform-wide figure
-    rolling_max = agg.groupby(group_cols, sort=False)["last_balance"].transform("cummax")
+    # relative safety threshold: a fraction of this agent's own *recent* peak
+    # balance (trailing window, causal -- no lookahead), not a flat
+    # platform-wide figure and not an all-time cummax. An all-time max is a
+    # bad reference: a single early lucky peak sets a permanent ceiling that
+    # ordinary multi-day random-walk drift repeatedly dips below, and it's
+    # especially unstable in an agent's first few hours of history (a
+    # near-zero-sample "peak"). min_periods holds off producing a threshold
+    # at all until there's enough history to trust it -- see the cap fallback
+    # below. Window is row-count-based (hourly-bucketed rows have gaps), an
+    # approximation of a true wall-clock trailing window.
+    rolling_max = agg.groupby(group_cols, sort=False)["last_balance"].transform(
+        lambda s: s.rolling(window=24, min_periods=6).max()
+    )
     safety_threshold = safety_fraction * rolling_max
     agg["safety_threshold"] = safety_threshold
 
