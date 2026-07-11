@@ -26,14 +26,28 @@ export function describeCohortContext(context, peerCount) {
   }
 }
 
+// Fixed categorical order (never cycled/reassigned), identity chips: solid
+// fill + inverse ink. Referenced as CSS custom properties so the light/dark
+// step swaps in one place (index.css) instead of a second hex table here.
 export const PROVIDER_COLORS = {
-  bKash: "#d6336c",
-  Nagad: "#e8590c",
-  Rocket: "#7048e8",
+  bKash: "var(--cat-blue)",
+  Nagad: "var(--cat-violet)",
+  Rocket: "var(--cat-aqua)",
 };
+export const PROVIDER_TEXT = "var(--ink-inverse)";
+export const CASH_COLOR = "var(--cat-cash)";
 
-export const SEVERITY_COLORS = {
-  high: "#c92a2a",
-  medium: "#e8590c",
-  low: "#2f9e44",
+// Status palette (reserved -- never reused as a categorical hue). Rendered
+// as soft pills (tinted wash + saturated ink) rather than solid fill: the
+// wash/ink pair is contrast-safe in both themes by construction, where a
+// solid fill would need a different text color per status per theme.
+export const SEVERITY_BG = {
+  high: "var(--status-critical-wash)",
+  medium: "var(--status-warning-wash)",
+  low: "var(--status-good-wash)",
+};
+export const SEVERITY_TEXT = {
+  high: "var(--status-critical-ink)",
+  medium: "var(--status-warning-ink)",
+  low: "var(--status-good-ink)",
 };

@@ -6,6 +6,7 @@ Balances are derived read-only from Stage 1's raw transactions; nothing here
 recomputes evidence, confidence, or routing, which come from Stage 2/3 as-is.
 """
 import json
+import threading
 from pathlib import Path
 
 import pandas as pd
@@ -39,9 +40,29 @@ def find_alert(split, alert_id):
     return alerts, None
 
 
+# Parsed once per split and reused. The raw transaction ledger is a Stage 1
+# build artifact -- read-only for the lifetime of the server, never written
+# back (only alerts_*.json is mutated, by save_alerts). Re-reading and
+# re-parsing the ~2 MB CSV on every request was both wasteful and, inside the
+# already memory-heavy API worker, enough to trip pandas' C parser into an
+# out-of-memory error under load. Callers below only filter / group / sort
+# (all of which return new frames), so sharing one cached frame is safe.
+_TXN_CACHE: dict[str, "pd.DataFrame"] = {}
+_TXN_LOCK = threading.Lock()
+
+
 def _raw_transactions(split):
-    path = DATA_DIR / f"transactions_{split}.csv"
-    return pd.read_csv(path, parse_dates=["timestamp"])
+    if split not in VALID_SPLITS:
+        raise ValueError(f"unknown split: {split}")
+    # Sync FastAPI endpoints run in a threadpool, so a cold page load can hit
+    # this from two threads at once (meta + balances). The lock makes the CSV
+    # parse happen exactly once instead of racing two concurrent parses -- the
+    # very concurrency that spiked memory before.
+    with _TXN_LOCK:
+        if split not in _TXN_CACHE:
+            path = DATA_DIR / f"transactions_{split}.csv"
+            _TXN_CACHE[split] = pd.read_csv(path, parse_dates=["timestamp"])
+        return _TXN_CACHE[split]
 
 
 def list_agents(split):

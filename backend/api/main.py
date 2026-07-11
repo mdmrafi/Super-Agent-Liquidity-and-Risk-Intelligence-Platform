@@ -5,31 +5,99 @@ confidence, or routing) and Stage 1's raw balances for the agent view.
 Lifecycle actions call the real alerts/lifecycle.py functions and persist
 the result back to the same JSON files Stage 3 produced.
 
-Run with (from backend/): uvicorn api.main:app --reload --port 8000
+Run with (from backend/): python -m api.main
+Port comes from BACKEND_PORT in the repo-root .env (default 8000) --
+frontend/vite.config.js reads the same variable for its dev proxy, so the
+two never drift apart. `uvicorn api.main:app --reload --port <N>` still
+works directly if you want to override without touching .env.
 """
+import os
+from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 
-from fastapi import FastAPI, HTTPException, Query
+from dotenv import load_dotenv
+from fastapi import Depends, FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from alerts import lifecycle
+from auth.dependencies import CurrentUser, get_current_user
+from auth.security import create_access_token, verify_password
 from chat.answer import answer_chat_query
+from db.connection import init_db
+from db.models import User
 from explain.explain import explain_alert
 from . import store
 
-app = FastAPI(title="Super Agent Liquidity & Risk Intelligence API")
+load_dotenv()
+
+BACKEND_PORT = int(os.getenv("BACKEND_PORT", 8000))
+FRONTEND_PORT = int(os.getenv("FRONTEND_PORT", 5173))
+
+
+@asynccontextmanager
+async def lifespan(_app: FastAPI):
+    await init_db()
+    yield
+
+
+app = FastAPI(title="Super Agent Liquidity & Risk Intelligence API", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[f"http://localhost:{FRONTEND_PORT}"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 
+class LoginRequest(BaseModel):
+    username: str
+    password: str
+
+
+def _user_public(user: User) -> dict:
+    return {
+        "username": user.username,
+        "display_name": user.display_name,
+        "role": user.role.value,
+        "agent_id": user.agent_id,
+        "area": user.area,
+        "provider": user.provider,
+    }
+
+
+@app.post("/api/auth/login")
+async def login(body: LoginRequest):
+    user = await User.find_one(User.username == body.username)
+    if user is None or not verify_password(body.password, user.hashed_password):
+        raise HTTPException(401, "invalid username or password")
+    token = create_access_token({
+        "sub": user.username,
+        "display_name": user.display_name,
+        "role": user.role.value,
+        "agent_id": user.agent_id,
+        "area": user.area,
+        "provider": user.provider,
+    })
+    return {"token": token, "user": _user_public(user)}
+
+
+@app.get("/api/auth/me")
+def me(current_user: CurrentUser = Depends(get_current_user)):
+    """Lets the frontend restore a session from a stored token on page load
+    without re-prompting for a password."""
+    return {
+        "username": current_user.username,
+        "display_name": current_user.display_name,
+        "role": current_user.role,
+        "agent_id": current_user.agent_id,
+        "area": current_user.area,
+        "provider": current_user.provider,
+    }
+
+
 class LifecycleAction(BaseModel):
-    actor: str
     split: str = "calibration"
 
 
@@ -95,14 +163,17 @@ def agent_balances(agent_id: str, split: str = "calibration"):
     return result
 
 
-def _apply_lifecycle(alert_id: str, action: str, body: LifecycleAction):
+def _apply_lifecycle(alert_id: str, action: str, body: LifecycleAction, current_user: CurrentUser):
     fn = {"acknowledge": lifecycle.acknowledge, "escalate": lifecycle.escalate, "resolve": lifecycle.resolve}[action]
     alerts, alert = store.find_alert(body.split, alert_id)
     if alert is None:
         raise HTTPException(404, f"no such alert: {alert_id}")
 
+    # actor comes from the verified JWT, never a client-supplied string --
+    # a logged-in user can't act as anyone but themselves.
+    actor = f"{current_user.display_name} ({current_user.role})"
     try:
-        updated = fn(alert, actor=body.actor, at=datetime.now(timezone.utc).isoformat())
+        updated = fn(alert, actor=actor, at=datetime.now(timezone.utc).isoformat())
     except ValueError as e:
         raise HTTPException(409, str(e))
 
@@ -112,18 +183,18 @@ def _apply_lifecycle(alert_id: str, action: str, body: LifecycleAction):
 
 
 @app.post("/api/alerts/{alert_id}/acknowledge")
-def acknowledge_alert(alert_id: str, body: LifecycleAction):
-    return _apply_lifecycle(alert_id, "acknowledge", body)
+def acknowledge_alert(alert_id: str, body: LifecycleAction, current_user: CurrentUser = Depends(get_current_user)):
+    return _apply_lifecycle(alert_id, "acknowledge", body, current_user)
 
 
 @app.post("/api/alerts/{alert_id}/escalate")
-def escalate_alert(alert_id: str, body: LifecycleAction):
-    return _apply_lifecycle(alert_id, "escalate", body)
+def escalate_alert(alert_id: str, body: LifecycleAction, current_user: CurrentUser = Depends(get_current_user)):
+    return _apply_lifecycle(alert_id, "escalate", body, current_user)
 
 
 @app.post("/api/alerts/{alert_id}/resolve")
-def resolve_alert(alert_id: str, body: LifecycleAction):
-    return _apply_lifecycle(alert_id, "resolve", body)
+def resolve_alert(alert_id: str, body: LifecycleAction, current_user: CurrentUser = Depends(get_current_user)):
+    return _apply_lifecycle(alert_id, "resolve", body, current_user)
 
 
 @app.post("/api/alerts/{alert_id}/explain")
@@ -142,3 +213,9 @@ def chat(body: ChatRequest):
     state. Read-only by construction -- reports on Stage 2/3's already-computed
     alerts and never creates one or changes a case_status. See chat/answer.py."""
     return {"answer": answer_chat_query(body.question, body.lang, body.split), "lang": body.lang}
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run("api.main:app", host="127.0.0.1", port=BACKEND_PORT, reload=True)

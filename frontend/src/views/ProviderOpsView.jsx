@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { getAlerts } from "../api";
 import AlertCard from "../components/AlertCard";
+import Loading from "../components/Loading";
+import EmptyState from "../components/EmptyState";
 
 /** Provider operations / network-coordination inbox.
  *
@@ -12,11 +14,21 @@ import AlertCard from "../components/AlertCard";
 export default function ProviderOpsView({ meta, split }) {
   const [provider, setProvider] = useState("");
   const [alerts, setAlerts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
     const filters = { audience: "provider_ops" };
     if (provider) filters.provider = provider;
-    getAlerts(split, filters).then(setAlerts);
+    getAlerts(split, filters).then((a) => {
+      if (cancelled) return;
+      setAlerts(a);
+      setLoading(false);
+    });
+    return () => {
+      cancelled = true;
+    };
   }, [split, provider]);
 
   return (
@@ -39,16 +51,22 @@ export default function ProviderOpsView({ meta, split }) {
         </label>
       </div>
 
-      <p className="muted">{alerts.length} alert(s) visible to provider ops</p>
-      {alerts.map((a) => (
-        <AlertCard
-          key={a.alert_id}
-          alert={a}
-          availableActions={["acknowledge", "escalate"]}
-          split={split}
-          actor="provider_ops"
-        />
-      ))}
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <p className="muted result-count">{alerts.length} alert(s) visible to provider ops</p>
+          {alerts.length === 0 && <EmptyState title="No provider-ops alerts right now" />}
+          {alerts.map((a) => (
+            <AlertCard
+              key={a.alert_id}
+              alert={a}
+              availableActions={["acknowledge", "escalate"]}
+              split={split}
+            />
+          ))}
+        </>
+      )}
     </div>
   );
 }

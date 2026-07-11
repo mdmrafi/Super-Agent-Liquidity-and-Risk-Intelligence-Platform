@@ -2,7 +2,20 @@
   "permissions": {
     "allow": [
       "Bash(python -m data_generation.main)",
-      "Bash(python -m ml.train)"
+      "Bash(python -m ml.train)",
+      "Bash(git commit -m ' *)",
+      "Bash(powershell -NoProfile -Command \"Stop-Process -Id 10668,8544,12236 -Force -ErrorAction SilentlyContinue\")",
+      "Bash(curl -s -o /dev/null -w \"5180:%{http_code}\\\\n\" http://localhost:5180)",
+      "Bash(curl -s -o /dev/null -w \"8123:%{http_code}\\\\n\" http://localhost:8123/api/meta)",
+      "Bash(powershell -NoProfile -Command 'Get-CimInstance Win32_Process -Filter \"Name='\\\\''python.exe'\\\\''\" | Where-Object { $_.CommandLine -like '\\\\''*8199*'\\\\'' } | Select-Object ProcessId,CommandLine')",
+      "Bash(powershell -NoProfile -Command 'Get-CimInstance Win32_OperatingSystem | Select-Object @{N='\\\\''FreeGB'\\\\'';E={[math]::Round\\($_.FreePhysicalMemory/1MB,1\\)}}, @{N='\\\\''TotalGB'\\\\'';E={[math]::Round\\($_.TotalVisibleMemorySize/1MB,1\\)}}')",
+      "Bash(powershell -NoProfile -Command 'Get-CimInstance Win32_Process -Filter \"Name='\\\\''python.exe'\\\\''\" | Where-Object { $_.CommandLine -like '\\\\''*api.main*'\\\\'' } | Select-Object ProcessId,CreationDate,CommandLine | Format-List')",
+      "Bash(powershell -NoProfile -Command \"Get-NetTCPConnection -LocalPort 8000 -State Listen -ErrorAction SilentlyContinue | Select-Object OwningProcess\")",
+      "Bash(python -c \"import pymongo; print\\('pymongo', pymongo.version\\)\")",
+      "Bash(python -c \"import motor; print\\('motor', motor.version\\)\")",
+      "Bash(python -c \"import beanie; print\\('beanie', beanie.__version__\\)\")",
+      "Bash(python -c \"import passlib; print\\('passlib ok'\\)\")",
+      "Bash(python -c \"import jose; print\\('jose ok'\\)\")"
     ]
   }
 }

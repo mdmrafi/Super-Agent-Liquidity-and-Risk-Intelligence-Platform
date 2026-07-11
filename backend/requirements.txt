@@ -5,3 +5,7 @@ uvicorn>=0.32
 openai>=2.0
 scikit-learn>=1.5
 joblib>=1.4
+python-dotenv>=1.0
+beanie>=1.26
+bcrypt>=4.1
+PyJWT>=2.9

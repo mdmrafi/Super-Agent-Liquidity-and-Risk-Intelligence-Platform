@@ -9,6 +9,22 @@ async function req(path, options) {
   return res.json();
 }
 
+function authHeaders(token) {
+  return token ? { Authorization: `Bearer ${token}` } : {};
+}
+
+export function login(username, password) {
+  return req(`/auth/login`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ username, password }),
+  });
+}
+
+export function getMe(token) {
+  return req(`/auth/me`, { headers: authHeaders(token) });
+}
+
 export function getMeta(split) {
   return req(`/meta?split=${split}`);
 }
@@ -23,11 +39,14 @@ export function getAgentBalances(split, agentId) {
 }
 
 function lifecycleAction(action) {
-  return (alertId, actor, split) =>
+  // actor is derived server-side from the bearer token (see
+  // backend/api/main.py) -- a logged-in user can only ever act as
+  // themselves, never as a client-supplied name.
+  return (alertId, split, token) =>
     req(`/alerts/${alertId}/${action}`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ actor, split }),
+      headers: { "Content-Type": "application/json", ...authHeaders(token) },
+      body: JSON.stringify({ split }),
     });
 }
 

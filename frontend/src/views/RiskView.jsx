@@ -1,12 +1,24 @@
 import { useEffect, useState } from "react";
 import { getAlerts } from "../api";
 import AlertCard from "../components/AlertCard";
+import Loading from "../components/Loading";
+import EmptyState from "../components/EmptyState";
 
 export default function RiskView({ split }) {
   const [alerts, setAlerts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getAlerts(split, { alert_type: "unusual_activity" }).then(setAlerts);
+    let cancelled = false;
+    setLoading(true);
+    getAlerts(split, { alert_type: "unusual_activity" }).then((a) => {
+      if (cancelled) return;
+      setAlerts(a);
+      setLoading(false);
+    });
+    return () => {
+      cancelled = true;
+    };
   }, [split]);
 
   return (
@@ -16,16 +28,22 @@ export default function RiskView({ split }) {
         determination. Actions here are limited to reviewing the evidence or escalating; nothing
         here blocks or restricts the agent.
       </p>
-      <p className="muted">{alerts.length} unusual_activity alert(s)</p>
-      {alerts.map((a) => (
-        <AlertCard
-          key={a.alert_id}
-          alert={a}
-          availableActions={["acknowledge", "escalate"]}
-          split={split}
-          actor="risk_analyst"
-        />
-      ))}
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <p className="muted result-count">{alerts.length} unusual_activity alert(s)</p>
+          {alerts.length === 0 && <EmptyState title="No unusual-activity alerts right now" />}
+          {alerts.map((a) => (
+            <AlertCard
+              key={a.alert_id}
+              alert={a}
+              availableActions={["acknowledge", "escalate"]}
+              split={split}
+            />
+          ))}
+        </>
+      )}
     </div>
   );
 }

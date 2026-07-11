@@ -1,7 +1,12 @@
 import { useState } from "react";
 import AlertExplanation from "./AlertExplanation";
 import { acknowledgeAlert, escalateAlert, resolveAlert } from "../api";
-import { formatDateTime, describeCohortContext, PROVIDER_COLORS, SEVERITY_COLORS } from "../lib/format";
+import { useAuth } from "../lib/AuthContext";
+import {
+  formatDateTime, describeCohortContext,
+  PROVIDER_COLORS, PROVIDER_TEXT, CASH_COLOR,
+  SEVERITY_BG, SEVERITY_TEXT,
+} from "../lib/format";
 
 const ACTION_FN = { acknowledge: acknowledgeAlert, escalate: escalateAlert, resolve: resolveAlert };
 const ACTION_LABEL = { acknowledge: "Acknowledge", escalate: "Escalate", resolve: "Resolve" };
@@ -26,18 +31,19 @@ const ROLE_LABEL = {
 function ScopeBadge({ alert }) {
   if (alert.provider) {
     return (
-      <span className="badge" style={{ background: PROVIDER_COLORS[alert.provider] }}>
+      <span className="badge" style={{ background: PROVIDER_COLORS[alert.provider], color: PROVIDER_TEXT }}>
         {alert.provider}
       </span>
     );
   }
   if (alert.liquidity_type === "physical_cash") {
-    return <span className="badge" style={{ background: "#495057" }}>Shared physical cash</span>;
+    return <span className="badge" style={{ background: CASH_COLOR, color: PROVIDER_TEXT }}>Shared physical cash</span>;
   }
   return null;
 }
 
-export default function AlertCard({ alert, availableActions = [], split, actor = "dashboard_user", onChange }) {
+export default function AlertCard({ alert, availableActions = [], split, onChange }) {
+  const { token } = useAuth();
   const [current, setCurrent] = useState(alert);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState(null);
@@ -49,7 +55,7 @@ export default function AlertCard({ alert, availableActions = [], split, actor =
     setBusy(true);
     setError(null);
     try {
-      const updated = await ACTION_FN[action](current.alert_id, actor, split);
+      const updated = await ACTION_FN[action](current.alert_id, split, token);
       setCurrent(updated);
       onChange?.(updated);
     } catch (e) {
@@ -62,7 +68,10 @@ export default function AlertCard({ alert, availableActions = [], split, actor =
   return (
     <div className="alert-card">
       <div className="alert-card__header">
-        <span className="badge" style={{ background: SEVERITY_COLORS[current.severity] }}>
+        <span
+          className="pill pill--severity"
+          style={{ background: SEVERITY_BG[current.severity], color: SEVERITY_TEXT[current.severity] }}
+        >
           {current.severity}
         </span>
         <span className="alert-type">{ALERT_TYPE_LABEL[current.alert_type] || current.alert_type}</span>
