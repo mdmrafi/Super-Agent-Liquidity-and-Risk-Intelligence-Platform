@@ -34,6 +34,14 @@ GENERAL_DATA_FAULTS = [
     dict(provider="Nagad", day_index=14, scenario_tag=None),
 ]
 
+# General (unnamed) liquidity-pressure injection on a holdout day, so Stage 2's
+# shortage-detection-lead-time metric has something to measure on held-out data --
+# Scenario A alone (calibration only) left holdout with no shortage event to detect.
+GENERAL_LIQUIDITY_PRESSURE = [
+    dict(agent_id="agent_11", provider="Nagad", day_index=12,
+         start_hour=11, end_hour=17, cash_out_prob=0.87, rate_multiplier=3.0, scenario_tag=None),
+]
+
 
 def build_clean_ledger(rng):
     all_events = []
@@ -70,6 +78,16 @@ def build_clean_ledger(rng):
                 day = CALENDAR[spec["day_index"]]
                 events += scenarios.inject_anomaly_burst(
                     rng, agent_id, area, spec["provider"], day, spec["hour"],
+                    scenario_tag=spec["scenario_tag"],
+                )
+
+        for spec in GENERAL_LIQUIDITY_PRESSURE:
+            if spec["agent_id"] == agent_id:
+                day = CALENDAR[spec["day_index"]]
+                events = scenarios.inject_pressure(
+                    rng, events, agent_id, area, day, spec["provider"],
+                    spec["start_hour"], spec["end_hour"],
+                    spec["cash_out_prob"], spec["rate_multiplier"],
                     scenario_tag=spec["scenario_tag"],
                 )
 

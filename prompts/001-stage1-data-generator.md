@@ -47,3 +47,14 @@ general anomaly/data-fault injection), `reconcile.py` (balance-replay verificati
   ~2% of each other, from 3 distinct customer_ids — matches section 5's pattern definition.
 - Scenario C spot-checked: delayed, duplicated, and null-balance ("corrupted") rows present
   and correctly tagged, applied only after reconciliation passed on the clean ledger.
+
+## Addendum (same session, discovered while starting Stage 2)
+
+Stage 2 needs a liquidity-shortage event on a **holdout** day to measure shortage-detection
+lead time against held-out data (section 11) -- Scenario A was calibration-only, so holdout
+had nothing to detect. Asked the user; confirmed adding a general (unnamed) liquidity-pressure
+injection to a holdout day, same pattern as the existing general anomaly/data-fault instances.
+Added `GENERAL_LIQUIDITY_PRESSURE` (agent_11, Nagad, day 12, hours 11-17) to
+`data_generation/main.py`. Re-ran the generator, reconciliation still passes (7,694 clean
+transactions), and spot-checked the Nagad-only conservation within the window
+(+83,690.61 balance exactly mirrors -83,690.61 cash).
