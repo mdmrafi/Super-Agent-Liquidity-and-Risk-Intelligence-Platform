@@ -13,6 +13,22 @@ const ALERT_TYPE_LABEL = {
   data_quality: "Data quality",
 };
 
+/** Which pool an alert concerns: a provider's e-money (colored provider badge)
+ *  or the agent's shared physical cash drawer (provider is null on the alert). */
+function ScopeBadge({ alert }) {
+  if (alert.provider) {
+    return (
+      <span className="badge" style={{ background: PROVIDER_COLORS[alert.provider] }}>
+        {alert.provider}
+      </span>
+    );
+  }
+  if (alert.liquidity_type === "physical_cash") {
+    return <span className="badge" style={{ background: "#495057" }}>Shared physical cash</span>;
+  }
+  return null;
+}
+
 export default function AlertCard({ alert, availableActions = [], split, actor = "dashboard_user", onChange }) {
   const [current, setCurrent] = useState(alert);
   const [busy, setBusy] = useState(false);
@@ -42,11 +58,7 @@ export default function AlertCard({ alert, availableActions = [], split, actor =
           {current.severity}
         </span>
         <span className="alert-type">{ALERT_TYPE_LABEL[current.alert_type] || current.alert_type}</span>
-        {current.provider && (
-          <span className="badge" style={{ background: PROVIDER_COLORS[current.provider] }}>
-            {current.provider}
-          </span>
-        )}
+        <ScopeBadge alert={current} />
         <span className="muted">{current.agent_id} · {current.area}</span>
         <span className="muted alert-card__time">{formatDateTime(current.timestamp)}</span>
       </div>

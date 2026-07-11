@@ -6,6 +6,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-11T18:00:00",
     "alert_type": "unusual_activity",
+    "liquidity_type": null,
     "severity": "low",
     "evidence": [
       "5 cash_outs, avg 4,789 BDT, 2 account(s), 5-minute window"
@@ -33,9 +34,10 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-12T11:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "low",
     "evidence": [
-      "burn_rate -2,022 BDT/hour, time_to_shortage 439 minutes, confidence 42%"
+      "bKash e-money balance: burn_rate -2,022 BDT/hour, time_to_shortage 439 minutes, confidence 42%"
     ],
     "confidence": 0.4199893016235173,
     "confidence_label": "medium",
@@ -60,9 +62,10 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-12T12:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "low",
     "evidence": [
-      "burn_rate -1,862 BDT/hour, time_to_shortage 470 minutes, confidence 59%"
+      "bKash e-money balance: burn_rate -1,862 BDT/hour, time_to_shortage 470 minutes, confidence 59%"
     ],
     "confidence": 0.5924227395262098,
     "confidence_label": "medium",
@@ -87,9 +90,10 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-12T13:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "high",
     "evidence": [
-      "burn_rate -13,707 BDT/hour, time_to_shortage 34 minutes, confidence 52%"
+      "shared physical cash reserve: burn_rate -13,707 BDT/hour, time_to_shortage 34 minutes, confidence 52%"
     ],
     "confidence": 0.5248964127423588,
     "confidence_label": "medium",
@@ -97,7 +101,7 @@
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained \u2014 replenishment requested",
+    "display_status": "constrained — replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -114,9 +118,10 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-12T17:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "low",
     "evidence": [
-      "burn_rate -3,681 BDT/hour, time_to_shortage 362 minutes, confidence 41%"
+      "shared physical cash reserve: burn_rate -3,681 BDT/hour, time_to_shortage 362 minutes, confidence 41%"
     ],
     "confidence": 0.40899664149730136,
     "confidence_label": "medium",
@@ -141,9 +146,10 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-12T19:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "medium",
     "evidence": [
-      "burn_rate -2,352 BDT/hour, time_to_shortage 187 minutes, confidence 37%"
+      "bKash e-money balance: burn_rate -2,352 BDT/hour, time_to_shortage 187 minutes, confidence 37%"
     ],
     "confidence": 0.37286815779212784,
     "confidence_label": "low",
@@ -168,9 +174,10 @@
     "area": "Shibganj",
     "timestamp": "2026-01-13T09:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "medium",
     "evidence": [
-      "burn_rate -4,645 BDT/hour, time_to_shortage 98 minutes, confidence 53%"
+      "shared physical cash reserve: burn_rate -4,645 BDT/hour, time_to_shortage 98 minutes, confidence 53%"
     ],
     "confidence": 0.5312726910752272,
     "confidence_label": "medium",
@@ -195,9 +202,10 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-13T13:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "medium",
     "evidence": [
-      "burn_rate -4,461 BDT/hour, time_to_shortage 115 minutes, confidence 72%"
+      "shared physical cash reserve: burn_rate -4,461 BDT/hour, time_to_shortage 115 minutes, confidence 72%"
     ],
     "confidence": 0.7170621679871673,
     "confidence_label": "high",
@@ -222,9 +230,10 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-13T13:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "low",
     "evidence": [
-      "burn_rate -3,422 BDT/hour, time_to_shortage 269 minutes, confidence 56%"
+      "Nagad e-money balance: burn_rate -3,422 BDT/hour, time_to_shortage 269 minutes, confidence 56%"
     ],
     "confidence": 0.5622090865493883,
     "confidence_label": "medium",
@@ -249,6 +258,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-13T13:00:00",
     "alert_type": "unusual_activity",
+    "liquidity_type": null,
     "severity": "low",
     "evidence": [
       "4 cash_outs, avg 2,584 BDT, 3 account(s), 6-minute window"
@@ -276,9 +286,10 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-13T15:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "low",
     "evidence": [
-      "burn_rate -2,634 BDT/hour, time_to_shortage 281 minutes, confidence 45%"
+      "shared physical cash reserve: burn_rate -2,634 BDT/hour, time_to_shortage 281 minutes, confidence 45%"
     ],
     "confidence": 0.4478139554112927,
     "confidence_label": "medium",
@@ -303,9 +314,10 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-13T15:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "medium",
     "evidence": [
-      "burn_rate -7,147 BDT/hour, time_to_shortage 142 minutes, confidence 71%"
+      "shared physical cash reserve: burn_rate -7,147 BDT/hour, time_to_shortage 142 minutes, confidence 71%"
     ],
     "confidence": 0.7051604006414934,
     "confidence_label": "high",
@@ -330,9 +342,10 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-13T18:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "medium",
     "evidence": [
-      "burn_rate -2,558 BDT/hour, time_to_shortage 164 minutes, confidence 55%"
+      "shared physical cash reserve: burn_rate -2,558 BDT/hour, time_to_shortage 164 minutes, confidence 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -357,9 +370,10 @@
     "area": "Shibganj",
     "timestamp": "2026-01-13T18:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "low",
     "evidence": [
-      "burn_rate -2,134 BDT/hour, time_to_shortage 421 minutes, confidence 58%"
+      "bKash e-money balance: burn_rate -2,134 BDT/hour, time_to_shortage 421 minutes, confidence 58%"
     ],
     "confidence": 0.580583231619896,
     "confidence_label": "medium",
@@ -384,9 +398,10 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-13T19:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "low",
     "evidence": [
-      "burn_rate -3,245 BDT/hour, time_to_shortage 279 minutes, confidence 64%"
+      "shared physical cash reserve: burn_rate -3,245 BDT/hour, time_to_shortage 279 minutes, confidence 64%"
     ],
     "confidence": 0.635724857497981,
     "confidence_label": "medium",
@@ -411,9 +426,10 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-13T19:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "low",
     "evidence": [
-      "burn_rate -1,855 BDT/hour, time_to_shortage 436 minutes, confidence 35%"
+      "bKash e-money balance: burn_rate -1,855 BDT/hour, time_to_shortage 436 minutes, confidence 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -438,9 +454,10 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-13T21:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "high",
     "evidence": [
-      "burn_rate -964 BDT/hour, time_to_shortage 0 minutes, confidence 35%"
+      "shared physical cash reserve: burn_rate -964 BDT/hour, time_to_shortage 0 minutes, confidence 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -448,7 +465,7 @@
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained \u2014 replenishment requested",
+    "display_status": "constrained — replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -465,9 +482,10 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-13T22:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "low",
     "evidence": [
-      "burn_rate -3,343 BDT/hour, time_to_shortage 273 minutes, confidence 59%"
+      "shared physical cash reserve: burn_rate -3,343 BDT/hour, time_to_shortage 273 minutes, confidence 59%"
     ],
     "confidence": 0.5936434047454607,
     "confidence_label": "medium",
@@ -492,6 +510,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T00:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -519,6 +538,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T02:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -546,6 +566,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T03:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 33%"
@@ -573,6 +594,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T04:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 47%"
@@ -600,6 +622,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T05:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 7%"
@@ -627,6 +650,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T06:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 23%"
@@ -654,6 +678,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T07:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 20%"
@@ -681,9 +706,10 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T08:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "low",
     "evidence": [
-      "burn_rate -2,995 BDT/hour, time_to_shortage 307 minutes, confidence 55%"
+      "shared physical cash reserve: burn_rate -2,995 BDT/hour, time_to_shortage 307 minutes, confidence 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -708,9 +734,10 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T08:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "medium",
     "evidence": [
-      "burn_rate -1,994 BDT/hour, time_to_shortage 184 minutes, confidence 35%"
+      "bKash e-money balance: burn_rate -1,994 BDT/hour, time_to_shortage 184 minutes, confidence 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -735,6 +762,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T08:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 18%"
@@ -762,6 +790,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T08:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -789,6 +818,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T08:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 25%"
@@ -816,6 +846,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T08:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 5%"
@@ -843,6 +874,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T09:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 20%"
@@ -870,6 +902,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T09:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -897,6 +930,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T09:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 40%"
@@ -924,6 +958,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T09:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -951,6 +986,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T09:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 29%"
@@ -978,6 +1014,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T10:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1005,6 +1042,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T10:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -1032,6 +1070,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T10:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1059,9 +1098,10 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T10:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "low",
     "evidence": [
-      "burn_rate -4,137 BDT/hour, time_to_shortage 381 minutes, confidence 55%"
+      "bKash e-money balance: burn_rate -4,137 BDT/hour, time_to_shortage 381 minutes, confidence 55%"
     ],
     "confidence": 0.5547230286747371,
     "confidence_label": "medium",
@@ -1086,9 +1126,10 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T10:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "medium",
     "evidence": [
-      "burn_rate -2,511 BDT/hour, time_to_shortage 195 minutes, confidence 35%"
+      "bKash e-money balance: burn_rate -2,511 BDT/hour, time_to_shortage 195 minutes, confidence 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -1113,6 +1154,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T10:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
@@ -1140,6 +1182,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T11:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "4 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 39%"
@@ -1167,9 +1210,10 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T11:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "low",
     "evidence": [
-      "burn_rate -1,149 BDT/hour, time_to_shortage 283 minutes, confidence 55%"
+      "bKash e-money balance: burn_rate -1,149 BDT/hour, time_to_shortage 283 minutes, confidence 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -1194,9 +1238,10 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T11:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "low",
     "evidence": [
-      "burn_rate -5,180 BDT/hour, time_to_shortage 394 minutes, confidence 69%"
+      "bKash e-money balance: burn_rate -5,180 BDT/hour, time_to_shortage 394 minutes, confidence 69%"
     ],
     "confidence": 0.6889343212913122,
     "confidence_label": "medium",
@@ -1221,6 +1266,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T11:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
@@ -1248,6 +1294,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T11:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1275,6 +1322,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T11:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 18%"
@@ -1302,6 +1350,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T11:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1329,6 +1378,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T11:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
@@ -1356,6 +1406,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T11:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -1383,6 +1434,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T11:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1410,6 +1462,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T11:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 18%"
@@ -1437,9 +1490,10 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T12:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "high",
     "evidence": [
-      "burn_rate -42 BDT/hour, time_to_shortage 0 minutes, confidence 55%"
+      "shared physical cash reserve: burn_rate -42 BDT/hour, time_to_shortage 0 minutes, confidence 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -1447,7 +1501,7 @@
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained \u2014 replenishment requested",
+    "display_status": "constrained — replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -1464,6 +1518,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T12:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1491,6 +1546,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T12:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1518,6 +1574,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T12:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1545,6 +1602,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T12:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1572,6 +1630,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T12:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 39%"
@@ -1599,6 +1658,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T12:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1626,6 +1686,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T12:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -1653,6 +1714,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T13:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -1680,6 +1742,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T13:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1707,6 +1770,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T13:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1734,6 +1798,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T13:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1761,6 +1826,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T13:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 47%"
@@ -1788,6 +1854,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T13:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1815,9 +1882,10 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T13:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "low",
     "evidence": [
-      "burn_rate -3,928 BDT/hour, time_to_shortage 409 minutes, confidence 46%"
+      "Rocket e-money balance: burn_rate -3,928 BDT/hour, time_to_shortage 409 minutes, confidence 46%"
     ],
     "confidence": 0.45978938786275875,
     "confidence_label": "medium",
@@ -1842,6 +1910,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T13:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1869,9 +1938,10 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T13:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "medium",
     "evidence": [
-      "burn_rate -2,046 BDT/hour, time_to_shortage 161 minutes, confidence 48%"
+      "bKash e-money balance: burn_rate -2,046 BDT/hour, time_to_shortage 161 minutes, confidence 48%"
     ],
     "confidence": 0.48179051383382115,
     "confidence_label": "medium",
@@ -1896,6 +1966,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T13:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 45%"
@@ -1923,6 +1994,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T13:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -1950,9 +2022,10 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T14:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "low",
     "evidence": [
-      "burn_rate -2,992 BDT/hour, time_to_shortage 270 minutes, confidence 57%"
+      "shared physical cash reserve: burn_rate -2,992 BDT/hour, time_to_shortage 270 minutes, confidence 57%"
     ],
     "confidence": 0.5704773122130441,
     "confidence_label": "medium",
@@ -1977,6 +2050,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T14:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2004,6 +2078,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T14:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -2031,6 +2106,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T14:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2058,6 +2134,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T14:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2085,6 +2162,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T15:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2112,6 +2190,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T15:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2139,6 +2218,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T15:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2166,6 +2246,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T15:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2193,6 +2274,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T15:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2220,6 +2302,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T15:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2247,6 +2330,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T15:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -2274,9 +2358,10 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T15:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "high",
     "evidence": [
-      "burn_rate -4,790 BDT/hour, time_to_shortage 27 minutes, confidence 56%"
+      "bKash e-money balance: burn_rate -4,790 BDT/hour, time_to_shortage 27 minutes, confidence 56%"
     ],
     "confidence": 0.5627514528604045,
     "confidence_label": "medium",
@@ -2284,7 +2369,7 @@
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained \u2014 replenishment requested",
+    "display_status": "constrained — replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -2301,9 +2386,10 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T16:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "medium",
     "evidence": [
-      "burn_rate -3,186 BDT/hour, time_to_shortage 233 minutes, confidence 59%"
+      "shared physical cash reserve: burn_rate -3,186 BDT/hour, time_to_shortage 233 minutes, confidence 59%"
     ],
     "confidence": 0.5937209681911548,
     "confidence_label": "medium",
@@ -2328,6 +2414,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T16:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -2355,9 +2442,10 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T16:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "low",
     "evidence": [
-      "burn_rate -3,663 BDT/hour, time_to_shortage 270 minutes, confidence 60%"
+      "bKash e-money balance: burn_rate -3,663 BDT/hour, time_to_shortage 270 minutes, confidence 60%"
     ],
     "confidence": 0.5953392258434547,
     "confidence_label": "medium",
@@ -2382,6 +2470,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T16:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2409,6 +2498,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T16:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 48%"
@@ -2436,6 +2526,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T16:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 42%"
@@ -2463,6 +2554,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T16:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 18%"
@@ -2490,6 +2582,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T16:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -2517,9 +2610,10 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T17:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "low",
     "evidence": [
-      "burn_rate -3,127 BDT/hour, time_to_shortage 432 minutes, confidence 66%"
+      "shared physical cash reserve: burn_rate -3,127 BDT/hour, time_to_shortage 432 minutes, confidence 66%"
     ],
     "confidence": 0.6569653924735611,
     "confidence_label": "medium",
@@ -2544,6 +2638,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T17:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2571,6 +2666,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T17:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -2598,6 +2694,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T17:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -2625,9 +2722,10 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T17:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "high",
     "evidence": [
-      "burn_rate -2,450 BDT/hour, time_to_shortage 0 minutes, confidence 60%"
+      "bKash e-money balance: burn_rate -2,450 BDT/hour, time_to_shortage 0 minutes, confidence 60%"
     ],
     "confidence": 0.5971489954390101,
     "confidence_label": "medium",
@@ -2635,7 +2733,7 @@
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained \u2014 replenishment requested",
+    "display_status": "constrained — replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -2652,6 +2750,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T17:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2679,6 +2778,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T17:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2706,6 +2806,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T17:00:00",
     "alert_type": "unusual_activity",
+    "liquidity_type": null,
     "severity": "low",
     "evidence": [
       "3 cash_outs, avg 2,550 BDT, 2 account(s), 2-minute window"
@@ -2733,6 +2834,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T17:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2760,6 +2862,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T17:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2787,6 +2890,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T17:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 38%"
@@ -2814,9 +2918,10 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T18:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "high",
     "evidence": [
-      "burn_rate -5,644 BDT/hour, time_to_shortage 0 minutes, confidence 60%"
+      "shared physical cash reserve: burn_rate -5,644 BDT/hour, time_to_shortage 0 minutes, confidence 60%"
     ],
     "confidence": 0.5956191506489112,
     "confidence_label": "medium",
@@ -2824,7 +2929,7 @@
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained \u2014 replenishment requested",
+    "display_status": "constrained — replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -2841,6 +2946,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T18:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2868,6 +2974,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T18:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 27%"
@@ -2895,6 +3002,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T18:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 59%"
@@ -2922,6 +3030,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T18:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "4 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -2949,6 +3058,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T18:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 38%"
@@ -2976,6 +3086,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T18:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 36%"
@@ -3003,6 +3114,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T18:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
@@ -3030,6 +3142,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T18:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 42%"
@@ -3057,6 +3170,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T18:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -3084,6 +3198,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T18:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
@@ -3111,6 +3226,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T18:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 49%"
@@ -3138,6 +3254,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T18:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -3165,9 +3282,10 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T19:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "medium",
     "evidence": [
-      "burn_rate -4,708 BDT/hour, time_to_shortage 236 minutes, confidence 55%"
+      "shared physical cash reserve: burn_rate -4,708 BDT/hour, time_to_shortage 236 minutes, confidence 55%"
     ],
     "confidence": 0.5540941259839149,
     "confidence_label": "medium",
@@ -3192,6 +3310,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T19:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -3219,6 +3338,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T19:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -3246,6 +3366,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T19:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 39%"
@@ -3273,6 +3394,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T19:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -3300,6 +3422,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T19:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -3327,9 +3450,10 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T19:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "low",
     "evidence": [
-      "burn_rate -2,151 BDT/hour, time_to_shortage 323 minutes, confidence 46%"
+      "Rocket e-money balance: burn_rate -2,151 BDT/hour, time_to_shortage 323 minutes, confidence 46%"
     ],
     "confidence": 0.45995481056394355,
     "confidence_label": "medium",
@@ -3354,6 +3478,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T19:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "4 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 40%"
@@ -3381,6 +3506,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T19:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 46%"
@@ -3408,6 +3534,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T19:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -3435,9 +3562,10 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T19:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "low",
     "evidence": [
-      "burn_rate -1,436 BDT/hour, time_to_shortage 314 minutes, confidence 55%"
+      "bKash e-money balance: burn_rate -1,436 BDT/hour, time_to_shortage 314 minutes, confidence 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -3462,9 +3590,10 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T20:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "low",
     "evidence": [
-      "burn_rate -3,307 BDT/hour, time_to_shortage 392 minutes, confidence 64%"
+      "shared physical cash reserve: burn_rate -3,307 BDT/hour, time_to_shortage 392 minutes, confidence 64%"
     ],
     "confidence": 0.6350153977582074,
     "confidence_label": "medium",
@@ -3489,9 +3618,10 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T20:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "physical_cash",
     "severity": "medium",
     "evidence": [
-      "burn_rate -5,338 BDT/hour, time_to_shortage 119 minutes, confidence 55%"
+      "shared physical cash reserve: burn_rate -5,338 BDT/hour, time_to_shortage 119 minutes, confidence 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -3516,6 +3646,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T20:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
@@ -3543,6 +3674,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T20:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -3570,6 +3702,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T20:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -3597,9 +3730,10 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T20:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "medium",
     "evidence": [
-      "burn_rate -397 BDT/hour, time_to_shortage 86 minutes, confidence 55%"
+      "bKash e-money balance: burn_rate -397 BDT/hour, time_to_shortage 86 minutes, confidence 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -3624,6 +3758,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T20:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -3651,6 +3786,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T20:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -3678,9 +3814,10 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T20:00:00",
     "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
     "severity": "low",
     "evidence": [
-      "burn_rate -1,928 BDT/hour, time_to_shortage 313 minutes, confidence 57%"
+      "bKash e-money balance: burn_rate -1,928 BDT/hour, time_to_shortage 313 minutes, confidence 57%"
     ],
     "confidence": 0.5696097651601226,
     "confidence_label": "medium",
@@ -3705,6 +3842,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T20:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "3 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -3732,6 +3870,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T21:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -3759,6 +3898,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T21:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -3786,6 +3926,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T21:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -3813,6 +3954,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T21:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 45%"
@@ -3840,6 +3982,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T21:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -3867,6 +4010,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T21:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -3894,6 +4038,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T22:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -3921,6 +4066,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T22:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 44%"
@@ -3948,6 +4094,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-14T22:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -3975,6 +4122,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T22:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4002,6 +4150,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T22:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "4 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 53%"
@@ -4029,6 +4178,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T22:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4056,6 +4206,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T22:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 41%"
@@ -4083,6 +4234,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T23:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 48%"
@@ -4110,6 +4262,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-14T23:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4137,6 +4290,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-14T23:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4164,6 +4318,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-14T23:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4191,6 +4346,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-14T23:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
@@ -4218,6 +4374,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T00:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "4 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4245,6 +4402,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T00:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4272,6 +4430,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T00:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 33%"
@@ -4299,6 +4458,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T00:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4326,6 +4486,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-15T00:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 47%"
@@ -4353,6 +4514,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-15T00:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4380,6 +4542,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T00:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 41%"
@@ -4407,6 +4570,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T00:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4434,6 +4598,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T01:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 47%"
@@ -4461,6 +4626,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-15T01:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4488,6 +4654,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-15T01:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4515,6 +4682,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T01:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4542,6 +4710,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T01:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4569,6 +4738,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-15T01:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 48%"
@@ -4596,6 +4766,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T02:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4623,6 +4794,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T02:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4650,6 +4822,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T02:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4677,6 +4850,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T02:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4704,6 +4878,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-15T02:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 46%"
@@ -4731,6 +4906,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T03:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4758,6 +4934,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T03:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 31%"
@@ -4785,6 +4962,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T03:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4812,6 +4990,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-15T03:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 40%"
@@ -4839,6 +5018,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-15T04:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4866,6 +5046,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T04:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 33%"
@@ -4893,6 +5074,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-15T04:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 37%"
@@ -4920,6 +5102,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T04:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4947,6 +5130,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T04:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -4974,6 +5158,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-15T04:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 41%"
@@ -5001,6 +5186,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T05:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 33%"
@@ -5028,6 +5214,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T05:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5055,6 +5242,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T05:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 33%"
@@ -5082,6 +5270,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T05:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5109,6 +5298,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T05:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5136,6 +5326,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-15T05:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5163,6 +5354,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-15T05:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 27%"
@@ -5190,6 +5382,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-15T06:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 23%"
@@ -5217,6 +5410,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T06:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5244,6 +5438,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T06:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 34%"
@@ -5271,6 +5466,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T06:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5298,6 +5494,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-15T06:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5325,6 +5522,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T06:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 40%"
@@ -5352,6 +5550,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T06:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5379,6 +5578,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T06:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 42%"
@@ -5406,6 +5606,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T07:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "4 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5433,6 +5634,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-15T07:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 14%"
@@ -5460,6 +5662,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T07:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5487,6 +5690,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T07:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 37%"
@@ -5514,6 +5718,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T07:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5541,6 +5746,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T08:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 33%"
@@ -5568,6 +5774,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T08:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5595,6 +5802,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T08:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5622,6 +5830,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-15T08:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 29%"
@@ -5649,6 +5858,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-15T08:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5676,6 +5886,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T08:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 33%"
@@ -5703,6 +5914,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T08:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5730,6 +5942,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T08:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5757,6 +5970,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T09:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5784,6 +5998,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T09:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5811,6 +6026,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T09:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -5838,6 +6054,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T10:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
@@ -5865,6 +6082,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T10:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
@@ -5892,6 +6110,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T10:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
@@ -5919,6 +6138,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T10:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
@@ -5946,6 +6166,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T10:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 59%"
@@ -5973,6 +6194,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-15T10:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -6000,6 +6222,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T11:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -6027,6 +6250,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T11:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -6054,6 +6278,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-15T11:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 40%"
@@ -6081,6 +6306,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-15T11:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "medium",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 51%"
@@ -6108,6 +6334,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T11:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -6135,6 +6362,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T12:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -6162,6 +6390,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-15T12:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -6189,6 +6418,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T12:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -6216,6 +6446,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T13:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -6243,6 +6474,7 @@
     "area": "Ambarkhana",
     "timestamp": "2026-01-15T13:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -6270,6 +6502,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T14:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -6297,6 +6530,7 @@
     "area": "Zindabazar",
     "timestamp": "2026-01-15T14:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -6324,6 +6558,7 @@
     "area": "Bandarbazar",
     "timestamp": "2026-01-15T16:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 25%"
@@ -6351,6 +6586,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-15T16:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 27%"
@@ -6378,6 +6614,7 @@
     "area": "Chowhatta",
     "timestamp": "2026-01-15T16:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
@@ -6405,6 +6642,7 @@
     "area": "Shibganj",
     "timestamp": "2026-01-15T17:00:00",
     "alert_type": "data_quality",
+    "liquidity_type": null,
     "severity": "high",
     "evidence": [
       "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 20%"

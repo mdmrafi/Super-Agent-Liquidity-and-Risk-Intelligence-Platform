@@ -39,6 +39,11 @@ concept for a feed problem).
 Additive field: "cohort_peer_count" is not in section 7's literal schema, but
 carried through from Stage 2 so Stage 4 can render cohort_context plainly
 ("similar to 6 nearby agents") instead of the raw enum string.
+
+Additive field: "liquidity_type" ("physical_cash" | "provider_emoney", None for
+non-liquidity alerts) makes the mandatory "which provider OR shared cash reserve"
+distinction explicit on the object and in the evidence text, instead of leaving
+it implicit in whether `provider` is null.
 """
 import pandas as pd
 
@@ -68,9 +73,22 @@ def _display_status(action):
     return "constrained — replenishment requested" if action == "request_replenishment_support" else "normal"
 
 
-def _liquidity_evidence(row):
+def _liquidity_type(provider):
+    """Which pool is under pressure: the agent's shared physical cash drawer
+    (provider is None -- the __cash__ forecast series) or one provider's
+    e-money float. Kept explicit so the alert states the type, rather than
+    leaving it implicit in whether `provider` happens to be null."""
+    return "physical_cash" if provider is None else "provider_emoney"
+
+
+def _liquidity_evidence(row, liquidity_type):
+    scope = (
+        "shared physical cash reserve"
+        if liquidity_type == "physical_cash"
+        else f"{row['provider']} e-money balance"
+    )
     return [
-        f"burn_rate {row['burn_rate']:,.0f} BDT/hour, "
+        f"{scope}: burn_rate {row['burn_rate']:,.0f} BDT/hour, "
         f"time_to_shortage {row['time_to_shortage_minutes']:.0f} minutes, "
         f"confidence {row['confidence']:.0%}"
     ]
@@ -83,7 +101,7 @@ def _data_quality_evidence(n_fault_txns, confidence):
     ]
 
 
-def _base_alert(row, alert_type, severity, evidence):
+def _base_alert(row, alert_type, severity, evidence, liquidity_type=None):
     action = _recommended_action(alert_type, severity)
     return {
         "alert_id": None,  # assigned by build_alerts once the alert is confirmed
@@ -92,6 +110,7 @@ def _base_alert(row, alert_type, severity, evidence):
         "area": row["area"],
         "timestamp": row["timestamp"],
         "alert_type": alert_type,
+        "liquidity_type": liquidity_type,  # set only for liquidity_shortage; None otherwise
         "severity": severity,
         "evidence": evidence,
         "confidence": row["confidence"],
@@ -156,7 +175,9 @@ def _maybe_liquidity_alert(row, ts, liquidity_keys):
     if key not in liquidity_keys:
         return None
     severity = _liquidity_severity(row["time_to_shortage_minutes"])
-    return _base_alert(row, "liquidity_shortage", severity, _liquidity_evidence(row))
+    liquidity_type = _liquidity_type(row["provider"])
+    evidence = _liquidity_evidence(row, liquidity_type)
+    return _base_alert(row, "liquidity_shortage", severity, evidence, liquidity_type=liquidity_type)
 
 
 def _maybe_anomaly_alert(row):

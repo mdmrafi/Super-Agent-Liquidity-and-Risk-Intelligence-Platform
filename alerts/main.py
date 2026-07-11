@@ -23,8 +23,8 @@ def generate_alerts():
     for split, prefix in (("calibration", "c"), ("holdout", "h")):
         scored, raw = _load(split)
         alerts = build.build_alerts(scored, raw, id_prefix=prefix)
-        with open(f"data/alerts_{split}.json", "w") as f:
-            json.dump(alerts, f, indent=2)
+        with open(f"data/alerts_{split}.json", "w", encoding="utf-8") as f:
+            json.dump(alerts, f, indent=2, ensure_ascii=False)
         print(f"Wrote data/alerts_{split}.json: {len(alerts)} alerts")
         all_alerts.extend(alerts)
     print(f"\nTotal alerts: {len(all_alerts)}")
@@ -81,14 +81,49 @@ def check_hand_check_scenarios():
               f"owner={a['recommended_owner']}")
 
 
-def check_full_lifecycle_demo(all_alerts):
-    print("\n4. Full lifecycle demo (Scenario D) -- end to end on one alert:")
-    demo = next(a for a in all_alerts if a["alert_type"] == "liquidity_shortage" and a["severity"] == "high")
-    print(f"   Starting alert {demo['alert_id']} ({demo['agent_id']}, {demo['provider']}), "
-          f"display_status={demo['display_status']!r}")
-    demo = lifecycle.acknowledge(demo, actor="field_officer_lima", at="2026-01-08T12:15:00")
-    demo = lifecycle.escalate(demo, actor="field_officer_lima", at="2026-01-08T12:40:00")
-    demo = lifecycle.resolve(demo, actor="area_coordinator_zindabazar", at="2026-01-08T14:05:00")
+# The one alert we deliberately walk through a full coordination lifecycle so
+# that "final status" (Scenario D / section 7's who-owns-it + resolution-status
+# mandatory) is a *visible artifact* in the shipped data, not something only a
+# live click can produce. Chosen deterministically (first high-severity
+# liquidity_shortage in calibration) and documented in docs/coordinated-case-
+# example.md; every other alert stays at case_status="new" (raw detector output).
+# Coordination timestamps and the resolving coordinator are derived from the
+# alert itself, so the timeline is same-day/realistic and the coordinator is
+# named for the alert's own area.
+def _walk_lifecycle(alert):
+    t0 = pd.Timestamp(alert["timestamp"])
+    resolver = f"area_coordinator_{alert['area'].lower()}" if alert.get("area") else "area_coordinator"
+    alert = lifecycle.acknowledge(alert, actor="field_officer_lima", at=(t0 + pd.Timedelta(minutes=15)).isoformat())
+    alert = lifecycle.escalate(alert, actor="field_officer_lima", at=(t0 + pd.Timedelta(minutes=40)).isoformat())
+    alert = lifecycle.resolve(alert, actor=resolver, at=(t0 + pd.Timedelta(hours=2, minutes=5)).isoformat())
+    return alert
+
+
+def seed_coordinated_example(split="calibration"):
+    """Persist one fully-coordinated case into data/alerts_{split}.json.
+
+    Read-modify-write of a single deterministically-chosen alert; leaves the
+    other alerts (raw detector output at case_status='new') untouched. Runs
+    after generate_alerts() so it operates on freshly-written clean data.
+    """
+    with open(f"data/alerts_{split}.json", encoding="utf-8") as f:
+        alerts = json.load(f)
+    target = next(
+        a for a in alerts
+        if a["alert_type"] == "liquidity_shortage" and a["severity"] == "high"
+    )
+    walked = _walk_lifecycle(target)
+    alerts = [walked if a["alert_id"] == walked["alert_id"] else a for a in alerts]
+    with open(f"data/alerts_{split}.json", "w", encoding="utf-8") as f:
+        json.dump(alerts, f, indent=2, ensure_ascii=False)
+    return walked
+
+
+def check_full_lifecycle_demo():
+    print("\n4. Full lifecycle demo (Scenario D) -- persisted end to end on one alert:")
+    demo = seed_coordinated_example("calibration")
+    print(f"   Seeded alert {demo['alert_id']} ({demo['agent_id']}, {demo['provider']}, "
+          f"{demo['liquidity_type']}) into data/alerts_calibration.json")
     print(f"   Final case_status={demo['case_status']}, display_status={demo['display_status']!r}")
     print("   case_history:")
     for h in demo["case_history"]:
@@ -113,7 +148,7 @@ def main():
     check_severity_distribution(all_alerts)
     check_replenishment_gating(all_alerts)
     check_hand_check_scenarios()
-    check_full_lifecycle_demo(all_alerts)
+    check_full_lifecycle_demo()
     check_no_banned_language(all_alerts)
 
     print("\nAll Stage 3 checks passed.")
