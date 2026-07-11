@@ -1,0 +1,27 @@
+#!/bin/bash
+# Runs SonarQube analysis after every commit.
+# One-time setup per teammate:
+#   cp scripts/post-commit .git/hooks/post-commit
+#   chmod +x .git/hooks/post-commit
+#
+# Requires:
+#   - Docker Desktop running
+#   - SonarQube container up and attached to the "sonarnet" network as "sonarqube"
+#   - SONAR_LOCAL_TOKEN exported in your shell profile (My Account > Security > Generate Token in the SonarQube UI)
+
+if [ -z "$SONAR_LOCAL_TOKEN" ]; then
+  echo "SONAR_LOCAL_TOKEN is not set — skipping SonarQube analysis."
+  echo "Generate a token in SonarQube (My Account > Security) and export SONAR_LOCAL_TOKEN."
+  exit 0
+fi
+
+echo "Running SonarQube analysis..."
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+
+docker run --rm \
+  --network=sonarnet \
+  -v "${REPO_ROOT}:/usr/src" \
+  sonarsource/sonar-scanner-cli \
+  -Dsonar.host.url=http://sonarqube:9000 \
+  -Dsonar.token="$SONAR_LOCAL_TOKEN"
