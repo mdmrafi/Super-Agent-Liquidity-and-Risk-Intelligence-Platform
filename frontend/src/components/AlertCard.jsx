@@ -13,6 +13,14 @@ const ALERT_TYPE_LABEL = {
   data_quality: "Data quality",
 };
 
+const ROLE_LABEL = {
+  agent: "Agent",
+  field_officer: "Field officer",
+  area_team: "Area team",
+  provider_ops: "Provider ops",
+  risk_team: "Risk team",
+};
+
 /** Which pool an alert concerns: a provider's e-money (colored provider badge)
  *  or the agent's shared physical cash drawer (provider is null on the alert). */
 function ScopeBadge({ alert }) {
@@ -81,6 +89,16 @@ export default function AlertCard({ alert, availableActions = [], split, actor =
         <div>
           <strong>Routed to:</strong> {current.recommended_owner} · <strong>Recommended:</strong> {current.recommended_action}
         </div>
+        {current.audience?.length > 0 && (
+          <div className="audience-row">
+            <strong>Visible to:</strong>
+            {current.audience.map((role) => (
+              <span key={role} className={`aud-chip${role === "provider_ops" ? " aud-chip--provider" : ""}`}>
+                {ROLE_LABEL[role] || role}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="alert-card__lifecycle">

@@ -286,6 +286,29 @@
   color: #333;
 }
 
+.audience-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.aud-chip {
+  font-size: 0.72rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: #e9ecef;
+  color: #495057;
+  border: 1px solid #dee2e6;
+}
+
+.aud-chip--provider {
+  background: #e9edff;
+  color: #2b3a99;
+  border-color: #a9b7f5;
+  font-weight: 600;
+}
+
 .alert-card__lifecycle {
   border-top: 1px dashed #e1e3e8;
   padding-top: 0.6rem;

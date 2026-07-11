@@ -60,6 +60,7 @@ def list_alerts(
     agent_id: str | None = None,
     area: str | None = None,
     alert_type: str | None = None,
+    audience: str | None = None,
     start: str | None = None,
     end: str | None = None,
 ):
@@ -73,6 +74,11 @@ def list_alerts(
         alerts = [a for a in alerts if a["area"] == area]
     if alert_type:
         alerts = [a for a in alerts if a["alert_type"] == alert_type]
+    if audience:
+        # who should *see* the alert -- e.g. audience=provider_ops returns only
+        # alerts a provider operations user is entitled to see (e-money pressure,
+        # never an agent's physical cash drawer).
+        alerts = [a for a in alerts if audience in a.get("audience", [])]
     if start:
         alerts = [a for a in alerts if a["timestamp"] >= start]
     if end:

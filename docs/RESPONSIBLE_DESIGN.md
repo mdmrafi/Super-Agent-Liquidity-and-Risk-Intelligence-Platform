@@ -68,6 +68,13 @@ agents never touched by any injection ([alerts/build.py](../alerts/build.py)).
   per-provider breakdown is one click away with a caption warning that a healthy
   total can hide a shared-cash squeeze. Nothing implies unauthorized conversion
   between provider balances (§4.2, §14).
+- **Visibility follows the pool, not just the case.** Every alert carries an
+  `audience` (who may *see* it), separate from its single owner. A shared **physical
+  cash** shortage is the agent's own drawer — agent-side only. A **provider e-money**
+  shortage concerns the provider's float, so it is visible to both the agent side
+  and that provider's operations team. Provider operations therefore never see an
+  agent's physical cash position — only their own float — enforced server-side by the
+  `audience=provider_ops` filter and surfaced in the Provider ops view.
 - **Synthetic identifiers only.** Agent, customer, and transaction ids are
   generated (`agent_07`, `cust_00272`, `txn_000001`). No PIN, OTP, password, private
   key, or real credential is collected, stored, or requested (§14).
@@ -82,12 +89,15 @@ agents never touched by any injection ([alerts/build.py](../alerts/build.py)).
 
 ## 6. Known responsibility-relevant gaps (stated honestly)
 
-- **No per-provider access control.** A single dashboard shows all providers'
-  alerts to one viewer. In production, a bKash operator must not see another
-  provider's confidential alerts; this prototype does not yet model that isolation.
-- **`provider_ops` / network-coordination routing is lightly exercised**, because
-  the cohort layer rarely classifies pressure as `provider_wide` on this synthetic
-  data. "Upcoming pressure automatically visible to provider operators" is therefore
-  only partially realized — see the evaluation notes for the recommended
-  owner-filtered inbox and provider-scoped view.
+- **Per-provider access isolation is partial.** The Provider ops view is now scoped
+  to a chosen provider and, by the `audience` rule, excludes agents' physical cash —
+  so a provider only sees its own e-money float. But the Agent / Ops / Risk views are
+  not yet behind per-provider authentication; a production deployment would enforce
+  that a bKash operator cannot open Nagad's data at all.
+- **Provider-ops *visibility* is now audience-driven, not cohort-dependent.** E-money
+  liquidity pressure reaches provider operations regardless of whether the cohort
+  layer widened the case, so "upcoming pressure automatically visible to provider
+  operators" is realized for the pool they own. Ownership *escalation* to
+  `provider_ops` (via the `provider_wide` cohort) remains rare on this synthetic
+  data, but visibility no longer depends on it.
 - **Single anomaly pattern** — see [DATA_AND_ASSUMPTIONS.md](./DATA_AND_ASSUMPTIONS.md) §4.

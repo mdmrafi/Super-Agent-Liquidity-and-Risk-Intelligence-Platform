@@ -16,6 +16,11 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -44,6 +49,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "risk_team",
+    "audience": [
+      "agent",
+      "risk_team"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -72,6 +81,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -100,6 +113,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -128,6 +145,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -156,6 +177,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -184,6 +209,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -212,6 +241,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -240,6 +273,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -268,6 +305,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -296,6 +337,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -324,6 +369,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -352,6 +401,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -380,6 +433,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -408,6 +465,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -436,6 +497,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -464,6 +529,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -492,6 +561,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -520,6 +593,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -548,6 +625,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -576,6 +657,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -604,6 +689,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -632,6 +721,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -660,6 +753,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -688,6 +785,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -716,6 +817,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -744,6 +849,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -772,6 +881,10 @@
     "cohort_context": "provider_wide",
     "cohort_peer_count": 3,
     "recommended_owner": "provider_ops",
+    "audience": [
+      "agent",
+      "provider_ops"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -800,6 +913,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -828,6 +945,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -856,6 +977,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -884,6 +1009,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -912,6 +1041,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -940,6 +1073,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "risk_team",
+    "audience": [
+      "agent",
+      "risk_team"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -968,6 +1105,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "risk_team",
+    "audience": [
+      "agent",
+      "risk_team"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -996,6 +1137,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1024,6 +1169,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -1052,6 +1201,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -1080,6 +1233,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1108,6 +1265,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1136,6 +1297,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -1164,6 +1329,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -1192,6 +1361,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -1220,6 +1393,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -1248,6 +1425,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -1276,6 +1457,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1304,6 +1489,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -1332,6 +1521,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1360,6 +1553,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1388,6 +1585,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1416,6 +1617,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1444,6 +1649,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1472,6 +1681,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1500,6 +1713,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1528,6 +1745,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1556,6 +1777,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1584,6 +1809,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1612,6 +1841,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1640,6 +1873,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1668,6 +1905,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1696,6 +1937,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1724,6 +1969,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1752,6 +2001,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1780,6 +2033,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1808,6 +2065,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1836,6 +2097,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1864,6 +2129,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -1892,6 +2161,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1920,6 +2193,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1948,6 +2225,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -1976,6 +2257,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2004,6 +2289,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2032,6 +2321,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2060,6 +2353,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2088,6 +2385,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2116,6 +2417,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2144,6 +2449,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2172,6 +2481,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2200,6 +2513,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2228,6 +2545,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2256,6 +2577,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2284,6 +2609,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2312,6 +2641,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2340,6 +2673,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2368,6 +2705,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2396,6 +2737,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2424,6 +2769,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2452,6 +2801,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2480,6 +2833,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2508,6 +2865,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2536,6 +2897,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2564,6 +2929,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2592,6 +2961,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2620,6 +2993,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2648,6 +3025,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2676,6 +3057,10 @@
     "cohort_context": "provider_wide",
     "cohort_peer_count": 3,
     "recommended_owner": "risk_team",
+    "audience": [
+      "agent",
+      "risk_team"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2704,6 +3089,11 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2732,6 +3122,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "request_replenishment_support",
     "display_status": "normal",
     "case_status": "resolved",
@@ -2775,6 +3169,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2803,6 +3201,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2831,6 +3233,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2859,6 +3265,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2887,6 +3297,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "request_replenishment_support",
     "display_status": "constrained — replenishment requested",
     "case_status": "new",
@@ -2915,6 +3329,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -2943,6 +3361,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2971,6 +3393,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -2999,6 +3425,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3027,6 +3457,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -3055,6 +3489,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3083,6 +3521,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3111,6 +3553,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3139,6 +3585,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3167,6 +3617,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -3195,6 +3649,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3223,6 +3681,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3251,6 +3713,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -3279,6 +3745,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3307,6 +3777,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3335,6 +3809,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3363,6 +3841,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3391,6 +3873,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3419,6 +3905,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3447,6 +3937,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3475,6 +3969,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3503,6 +4001,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3531,6 +4033,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3559,6 +4065,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3587,6 +4097,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3615,6 +4129,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3643,6 +4161,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3671,6 +4193,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3699,6 +4225,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3727,6 +4257,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3755,6 +4289,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3783,6 +4321,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -3811,6 +4353,11 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3839,6 +4386,10 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3867,6 +4418,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -3895,6 +4450,11 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -3923,6 +4483,11 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -3951,6 +4516,11 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -3979,6 +4549,11 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4007,6 +4582,11 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -4035,6 +4615,11 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "request_replenishment_support",
     "display_status": "constrained — replenishment requested",
     "case_status": "new",
@@ -4063,6 +4648,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "request_replenishment_support",
     "display_status": "constrained — replenishment requested",
     "case_status": "new",
@@ -4091,6 +4680,11 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -4119,6 +4713,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4147,6 +4745,11 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4175,6 +4778,11 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4203,6 +4811,11 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4231,6 +4844,11 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "request_replenishment_support",
     "display_status": "constrained — replenishment requested",
     "case_status": "new",
@@ -4259,6 +4877,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -4287,6 +4909,11 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -4315,6 +4942,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4343,6 +4974,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -4371,6 +5006,11 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "request_replenishment_support",
     "display_status": "constrained — replenishment requested",
     "case_status": "new",
@@ -4399,6 +5039,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4427,6 +5071,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4455,6 +5103,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -4483,6 +5135,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "request_replenishment_support",
     "display_status": "constrained — replenishment requested",
     "case_status": "new",
@@ -4511,6 +5167,11 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4539,6 +5200,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4567,6 +5232,11 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4595,6 +5265,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "risk_team",
+    "audience": [
+      "agent",
+      "risk_team"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -4623,6 +5297,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "request_replenishment_support",
     "display_status": "constrained — replenishment requested",
     "case_status": "new",
@@ -4651,6 +5329,11 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -4679,6 +5362,11 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -4707,6 +5395,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4735,6 +5427,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4763,6 +5459,11 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -4791,6 +5492,11 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4819,6 +5525,10 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer"
+    ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
@@ -4847,6 +5557,11 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
@@ -4875,6 +5590,11 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "request_replenishment_support",
     "display_status": "constrained — replenishment requested",
     "case_status": "new",
@@ -4903,6 +5623,11 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "provider_ops"
+    ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",

@@ -83,8 +83,9 @@ Every field §9 lists is present in `data/transactions_{split}.csv`:
 Additional analytical fields are added downstream (never in the raw ledger):
 Stage 2 forecast rows carry `burn_rate`, `time_to_shortage_minutes`, `confidence`,
 `cohort_z`, `cohort_context`, `is_anomalous`; Stage 3 alerts add
-`liquidity_type` (`physical_cash` | `provider_emoney`), `recommended_owner`,
-`recommended_action`, `case_history`.
+`liquidity_type` (`physical_cash` | `provider_emoney`), `recommended_owner` (who
+acts), `audience` (who may see it — physical cash is agent-side only, e-money also
+reaches `provider_ops`), `recommended_action`, `case_history`.
 
 ---
 

@@ -4,6 +4,7 @@ import { LanguageProvider } from "./lib/LanguageContext";
 import LanguageToggle from "./components/LanguageToggle";
 import AgentView from "./views/AgentView";
 import OpsView from "./views/OpsView";
+import ProviderOpsView from "./views/ProviderOpsView";
 import RiskView from "./views/RiskView";
 import AssistantView from "./views/AssistantView";
 import "./App.css";
@@ -11,6 +12,7 @@ import "./App.css";
 const VIEWS = {
   agent: { label: "Agent view", Component: AgentView },
   ops: { label: "Ops / coordination view", Component: OpsView },
+  provider: { label: "Provider ops view", Component: ProviderOpsView },
   risk: { label: "Risk / compliance view", Component: RiskView },
   assistant: { label: "Assistant", Component: AssistantView },
 };

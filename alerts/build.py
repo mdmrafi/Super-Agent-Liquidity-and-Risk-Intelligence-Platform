@@ -44,6 +44,12 @@ Additive field: "liquidity_type" ("physical_cash" | "provider_emoney", None for
 non-liquidity alerts) makes the mandatory "which provider OR shared cash reserve"
 distinction explicit on the object and in the evidence text, instead of leaving
 it implicit in whether `provider` is null.
+
+Additive field: "audience" (list of roles who should *see* the alert, distinct
+from the single "recommended_owner" who acts on it). A physical-cash shortage is
+the agent's own drawer -- agent-side only, never provider operations. An e-money
+shortage concerns the provider's float, so it reaches both the agent side and
+provider_ops. See _audience() / _effective_owner().
 """
 import pandas as pd
 
@@ -67,6 +73,40 @@ def _recommended_action(alert_type, severity):
     if severity == "medium":
         return "contact_agent"
     return "review_evidence"
+
+
+def _effective_owner(alert_type, liquidity_type, owner):
+    """Physical cash is the agent's own drawer, never a provider-operations
+    concern -- so a shared-cash shortage never *owns* to provider_ops even if
+    the cohort layer had widened it. Documented exception to the "owner carried
+    unchanged from Stage 2" rule below: the physical/e-money split is itself a
+    Stage 3 concept, so correcting an impossible physical-cash->provider_ops
+    routing belongs here."""
+    if alert_type == "liquidity_shortage" and liquidity_type == "physical_cash" and owner == "provider_ops":
+        return "field_officer"
+    return owner
+
+
+def _audience(alert_type, liquidity_type, owner):
+    """Who the warning should be *visible* to -- distinct from who owns/acts on
+    it. Mirrors a real agent shop:
+
+      - the agent always sees alerts about their own shop;
+      - the routed agent-side owner (field_officer / area_team / risk_team) sees it;
+      - provider operations see a liquidity alert ONLY when it concerns their
+        provider's e-money float -- never the agent's physical cash drawer.
+
+    So a physical_cash shortage is agent-side only; a provider_emoney shortage
+    reaches both the agent (side) and provider_ops.
+    """
+    audience = ["agent", owner]
+    if alert_type == "liquidity_shortage" and liquidity_type == "provider_emoney":
+        audience.append("provider_ops")
+    deduped = []
+    for role in audience:
+        if role and role not in deduped:
+            deduped.append(role)
+    return deduped
 
 
 def _display_status(action):
@@ -103,6 +143,7 @@ def _data_quality_evidence(n_fault_txns, confidence):
 
 def _base_alert(row, alert_type, severity, evidence, liquidity_type=None):
     action = _recommended_action(alert_type, severity)
+    owner = _effective_owner(alert_type, liquidity_type, row["recommended_owner"])
     return {
         "alert_id": None,  # assigned by build_alerts once the alert is confirmed
         "agent_id": row["agent_id"],
@@ -117,7 +158,8 @@ def _base_alert(row, alert_type, severity, evidence, liquidity_type=None):
         "confidence_label": row["confidence_label"],
         "cohort_context": row["cohort_context"],
         "cohort_peer_count": row["cohort_peer_count"],
-        "recommended_owner": row["recommended_owner"],
+        "recommended_owner": owner,
+        "audience": _audience(alert_type, liquidity_type, owner),
         "recommended_action": action,
         "display_status": _display_status(action),
         "case_status": "new",
