@@ -21,7 +21,7 @@ sets severity, never triggers an alert, never changes recommended_owner --
 Stage 2's deterministic engine (engine/liquidity.py) stays the one driving
 the live system.
 
-Run with: python -m ml.train
+Run with (from backend/): python -m ml.train
 """
 import json
 import pathlib

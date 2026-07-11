@@ -1,6 +1,6 @@
 """Stage 1 orchestration: generate, inject scenarios, reconcile, export.
 
-Run with: python -m data_generation.main
+Run with (from backend/): python -m data_generation.main
 """
 import numpy as np
 import pandas as pd

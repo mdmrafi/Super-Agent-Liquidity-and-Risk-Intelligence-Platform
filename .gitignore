@@ -7,4 +7,4 @@ dist/
 build/
 .env
 *.log
-ml/models/*.joblib
+backend/ml/models/*.joblib

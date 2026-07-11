@@ -1,6 +1,6 @@
 """Stage 3 orchestration: build alerts, demo the case lifecycle, run required checks.
 
-Run with: python -m alerts.main
+Run with (from backend/): python -m alerts.main
 """
 import json
 import pathlib

@@ -1,6 +1,6 @@
 """Stage 2 orchestration: forecast + cohort + anomaly engine.
 
-Run with: python -m engine.main
+Run with (from backend/): python -m engine.main
 """
 import json
 import time

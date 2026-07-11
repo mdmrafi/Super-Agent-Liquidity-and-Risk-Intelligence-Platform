@@ -16,7 +16,7 @@ This is enforced in behavior, not just stated. The anomaly detector produces an
   *"Unusual activity — requires review."* The bilingual explanation layer's system
   prompt forbids the words "fraud" and "high risk" and substitutes "unusual" /
   "requires review"
-  ([explain/explain.py](../explain/explain.py)); `alerts.main` greps all alert
+  ([explain/explain.py](../backend/explain/explain.py)); `alerts.main` greps all alert
   evidence for banned verdict language and asserts zero matches (check 5).
 - **What a flag means:** a cluster of near-identical amounts from a small set of
   accounts in a short window — a *pattern worth a human look*, which on an Eid or
@@ -43,7 +43,7 @@ which is *why* the workflow routes them to a human reviewer rather than acting o
 them. Liquidity alerts are additionally **debounced**: a single-hour EWMA blip is
 suppressed, requiring 2+ consecutive crossings before firing. On this dataset that
 removed ~58 of ~84 high-severity liquidity episodes that were single-hour noise on
-agents never touched by any injection ([alerts/build.py](../alerts/build.py)).
+agents never touched by any injection ([alerts/build.py](../backend/alerts/build.py)).
 
 ## 3. Human-in-the-loop by construction
 

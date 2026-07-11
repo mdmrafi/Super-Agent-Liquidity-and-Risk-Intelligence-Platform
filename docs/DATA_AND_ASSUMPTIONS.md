@@ -8,13 +8,14 @@ identity, real balance, or real transaction account is used or accessed
 reproduces every byte:
 
 ```bash
+cd backend
 python -m data_generation.main      # writes data/transactions_{calibration,holdout}.csv
 python -m engine.main               # writes data/forecast_{split}.json
 python -m alerts.main               # writes data/alerts_{split}.json
 ```
 
 Reproducibility is fixed by `RANDOM_SEED = 42` in
-[data_generation/config.py](../data_generation/config.py).
+[data_generation/config.py](../backend/data_generation/config.py).
 
 ---
 
@@ -26,7 +27,7 @@ split **21 calibration + 9 holdout** days. Day types are assigned deterministica
 (not random) so the mix is documented: calibration = 15 normal / 4 salary / 2 Eid;
 holdout = 5 normal / 2 salary / 2 Eid.
 
-**Transaction stream.** For each agent, [simulate.py](../data_generation/simulate.py)
+**Transaction stream.** For each agent, [simulate.py](../backend/data_generation/simulate.py)
 draws an hourly Poisson transaction count from a base of ~13 txns/agent/day, shaped
 by an hourly demand curve (lunch + evening peaks) and scaled 3–5× on salary/Eid
 days. Each transaction is a `cash_in` or `cash_out` (ratio ~1.12:1), amount drawn
@@ -37,7 +38,7 @@ from a 400-id rotating pool per agent.
 e-money (100k–250k BDT) are replayed transaction-by-transaction into
 `agent_cash_before/after` and `agent_provider_balance_before/after`. A
 `cash_out` drains **shared physical cash** and raises that provider's e-money;
-`cash_in` does the reverse. [reconcile.py](../data_generation/reconcile.py)
+`cash_in` does the reverse. [reconcile.py](../backend/data_generation/reconcile.py)
 asserts the replay invariant holds on the **clean** ledger before any data faults
 are applied.
 
@@ -58,7 +59,7 @@ clean stream so the analytics can be measured:
 holdout 2,686 txns (10 anomaly rows, 289 data-fault rows).
 
 **Scenario D is a real, *visible* artifact, not just a runtime check.**
-[alerts/main.py](../alerts/main.py) deterministically walks one alert
+[alerts/main.py](../backend/alerts/main.py) deterministically walks one alert
 (`alert_c00098`, agent_14's shared-physical-cash shortage) through the full
 coordination lifecycle (new → acknowledged → escalated → resolved) and **persists**
 it into `data/alerts_calibration.json`. Every other alert stays at

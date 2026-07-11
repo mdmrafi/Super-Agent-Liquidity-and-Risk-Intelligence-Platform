@@ -9,7 +9,7 @@ resolution status").*
 This is a **visible artifact**, not a live-only demo: one alert in the shipped
 `data/alerts_calibration.json` — **`alert_c00098`** — is deterministically walked
 through the full coordination lifecycle by
-[alerts/main.py](../alerts/main.py) (`seed_coordinated_example`). Every other alert
+[alerts/main.py](../backend/alerts/main.py) (`seed_coordinated_example`). Every other alert
 stays at `case_status: "new"` (raw detector output). To see it live: open the
 **Ops / coordination view**, filter to agent_14 / Shibganj, and open the card.
 
@@ -46,6 +46,7 @@ the agent blocked or restricted; the whole flow is advisory and human-driven (se
 ## Reproducing it
 
 ```bash
+cd backend
 python -m alerts.main    # regenerates all alerts, then seeds this one case
 ```
 

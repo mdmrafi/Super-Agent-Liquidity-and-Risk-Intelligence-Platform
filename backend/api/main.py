@@ -5,7 +5,7 @@ confidence, or routing) and Stage 1's raw balances for the agent view.
 Lifecycle actions call the real alerts/lifecycle.py functions and persist
 the result back to the same JSON files Stage 3 produced.
 
-Run with: uvicorn api.main:app --reload --port 8000
+Run with (from backend/): uvicorn api.main:app --reload --port 8000
 """
 from datetime import datetime, timezone
 
