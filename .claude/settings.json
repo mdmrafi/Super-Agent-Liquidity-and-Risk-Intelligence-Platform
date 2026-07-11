@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python -m data_generation.main)"
+      "Bash(python -m data_generation.main)",
+      "Bash(python -m ml.train)"
     ]
   }
 }

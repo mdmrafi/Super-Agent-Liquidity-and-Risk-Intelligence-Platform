@@ -20,16 +20,17 @@ AGENTS = [f"agent_{i:02d}" for i in range(1, NUM_AGENTS + 1)]
 AGENT_AREA = {AGENTS[i]: AREAS[i % len(AREAS)] for i in range(NUM_AGENTS)}
 
 START_DATE = "2026-01-01"
-NUM_DAYS = 14
-CALIBRATION_DAYS = 10
-HOLDOUT_DAYS = 4
+NUM_DAYS = 30
+CALIBRATION_DAYS = 21
+HOLDOUT_DAYS = 9
 
-# Mix of day types across both splits (spec 4.1): calibration days 1-10,
-# holdout days 11-14. Assigned deterministically so the mix is documented,
-# not left to chance.
+# Mix of day types across both splits (spec 4.1): calibration days 1-21,
+# holdout days 22-30. Same ~70/20/10 (calibration) and ~55/22/22 (holdout)
+# proportions as the original 10+4 day split, scaled up. Assigned
+# deterministically so the mix is documented, not left to chance.
 DAY_TYPES = (
-    ["normal"] * 7 + ["salary_day"] * 2 + ["eid"] * 1       # calibration
-    + ["normal"] * 2 + ["salary_day"] * 1 + ["eid"] * 1     # holdout
+    ["normal"] * 15 + ["salary_day"] * 4 + ["eid"] * 2       # calibration
+    + ["normal"] * 5 + ["salary_day"] * 2 + ["eid"] * 2      # holdout
 )
 assert len(DAY_TYPES) == NUM_DAYS
 

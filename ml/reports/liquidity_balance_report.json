@@ -1,0 +1,44 @@
+{
+  "horizon_hours": 3,
+  "modeling_target": "residual over EWMA baseline (target - baseline_pred)",
+  "selected_hyperparameters": {
+    "max_depth": 3,
+    "learning_rate": 0.1,
+    "max_iter": 200,
+    "l2_regularization": 0.0
+  },
+  "train_rows": 6636,
+  "eval_rows": 3155,
+  "holdout": {
+    "ewma_baseline": {
+      "mae_bdt": 7118.534194476095,
+      "r2": 0.9793064519501878
+    },
+    "ml_model": {
+      "mae_bdt": 6012.654708798038,
+      "r2": 0.9844682972595739
+    },
+    "mae_improvement_pct": 15.535213506963377
+  },
+  "per_provider": [
+    {
+      "provider": "Nagad",
+      "n": 1141,
+      "ml_mae": 5763.645763614552,
+      "baseline_mae": 7320.276108951614
+    },
+    {
+      "provider": "Rocket",
+      "n": 609,
+      "ml_mae": 5355.533603998158,
+      "baseline_mae": 6107.8054698360165
+    },
+    {
+      "provider": "bKash",
+      "n": 1405,
+      "ml_mae": 6499.705213621874,
+      "baseline_mae": 7392.802001514699
+    }
+  ],
+  "boundary_note": "Comparison figure only. Does not set severity, trigger alerts, or change recommended_owner -- engine/liquidity.py remains the engine driving the live system."
+}

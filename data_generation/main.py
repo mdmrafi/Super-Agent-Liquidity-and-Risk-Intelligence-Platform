@@ -12,34 +12,44 @@ CALENDAR = {d["day_index"]: d for d in simulate.day_calendar()}
 # Named scenarios A-C (spec section 5), placed on calibration days so they're
 # available for engine-tuning in Stage 2. Scenario D needs no data (routing/
 # case-lifecycle concern, out of scope for Stage 1).
-SCENARIO_A = dict(agent_id="agent_07", provider="bKash", day_index=8,
+#
+# day_index values are scaled by NUM_DAYS / 14 from the original 14-day design
+# (rounded) so each injection keeps its original relative position -- and,
+# critically, keeps landing on the same side of the calibration/holdout split
+# -- after NUM_DAYS grew to 30.
+SCENARIO_A = dict(agent_id="agent_07", provider="bKash", day_index=17,
                    start_hour=10, end_hour=16, cash_out_prob=0.88, rate_multiplier=3.0)
-SCENARIO_B_PRESSURE = dict(agent_id="agent_14", provider="Nagad", day_index=5,
+SCENARIO_B_PRESSURE = dict(agent_id="agent_14", provider="Nagad", day_index=11,
                             start_hour=9, end_hour=15, cash_out_prob=0.85, rate_multiplier=2.5)
-SCENARIO_B_ANOMALY = dict(agent_id="agent_14", provider="Nagad", day_index=5, hour=13)
-SCENARIO_C = dict(provider="Rocket", day_index=6)
+SCENARIO_B_ANOMALY = dict(agent_id="agent_14", provider="Nagad", day_index=11, hour=13)
+SCENARIO_C = dict(provider="Rocket", day_index=13)
 
 # General anomaly bursts beyond Scenario B's, spread across both splits so
 # Stage 2 has enough labeled examples for precision/recall (spec section 11).
 GENERAL_ANOMALIES = [
-    dict(agent_id="agent_02", provider="bKash", day_index=2, hour=19, scenario_tag=None),
-    dict(agent_id="agent_09", provider="Nagad", day_index=10, hour=12, scenario_tag=None),
-    dict(agent_id="agent_03", provider="Rocket", day_index=11, hour=18, scenario_tag=None),
-    dict(agent_id="agent_18", provider="bKash", day_index=13, hour=13, scenario_tag=None),
+    dict(agent_id="agent_02", provider="bKash", day_index=4, hour=19, scenario_tag=None),
+    dict(agent_id="agent_09", provider="Nagad", day_index=21, hour=12, scenario_tag=None),
+    dict(agent_id="agent_03", provider="Rocket", day_index=24, hour=18, scenario_tag=None),
+    dict(agent_id="agent_18", provider="bKash", day_index=28, hour=13, scenario_tag=None),
 ]
 
 # General data faults beyond Scenario C's, spread across both splits.
 GENERAL_DATA_FAULTS = [
-    dict(provider="bKash", day_index=3, scenario_tag=None),
-    dict(provider="Nagad", day_index=14, scenario_tag=None),
+    dict(provider="bKash", day_index=6, scenario_tag=None),
+    dict(provider="Nagad", day_index=30, scenario_tag=None),
 ]
 
 # General (unnamed) liquidity-pressure injection on a holdout day, so Stage 2's
 # shortage-detection-lead-time metric has something to measure on held-out data --
 # Scenario A alone (calibration only) left holdout with no shortage event to detect.
 GENERAL_LIQUIDITY_PRESSURE = [
-    dict(agent_id="agent_11", provider="Nagad", day_index=12,
-         start_hour=11, end_hour=17, cash_out_prob=0.87, rate_multiplier=3.0, scenario_tag=None),
+    # rate_multiplier/cash_out_prob bumped slightly vs. the original 14-day
+    # design: over 30 days agents' natural cash balance drifts higher before
+    # day 26, so the same relative pressure fell just short (ratio 0.803 vs.
+    # the 0.80 safety threshold) of actually crossing -- this restores a real
+    # crossing event for evaluate.shortage_lead_time to measure.
+    dict(agent_id="agent_11", provider="Nagad", day_index=26,
+         start_hour=10, end_hour=19, cash_out_prob=0.95, rate_multiplier=5.0, scenario_tag=None),
 ]
 
 

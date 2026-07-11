@@ -21,10 +21,10 @@ Reproducibility is fixed by `RANDOM_SEED = 42` in
 ## 1. How the data was created
 
 **World.** 20 agents across 5 areas (4 agents/area, round-robin), each serving 3
-providers — **bKash, Nagad, Rocket**. 14 calendar days starting 2026-01-01,
-split **10 calibration + 4 holdout** days. Day types are assigned deterministically
-(not random) so the mix is documented: calibration = 7 normal / 2 salary / 1 Eid;
-holdout = 2 normal / 1 salary / 1 Eid.
+providers — **bKash, Nagad, Rocket**. 30 calendar days starting 2026-01-01,
+split **21 calibration + 9 holdout** days. Day types are assigned deterministically
+(not random) so the mix is documented: calibration = 15 normal / 4 salary / 2 Eid;
+holdout = 5 normal / 2 salary / 2 Eid.
 
 **Transaction stream.** For each agent, [simulate.py](../data_generation/simulate.py)
 draws an hourly Poisson transaction count from a base of ~13 txns/agent/day, shaped
@@ -105,7 +105,7 @@ thresholds except the anomaly-pattern grid, which is *calibrated* against labels
 
 ## 4. Limitations
 
-- **Synthetic, small-scale:** 20 agents × 14 days. Distributions are plausible but
+- **Synthetic, small-scale:** 20 agents × 30 days. Distributions are plausible but
   not fitted to a real institution; absolute BDT figures are illustrative.
 - **Anomaly coverage is one pattern:** near-identical repeated amounts from few
   accounts in a short window. Velocity spikes, transaction-splitting, and circular
