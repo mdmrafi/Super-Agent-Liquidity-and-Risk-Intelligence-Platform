@@ -35,6 +35,10 @@ table (it only covers liquidity/anomaly) -- assumption: severity follows
 confidence_label (lower confidence = worse trust = higher severity), action
 is always review_evidence (there's no "replenishment" or "contact_agent"
 concept for a feed problem).
+
+Additive field: "cohort_peer_count" is not in section 7's literal schema, but
+carried through from Stage 2 so Stage 4 can render cohort_context plainly
+("similar to 6 nearby agents") instead of the raw enum string.
 """
 import pandas as pd
 
@@ -93,6 +97,7 @@ def _base_alert(row, alert_type, severity, evidence):
         "confidence": row["confidence"],
         "confidence_label": row["confidence_label"],
         "cohort_context": row["cohort_context"],
+        "cohort_peer_count": row["cohort_peer_count"],
         "recommended_owner": row["recommended_owner"],
         "recommended_action": action,
         "display_status": _display_status(action),

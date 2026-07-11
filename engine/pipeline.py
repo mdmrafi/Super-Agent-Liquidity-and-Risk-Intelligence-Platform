@@ -16,6 +16,11 @@ while one provider's own balance rises -- is even representable). Using
 provider=null for cash rows keeps the field set identical without adding a
 new field, at the cost of "provider" no longer being strictly the section
 4.2 enum on every row.
+
+Additive field: "cohort_peer_count" is not in the literal contract, but
+Stage 4 needs a real number to render cohort_context plainly ("similar to 6
+nearby agents", per its own spec example) rather than the raw enum string --
+cohort.py already computes this, it just wasn't being surfaced.
 """
 import pandas as pd
 
@@ -30,7 +35,7 @@ CONTRACT_COLUMNS = [
     "agent_id", "provider", "area", "timestamp",
     "burn_rate", "time_to_shortage_minutes",
     "confidence", "confidence_label",
-    "cohort_z", "cohort_context",
+    "cohort_z", "cohort_context", "cohort_peer_count",
     "is_anomalous", "anomaly_evidence",
     "recommended_owner",
 ]

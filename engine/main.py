@@ -21,6 +21,7 @@ def _to_jsonable(records):
             r["provider"] = None
         for k in ("burn_rate", "time_to_shortage_minutes", "confidence", "cohort_z"):
             r[k] = float(r[k])
+        r["cohort_peer_count"] = int(r["cohort_peer_count"])
         r["is_anomalous"] = bool(r["is_anomalous"])
         out.append(r)
     return out
