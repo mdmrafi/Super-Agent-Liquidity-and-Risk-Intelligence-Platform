@@ -42,3 +42,11 @@ export function explainAlert(alertId, lang, split) {
     body: JSON.stringify({ lang, split }),
   });
 }
+
+export function askChat(question, lang, split) {
+  return req(`/chat`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ question, lang, split }),
+  });
+}

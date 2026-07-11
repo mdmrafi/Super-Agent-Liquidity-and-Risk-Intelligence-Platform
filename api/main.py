@@ -14,6 +14,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from alerts import lifecycle
+from chat.answer import answer_chat_query
 from explain.explain import explain_alert
 from . import store
 
@@ -33,6 +34,12 @@ class LifecycleAction(BaseModel):
 
 
 class ExplainRequest(BaseModel):
+    lang: str = "en"
+    split: str = "calibration"
+
+
+class ChatRequest(BaseModel):
+    question: str
     lang: str = "en"
     split: str = "calibration"
 
@@ -121,3 +128,11 @@ def explain(alert_id: str, body: ExplainRequest):
     if alert is None:
         raise HTTPException(404, f"no such alert: {alert_id}")
     return {"explanation": explain_alert(alert, body.lang), "lang": body.lang}
+
+
+@app.post("/api/chat")
+def chat(body: ChatRequest):
+    """Stage 6: answer a natural-language question about current liquidity/risk
+    state. Read-only by construction -- reports on Stage 2/3's already-computed
+    alerts and never creates one or changes a case_status. See chat/answer.py."""
+    return {"answer": answer_chat_query(body.question, body.lang, body.split), "lang": body.lang}
