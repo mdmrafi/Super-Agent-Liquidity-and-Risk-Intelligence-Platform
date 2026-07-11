@@ -2635,7 +2635,7 @@
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained — replenishment requested",
+    "display_status": "constrained \u2014 replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -2770,7 +2770,7 @@
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained — replenishment requested",
+    "display_status": "constrained \u2014 replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -3877,7 +3877,7 @@
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained — replenishment requested",
+    "display_status": "constrained \u2014 replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -3904,7 +3904,7 @@
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained — replenishment requested",
+    "display_status": "constrained \u2014 replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -4066,7 +4066,7 @@
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained — replenishment requested",
+    "display_status": "constrained \u2014 replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -4201,7 +4201,7 @@
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained — replenishment requested",
+    "display_status": "constrained \u2014 replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -4309,7 +4309,7 @@
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained — replenishment requested",
+    "display_status": "constrained \u2014 replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -4444,7 +4444,7 @@
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained — replenishment requested",
+    "display_status": "constrained \u2014 replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -4687,7 +4687,7 @@
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained — replenishment requested",
+    "display_status": "constrained \u2014 replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -4715,17 +4715,12 @@
     "recommended_owner": "field_officer",
     "recommended_action": "contact_agent",
     "display_status": "normal",
-    "case_status": "acknowledged",
+    "case_status": "new",
     "case_history": [
       {
         "timestamp": "2026-01-10T22:00:00",
         "actor": "system",
         "action": "created (new)"
-      },
-      {
-        "timestamp": "2026-07-11T12:53:45.551839+00:00",
-        "actor": "dashboard_user",
-        "action": "new -> acknowledged"
       }
     ]
   }

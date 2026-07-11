@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Translated from "./Translated";
+import AlertExplanation from "./AlertExplanation";
 import { acknowledgeAlert, escalateAlert, resolveAlert } from "../api";
 import { formatDateTime, describeCohortContext, PROVIDER_COLORS, SEVERITY_COLORS } from "../lib/format";
 
@@ -51,9 +51,11 @@ export default function AlertCard({ alert, availableActions = [], split, actor =
         <span className="muted alert-card__time">{formatDateTime(current.timestamp)}</span>
       </div>
 
+      <AlertExplanation alertId={current.alert_id} split={split} />
+
       <ul className="evidence-list">
         {current.evidence.map((e, i) => (
-          <li key={i}><Translated text={e} /></li>
+          <li key={i}>{e}</li>
         ))}
       </ul>
 

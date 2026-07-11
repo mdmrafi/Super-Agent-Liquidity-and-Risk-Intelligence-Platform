@@ -35,10 +35,10 @@ export const acknowledgeAlert = lifecycleAction("acknowledge");
 export const escalateAlert = lifecycleAction("escalate");
 export const resolveAlert = lifecycleAction("resolve");
 
-export function translate(text, lang) {
-  return req(`/translate`, {
+export function explainAlert(alertId, lang, split) {
+  return req(`/alerts/${alertId}/explain`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ text, lang }),
+    body: JSON.stringify({ lang, split }),
   });
 }

@@ -14,6 +14,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from alerts import lifecycle
+from explain.explain import explain_alert
 from . import store
 
 app = FastAPI(title="Super Agent Liquidity & Risk Intelligence API")
@@ -31,9 +32,9 @@ class LifecycleAction(BaseModel):
     split: str = "calibration"
 
 
-class TranslateRequest(BaseModel):
-    text: str
+class ExplainRequest(BaseModel):
     lang: str = "en"
+    split: str = "calibration"
 
 
 @app.get("/api/meta")
@@ -112,8 +113,11 @@ def resolve_alert(alert_id: str, body: LifecycleAction):
     return _apply_lifecycle(alert_id, "resolve", body)
 
 
-@app.post("/api/translate")
-def translate(body: TranslateRequest):
-    """Placeholder -- Stage 5 swaps this for a real LLM call. Never invents
-    a claim beyond what's in the original text; for now, returns it unchanged."""
-    return {"translated": body.text, "lang": body.lang}
+@app.post("/api/alerts/{alert_id}/explain")
+def explain(alert_id: str, body: ExplainRequest):
+    """Stage 5: translate an already-computed alert object into one or two
+    natural-language sentences. Computes nothing new -- see explain/explain.py."""
+    _, alert = store.find_alert(body.split, alert_id)
+    if alert is None:
+        raise HTTPException(404, f"no such alert: {alert_id}")
+    return {"explanation": explain_alert(alert, body.lang), "lang": body.lang}
