@@ -7,6 +7,7 @@ import { IconAgent, IconAssistant, IconOps, IconProvider, IconRisk } from "../co
 export const ROLES = {
   agent: { label: "Agent", icon: IconAgent, primaryView: "agent", views: ["agent"] },
   field_officer: { label: "Field Officer", icon: IconOps, primaryView: "ops", views: ["ops", "assistant"] },
+  area_team: { label: "Area Team", icon: IconOps, primaryView: "ops", views: ["ops", "assistant"] },
   provider_ops: { label: "Provider Ops", icon: IconProvider, primaryView: "provider", views: ["provider", "assistant"] },
   risk_team: { label: "Risk Team", icon: IconRisk, primaryView: "risk", views: ["risk", "assistant"] },
   admin: {
@@ -23,6 +24,7 @@ export const ROLES = {
 export const DEMO_ACCOUNTS = [
   { role: "agent", username: "agent01", password: "agent123" },
   { role: "field_officer", username: "fieldofficer", password: "officer123" },
+  { role: "area_team", username: "areateam", password: "area123" },
   { role: "provider_ops", username: "providerops", password: "provider123" },
   { role: "risk_team", username: "riskteam", password: "risk123" },
   { role: "admin", username: "admin", password: "admin123" },

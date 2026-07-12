@@ -1,7 +1,10 @@
 const BASE = "/api";
+const STORAGE_KEY = "super_agent_token";
 
-async function req(path, options) {
-  const res = await fetch(`${BASE}${path}`, options);
+async function req(path, options = {}) {
+  const token = localStorage.getItem(STORAGE_KEY);
+  const headers = { ...authHeaders(token), ...(options.headers || {}) };
+  const res = await fetch(`${BASE}${path}`, { ...options, headers });
   if (!res.ok) {
     const body = await res.text();
     throw new Error(`${res.status} ${path}: ${body}`);
@@ -13,11 +16,11 @@ function authHeaders(token) {
   return token ? { Authorization: `Bearer ${token}` } : {};
 }
 
-export function login(username, password) {
+export function login(username, password, role) {
   return req(`/auth/login`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ username, password }),
+    body: JSON.stringify({ username, password, role }),
   });
 }
 

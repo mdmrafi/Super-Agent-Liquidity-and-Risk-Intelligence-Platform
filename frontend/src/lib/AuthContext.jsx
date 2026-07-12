@@ -1,7 +1,6 @@
-import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { getMe, login as apiLogin } from "../api";
-
-const AuthContext = createContext(null);
+import { AuthContext } from "./auth-context";
 
 const STORAGE_KEY = "super_agent_token";
 
@@ -36,8 +35,8 @@ export function AuthProvider({ children }) {
     };
   }, [token]);
 
-  const login = useCallback(async (username, password) => {
-    const { token: newToken, user: loggedInUser } = await apiLogin(username, password);
+  const login = useCallback(async (username, password, role) => {
+    const { token: newToken, user: loggedInUser } = await apiLogin(username, password, role);
     localStorage.setItem(STORAGE_KEY, newToken);
     setToken(newToken);
     setUser(loggedInUser);
@@ -55,8 +54,4 @@ export function AuthProvider({ children }) {
       {children}
     </AuthContext.Provider>
   );
-}
-
-export function useAuth() {
-  return useContext(AuthContext);
 }

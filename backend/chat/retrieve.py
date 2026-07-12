@@ -50,12 +50,23 @@ def _severity_sort_key(alert):
     return (SEVERITY_RANK.get(alert.get("severity"), 0), alert.get("confidence", 0.0))
 
 
-def _balance_snapshot(split, agent_id):
+def _balance_snapshot(split, agent_id, scope_provider=None):
     """Only pulled when a specific agent is named -- keeps the context small and
-    the query grounded. Read-only, derived from Stage 1's raw balances."""
+    the query grounded. A provider employee receives only their provider's
+    e-money balance, never shared cash or another provider's balance."""
     if not agent_id:
         return None
-    return store.agent_balances(split, agent_id)
+    snapshot = store.agent_balances(split, agent_id)
+    if snapshot is None or not scope_provider:
+        return snapshot
+    provider_balance = snapshot.get("providers", {}).get(scope_provider)
+    return {
+        "agent_id": snapshot["agent_id"],
+        "area": snapshot["area"],
+        "cash": None,
+        "cash_as_of": None,
+        "providers": {scope_provider: provider_balance} if provider_balance else {},
+    }
 
 
 def _cohort_summary(open_alerts):
@@ -64,11 +75,46 @@ def _cohort_summary(open_alerts):
     return {"by_cohort_context": dict(Counter(a.get("cohort_context") for a in open_alerts))}
 
 
-def match_entities(question, split="calibration"):
-    """Expose which known entities a question mentions (used by callers/tests)."""
+def _scoped_state(
+    split,
+    scope_provider=None,
+    scope_agent_id=None,
+    scope_area=None,
+    scope_role=None,
+):
     alerts = store.load_alerts(split)
     agents = store.list_agents(split)
+    if scope_role and scope_role != "admin":
+        alerts = [a for a in alerts if scope_role in a.get("audience", [])]
+    if scope_provider:
+        alerts = [a for a in alerts if a.get("provider") == scope_provider]
+    if scope_agent_id:
+        alerts = [a for a in alerts if a.get("agent_id") == scope_agent_id]
+        agents = [a for a in agents if a.get("agent_id") == scope_agent_id]
+    if scope_area:
+        alerts = [a for a in alerts if a.get("area") == scope_area]
+        agents = [a for a in agents if a.get("area") == scope_area]
+    return alerts, agents
+
+
+def match_entities(
+    question,
+    split="calibration",
+    scope_provider=None,
+    scope_agent_id=None,
+    scope_area=None,
+    scope_role=None,
+):
+    """Expose which known entities a question mentions (used by callers/tests)."""
+    alerts, agents = _scoped_state(
+        split, scope_provider, scope_agent_id, scope_area, scope_role
+    )
     providers, areas, agent_ids = _known_entities(alerts, agents)
+    if scope_provider and scope_provider not in providers:
+        providers.append(scope_provider)
+    if scope_agent_id:
+        # An agent may discuss every provider, even if one has no open alert.
+        providers = store.list_providers(split)
     return {
         "provider": _match_substring(providers, question),
         "area": _match_substring(areas, question),
@@ -76,7 +122,14 @@ def match_entities(question, split="calibration"):
     }
 
 
-def retrieve_relevant_state(question, split="calibration"):
+def retrieve_relevant_state(
+    question,
+    split="calibration",
+    scope_provider=None,
+    scope_agent_id=None,
+    scope_area=None,
+    scope_role=None,
+):
     """Filter live state to the entities mentioned in `question`.
 
     Returns a dict with:
@@ -88,9 +141,14 @@ def retrieve_relevant_state(question, split="calibration"):
       - balance_snapshot: latest balances for a named agent, else None
       - cohort_summary:   compact count of cohort_context across the open alerts
     """
-    alerts = store.load_alerts(split)
-    agents = store.list_agents(split)
+    alerts, agents = _scoped_state(
+        split, scope_provider, scope_agent_id, scope_area, scope_role
+    )
     providers, areas, agent_ids = _known_entities(alerts, agents)
+    if scope_provider and scope_provider not in providers:
+        providers.append(scope_provider)
+    if scope_agent_id:
+        providers = store.list_providers(split)
 
     mentioned_provider = _match_substring(providers, question)
     mentioned_area = _match_substring(areas, question)
@@ -113,6 +171,6 @@ def retrieve_relevant_state(question, split="calibration"):
             "agent_id": mentioned_agent,
         },
         "open_alerts": open_alerts,
-        "balance_snapshot": _balance_snapshot(split, mentioned_agent),
+        "balance_snapshot": _balance_snapshot(split, mentioned_agent, scope_provider),
         "cohort_summary": _cohort_summary(open_alerts),
     }

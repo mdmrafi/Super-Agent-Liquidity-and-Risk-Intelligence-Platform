@@ -88,25 +88,55 @@ def _no_issues_message(context, language):
     return f"There are no open alerts {who} — nothing needs attention at the moment."
 
 
-def _grounded_fallback(context):
+def _grounded_fallback(context, language="en"):
     """Used only when the LLM call itself fails (network, auth, timeout, empty
     completion). Still strictly grounded -- it restates the top open alert's own
     fields, inventing nothing."""
     top = context["open_alerts"][0]
     provider = f" ({top['provider']})" if top.get("provider") else ""
+    count = len(context["open_alerts"])
+    if language == "bn":
+        return (
+            f"{count}টি খোলা সতর্কতা আছে। সবচেয়ে গুরুত্বপূর্ণটি "
+            f"{top.get('agent_id')}{provider}-এর {top.get('severity')} "
+            f"{top.get('alert_type')}। প্রস্তাবিত পদক্ষেপ: "
+            f"{top.get('recommended_action')}; দায়িত্বে {top.get('recommended_owner')}।"
+        )
+    if language == "banglish":
+        return (
+            f"{count}ta open alert ache. Shobcheye guruttopurno holo "
+            f"{top.get('agent_id')}{provider}-er {top.get('severity')} "
+            f"{top.get('alert_type')}. Porer podokkhep: "
+            f"{top.get('recommended_action')}; dayitte {top.get('recommended_owner')}."
+        )
     return (
-        f"{len(context['open_alerts'])} open alert(s). Highest severity: "
+        f"{count} open alert(s). Highest severity: "
         f"{top.get('severity')} {top.get('alert_type')} for {top.get('agent_id')}{provider}. "
         f"Recommended action: {top.get('recommended_action')} by {top.get('recommended_owner')}."
     )
 
 
-def answer_chat_query(question, language="en", split="calibration"):
+def answer_chat_query(
+    question,
+    language="en",
+    split="calibration",
+    scope_provider=None,
+    scope_agent_id=None,
+    scope_area=None,
+    scope_role=None,
+):
     """Answer a natural-language question about current liquidity/risk state.
 
     language: 'en' | 'bn' | 'banglish'. Returns a string. Never mutates state.
     """
-    context = retrieve_relevant_state(question, split)
+    context = retrieve_relevant_state(
+        question,
+        split,
+        scope_provider=scope_provider,
+        scope_agent_id=scope_agent_id,
+        scope_area=scope_area,
+        scope_role=scope_role,
+    )
 
     if not context["open_alerts"]:
         return _no_issues_message(context, language)
@@ -129,9 +159,9 @@ def answer_chat_query(question, language="en", split="calibration"):
             ],
         )
         text = (response.choices[0].message.content or "").strip()
-        return text or _grounded_fallback(context)
+        return text or _grounded_fallback(context, language)
     except Exception:
         # Never let the LLM layer break the dashboard -- degrade to a grounded
         # restatement of the top alert. Broad catch is intentional at this
         # boundary, as in Stage 5's explain_alert.
-        return _grounded_fallback(context)
+        return _grounded_fallback(context, language)

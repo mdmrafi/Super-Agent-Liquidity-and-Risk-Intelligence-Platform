@@ -31,14 +31,14 @@ Measured on the held-out split with locked thresholds:
 
 | Metric | Value |
 |---|---|
-| Anomaly precision | 0.75 |
-| Anomaly recall | 0.90 |
-| Anomaly F1 | 0.82 |
-| False-positive rate on normal Eid/salary spikes | 0.28% |
-| Provider-balance forecast MAE | 1,036 BDT/hour |
-| Shortage-detection lead time | 143.8 min (agent_11, holdout) |
+| Anomaly precision | 0.727 |
+| Anomaly recall | 0.800 |
+| Anomaly F1 | 0.762 |
+| False-positive rate on normal Eid spikes | 0.137% |
+| Provider-balance forecast MAE | 676 BDT/hour |
+| Shortage-detection lead time | 152.0 min (agent_11, holdout) |
 
-Precision 0.75 means **~1 in 4 anomaly flags is expected to be a false positive** —
+Precision 0.727 means **roughly 1 in 4 anomaly flags is expected to be a false positive** —
 which is *why* the workflow routes them to a human reviewer rather than acting on
 them. Liquidity alerts are additionally **debounced**: a single-hour EWMA blip is
 suppressed, requiring 2+ consecutive crossings before firing. On this dataset that
@@ -87,13 +87,12 @@ agents never touched by any injection ([alerts/build.py](../backend/alerts/build
 - Make a final fraud determination or claim regulatory / production readiness.
 - Convert or transfer liquidity between providers.
 
-## 6. Known responsibility-relevant gaps (stated honestly)
+## 6. Known responsibility-relevant limitations
 
-- **Per-provider access isolation is partial.** The Provider ops view is now scoped
-  to a chosen provider and, by the `audience` rule, excludes agents' physical cash —
-  so a provider only sees its own e-money float. But the Agent / Ops / Risk views are
-  not yet behind per-provider authentication; a production deployment would enforce
-  that a bKash operator cannot open Nagad's data at all.
+- **Prototype authentication, not production IAM.** Server-side JWT authorization
+  isolates agents by `agent_id`, field/area teams by `area`, and provider/risk
+  users by `provider`. Demo credentials remain intentionally simple and must not be
+  reused outside this synthetic prototype.
 - **Provider-ops *visibility* is now audience-driven, not cohort-dependent.** E-money
   liquidity pressure reaches provider operations regardless of whether the cohort
   layer widened the case, so "upcoming pressure automatically visible to provider
@@ -101,3 +100,5 @@ agents never touched by any injection ([alerts/build.py](../backend/alerts/build
   `provider_ops` (via the `provider_wide` cohort) remains rare on this synthetic
   data, but visibility no longer depends on it.
 - **Single anomaly pattern** — see [DATA_AND_ASSUMPTIONS.md](./DATA_AND_ASSUMPTIONS.md) §4.
+- **Synthetic evaluation only.** Current metrics describe the generated holdout
+  split and are not evidence of production performance.

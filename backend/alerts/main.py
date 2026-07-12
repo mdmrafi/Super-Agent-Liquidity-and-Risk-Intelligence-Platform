@@ -84,9 +84,9 @@ def check_hand_check_scenarios():
 # The one alert we deliberately walk through a full coordination lifecycle so
 # that "final status" (Scenario D / section 7's who-owns-it + resolution-status
 # mandatory) is a *visible artifact* in the shipped data, not something only a
-# live click can produce. Chosen deterministically (first high-severity
-# liquidity_shortage in calibration) and documented in docs/coordinated-case-
-# example.md; every other alert stays at case_status="new" (raw detector output).
+# live click can produce. It prefers agent_14's first high shared-cash alert,
+# with a deterministic high shared-cash fallback, and is documented in docs/
+# coordinated-case-example.md; every other alert stays at case_status="new".
 # Coordination timestamps and the resolving coordinator are derived from the
 # alert itself, so the timeline is same-day/realistic and the coordinator is
 # named for the alert's own area.
@@ -108,9 +108,15 @@ def seed_coordinated_example(split="calibration"):
     """
     with open(f"data/alerts_{split}.json", encoding="utf-8") as f:
         alerts = json.load(f)
-    target = next(
+    candidates = [
         a for a in alerts
-        if a["alert_type"] == "liquidity_shortage" and a["severity"] == "high"
+        if a["alert_type"] == "liquidity_shortage"
+        and a["liquidity_type"] == "physical_cash"
+        and a["severity"] == "high"
+    ]
+    target = next(
+        (a for a in candidates if a["agent_id"] == "agent_14"),
+        candidates[0],
     )
     walked = _walk_lifecycle(target)
     alerts = [walked if a["alert_id"] == walked["alert_id"] else a for a in alerts]

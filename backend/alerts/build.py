@@ -24,12 +24,10 @@ before adding it, since it's a real detection-sensitivity tradeoff, not a bug.
 recommended_owner is carried through unchanged from Stage 2 -- never
 recomputed here, per the master spec's routing-is-deterministic rule.
 
-data_quality's trigger reads Stage 1's is_injected_data_fault directly
-(as instructed for this stage) rather than re-deriving an "observable" quality
-signal -- the label itself corresponds to genuinely observable artifacts
-(null balance fields, duplicate transaction_ids, delayed timestamps), so this
-isn't a ground-truth leak into a scored detector the way it would be for the
-anomaly rule in Stage 2; there's no precision/recall being computed here.
+  data_quality is derived only from observable ledger defects: missing balance
+  readings, duplicate transaction fingerprints, and broken provider-balance
+  continuity after timestamp delays. Synthetic ground-truth labels are used
+  only for evaluation and never participate in alert generation.
 Severity and recommended_action for data_quality aren't covered by the given
 table (it only covers liquidity/anomaly) -- assumption: severity follows
 confidence_label (lower confidence = worse trust = higher severity), action
@@ -100,6 +98,8 @@ def _audience(alert_type, liquidity_type, owner):
     reaches both the agent (side) and provider_ops.
     """
     audience = ["agent", owner]
+    if owner == "field_officer":
+        audience.append("area_team")
     if alert_type == "liquidity_shortage" and liquidity_type == "provider_emoney":
         audience.append("provider_ops")
     deduped = []
@@ -134,10 +134,11 @@ def _liquidity_evidence(row, liquidity_type):
     ]
 
 
-def _data_quality_evidence(n_fault_txns, confidence):
+def _data_quality_evidence(n_fault_signals, confidence):
     return [
-        f"{n_fault_txns} transaction(s) in this window show delayed, duplicated, "
-        f"or missing balance data; confidence reduced to {confidence:.0%}"
+        f"{n_fault_signals} observable ledger issue(s) in this window: missing "
+        f"balance, duplicate record, or broken balance continuity; confidence "
+        f"reduced to {confidence:.0%}"
     ]
 
 
@@ -169,18 +170,55 @@ def _base_alert(row, alert_type, severity, evidence, liquidity_type=None):
     }
 
 
-def _fault_counts_by_hour(raw_df):
+_DUPLICATE_FINGERPRINT = [
+    "agent_id", "provider", "timestamp", "txn_type", "amount", "status",
+    "customer_id", "agent_cash_before", "agent_cash_after",
+    "agent_provider_balance_before", "agent_provider_balance_after",
+]
+
+
+def _observable_fault_counts_by_hour(raw_df):
+    """Count data-quality signals without consulting injected truth labels."""
     d = raw_df.copy()
     d["hour_slot"] = pd.to_datetime(d["timestamp"]).dt.floor("h")
-    faults = d[d["is_injected_data_fault"].astype(bool)]
-    return faults.groupby(["agent_id", "provider", "hour_slot"]).size()
+    d["duplicate_record"] = d.duplicated(
+        subset=_DUPLICATE_FINGERPRINT, keep=False
+    )
+    d["missing_balance"] = d[
+        ["agent_provider_balance_before", "agent_provider_balance_after"]
+    ].isna().any(axis=1)
+
+    ordered = d.sort_values(
+        ["agent_id", "provider", "timestamp", "transaction_id"],
+        kind="stable",
+    )
+    previous_balance = ordered.groupby(
+        ["agent_id", "provider"], sort=False
+    )["agent_provider_balance_after"].shift()
+    ordered["broken_continuity"] = (
+        previous_balance.notna()
+        & ordered["agent_provider_balance_before"].notna()
+        & (
+            ordered["agent_provider_balance_before"] - previous_balance
+        ).abs().gt(0.01)
+    )
+    d["broken_continuity"] = ordered["broken_continuity"].reindex(
+        d.index, fill_value=False
+    )
+    d["observable_fault_count"] = d[
+        ["duplicate_record", "missing_balance", "broken_continuity"]
+    ].sum(axis=1)
+    faults = d[d["observable_fault_count"] > 0]
+    return faults.groupby(
+        ["agent_id", "provider", "hour_slot"]
+    )["observable_fault_count"].sum()
 
 
 _CASH_KEY = "__cash__"
 
 
 def _provider_key(provider):
-    return provider if provider is not None else _CASH_KEY
+    return _CASH_KEY if provider is None or pd.isna(provider) else provider
 
 
 def _debounced_liquidity_keys(scored_records):
@@ -241,7 +279,7 @@ def _maybe_data_quality_alert(row, ts, fault_counts):
 
 
 def build_alerts(scored_records, raw_df, id_prefix=""):
-    fault_counts = _fault_counts_by_hour(raw_df)
+    fault_counts = _observable_fault_counts_by_hour(raw_df)
     liquidity_keys = _debounced_liquidity_keys(scored_records)
     alerts = []
     counter = 1

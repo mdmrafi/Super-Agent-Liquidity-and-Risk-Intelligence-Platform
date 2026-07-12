@@ -1,13 +1,6 @@
-import { createContext, useContext, useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { explainAlert } from "../api";
-
-const LanguageContext = createContext(null);
-
-export const LANGUAGES = [
-  { code: "en", label: "English" },
-  { code: "bn", label: "বাংলা" },
-  { code: "banglish", label: "Banglish" },
-];
+import { LanguageContext } from "./language-context";
 
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useState("en");
@@ -29,8 +22,4 @@ export function LanguageProvider({ children }) {
       {children}
     </LanguageContext.Provider>
   );
-}
-
-export function useLanguage() {
-  return useContext(LanguageContext);
 }

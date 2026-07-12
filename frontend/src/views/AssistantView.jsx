@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { askChat } from "../api";
-import { useLanguage } from "../lib/LanguageContext";
+import { useLanguage } from "../lib/language-context";
 
 // The three queries section 10 requires this stage to support, offered as
 // one-click prompts so a demo doesn't depend on typing.

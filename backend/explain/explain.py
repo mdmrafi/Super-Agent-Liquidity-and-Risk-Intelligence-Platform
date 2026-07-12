@@ -39,8 +39,29 @@ def _get_client():
     return _client
 
 
-def _fallback_explanation(alert):
-    return f"{alert['alert_type']} alert for {alert['agent_id']}: {alert['evidence'][0]}"
+_FALLBACK_LABELS = {
+    "bn": {
+        "liquidity_shortage": "তারল্য সংকট",
+        "unusual_activity": "অস্বাভাবিক কার্যকলাপ",
+        "data_quality": "ডেটার মান",
+    },
+    "banglish": {
+        "liquidity_shortage": "liquidity shortage",
+        "unusual_activity": "unusual activity",
+        "data_quality": "data quality",
+    },
+}
+
+
+def _fallback_explanation(alert, language="en"):
+    evidence = alert["evidence"][0]
+    if language == "bn":
+        label = _FALLBACK_LABELS["bn"].get(alert["alert_type"], alert["alert_type"])
+        return f"{alert['agent_id']}-এর জন্য {label} সতর্কতা। প্রমাণ: {evidence}"
+    if language == "banglish":
+        label = _FALLBACK_LABELS["banglish"].get(alert["alert_type"], alert["alert_type"])
+        return f"{alert['agent_id']}-er jonno {label} alert. Proman: {evidence}"
+    return f"{alert['alert_type']} alert for {alert['agent_id']}: {evidence}"
 
 
 def _alert_facts(alert):
@@ -77,11 +98,11 @@ def explain_alert(alert_object, language="en"):
         )
         text = (response.choices[0].message.content or "").strip()
         if not text:
-            return _fallback_explanation(alert_object)
+            return _fallback_explanation(alert_object, language)
         return text
     except Exception:
         # Never let an LLM-layer failure (network, auth, rate limit, timeout,
         # malformed response) block the dashboard -- degrade to the plain
         # template instead. This is the boundary function; a broad catch is
         # intentional here, not a shortcut.
-        return _fallback_explanation(alert_object)
+        return _fallback_explanation(alert_object, language)

@@ -47,20 +47,23 @@ clean stream so the analytics can be measured:
 
 | Scenario | What it is | Where | Rows |
 |---|---|---|---|
-| **A** — hidden shortage | cash-out burst on one provider drains shared cash while that provider's own balance looks healthy | agent_07 / bKash, day 8 | 39 |
-| **B** — pressure + anomaly | a liquidity burst **and** a near-identical-amount anomaly on the same agent/day | agent_14 / Nagad, day 5 | 37 |
-| **C** — data inconsistency | delayed / duplicated / null-balance rows in one provider's feed for one day (applied *after* reconciliation, deliberately breaking the invariant) | Rocket, day 6 | 46 |
+| **A** — hidden shortage | cash-out burst on one provider drains shared cash while that provider's own balance looks healthy | agent_07 / bKash, day 8 | 38 |
+| **B** — pressure + anomaly | a liquidity burst **and** a near-identical-amount anomaly on the same agent/day | agent_14 / Nagad, day 5 | 41 |
+| **C** — data inconsistency | delayed / duplicated / null-balance rows in one provider's feed for one day (applied *after* reconciliation, deliberately breaking the invariant) | Rocket, day 6 | 36 |
 | **D** — coordination | routing / case-lifecycle only; needs no injected data | see below | — |
 | General anomaly bursts | 4 extra labeled anomalies across both splits | agents 02/09/03/18 | included in 25 anomaly rows |
-| General data faults | 2 extra provider-feed faults | bKash day 3, Nagad day 14 | included in 449 fault rows |
+| General data faults | 2 extra provider-feed faults | bKash day 3, Nagad day 14 | included in 455 labeled fault rows |
 | General liquidity pressure | a holdout-day shortage so held-out lead-time is measurable | agent_11 / Nagad, day 12 | — |
 
-**Totals:** calibration 5,087 txns (15 anomaly rows, 160 data-fault rows);
-holdout 2,686 txns (10 anomaly rows, 289 data-fault rows).
+**Current generated totals:** calibration 10,334 txns (15 anomaly rows, 144
+data-fault labels); holdout 5,641 txns (10 anomaly rows, 311 data-fault labels).
+Labels are retained strictly for evaluation. Data-quality alerts are generated
+from observable null balances, duplicate record fingerprints, and balance-
+continuity breaks; they do not read `is_injected_data_fault`.
 
 **Scenario D is a real, *visible* artifact, not just a runtime check.**
 [alerts/main.py](../backend/alerts/main.py) deterministically walks one alert
-(`alert_c00098`, agent_14's shared-physical-cash shortage) through the full
+(`alert_c00107`, agent_14's shared-physical-cash shortage) through the full
 coordination lifecycle (new → acknowledged → escalated → resolved) and **persists**
 it into `data/alerts_calibration.json`. Every other alert stays at
 `case_status: "new"` (raw detector output). See

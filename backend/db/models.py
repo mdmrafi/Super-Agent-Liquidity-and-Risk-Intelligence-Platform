@@ -22,9 +22,18 @@ class UserRole(str, Enum):
     and AlertCard.jsx's ROLE_LABEL."""
     agent = "agent"
     field_officer = "field_officer"
+    area_team = "area_team"
     provider_ops = "provider_ops"
     risk_team = "risk_team"
     admin = "admin"
+
+
+class MFSProvider(str, Enum):
+    """Canonical provider identifiers used by transactions and alerts."""
+
+    bkash = "bKash"
+    nagad = "Nagad"
+    rocket = "Rocket"
 
 
 class User(Document):
@@ -33,10 +42,22 @@ class User(Document):
     hashed_password: str
     role: UserRole
 
-    # role-scoping fields -- only the field matching `role` is meaningful:
-    agent_id: str | None = None   # role=agent: which agent this account IS
-    area: str | None = None       # role=agent: their area, for display
-    provider: str | None = None   # role=provider_ops: default provider filter
+    # Authorization scope, not a UI preference:
+    # - agent accounts require agent_id and may see that agent's cash and every
+    #   provider balance/alert;
+    # - field_officer/area_team accounts require area and may see agent-side
+    #   data only in that territory;
+    # - provider_ops/risk_team accounts require provider and may see only that
+    #   provider's data;
+    # - admin is deliberately unscoped.
+    #
+    # The role/field combination is checked at login and on every authenticated
+    # request (auth/scope.py). Keeping that check at the authorization boundary
+    # also makes legacy pre-provider JWTs fail with a controlled 403 instead of
+    # turning an old Mongo document into a Pydantic read-time 500.
+    agent_id: str | None = None
+    area: str | None = None
+    provider: MFSProvider | None = None
 
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 

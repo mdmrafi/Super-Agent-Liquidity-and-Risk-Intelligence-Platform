@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AlertExplanation from "./AlertExplanation";
 import { acknowledgeAlert, escalateAlert, resolveAlert } from "../api";
-import { useAuth } from "../lib/AuthContext";
+import { useAuth } from "../lib/auth-context";
 import {
   formatDateTime, describeCohortContext,
   PROVIDER_COLORS, PROVIDER_TEXT, CASH_COLOR,

@@ -7,6 +7,7 @@ recomputes evidence, confidence, or routing, which come from Stage 2/3 as-is.
 """
 import json
 import threading
+from datetime import timedelta
 from pathlib import Path
 
 import pandas as pd
@@ -48,6 +49,7 @@ def find_alert(split, alert_id):
 # out-of-memory error under load. Callers below only filter / group / sort
 # (all of which return new frames), so sharing one cached frame is safe.
 _TXN_CACHE: dict[str, "pd.DataFrame"] = {}
+_TXN_MTIME: dict[str, int] = {}
 _TXN_LOCK = threading.Lock()
 
 
@@ -59,9 +61,14 @@ def _raw_transactions(split):
     # parse happen exactly once instead of racing two concurrent parses -- the
     # very concurrency that spiked memory before.
     with _TXN_LOCK:
+        path = DATA_DIR / f'transactions_{split}.csv'
+        mtime = path.stat().st_mtime_ns
+        if split in _TXN_CACHE and _TXN_MTIME.get(split) != mtime:
+            del _TXN_CACHE[split]
         if split not in _TXN_CACHE:
             path = DATA_DIR / f"transactions_{split}.csv"
             _TXN_CACHE[split] = pd.read_csv(path, parse_dates=["timestamp"])
+        _TXN_MTIME[split] = mtime
         return _TXN_CACHE[split]
 
 
@@ -73,6 +80,102 @@ def list_agents(split):
         .sort_values("agent_id")
         .to_dict(orient="records")
     )
+
+
+def list_providers(split):
+    df = _raw_transactions(split)
+    return sorted(df["provider"].dropna().unique().tolist())
+
+
+def _number_or_none(value):
+    return None if pd.isna(value) else float(value)
+
+
+def _analytics_bucket(bucket_start, rows, window_minutes):
+    closing_row = rows.iloc[-1]
+    provider_balances = {}
+    provider_counts = {}
+
+    for provider, provider_rows in rows.groupby('provider', sort=True):
+        provider_closing_row = provider_rows.iloc[-1]
+        provider_balances[provider] = {
+            'balance': _number_or_none(
+                provider_closing_row['agent_provider_balance_after']
+            ),
+            'as_of': provider_closing_row['timestamp'].isoformat(),
+        }
+        provider_counts[provider] = int(len(provider_rows))
+
+    return {
+        'bucket_start': bucket_start.isoformat(),
+        'bucket_end': (
+            bucket_start + timedelta(minutes=window_minutes)
+        ).isoformat(),
+        'cash_closing_balance': _number_or_none(
+            closing_row['agent_cash_after']
+        ),
+        'cash_as_of': closing_row['timestamp'].isoformat(),
+        'provider_closing_balances': provider_balances,
+        'transaction_count': int(len(rows)),
+        'provider_transaction_counts': provider_counts,
+    }
+
+
+def agent_analytics(split, agent_id, window_minutes=30, limit=96, provider=None):
+    '''Build observed buckets without filling or forecasting missing intervals.
+
+    Provider filtering happens before newest-bucket selection so the limit
+    always applies to the caller-visible provider history.
+    '''
+    if (
+        not isinstance(window_minutes, int)
+        or isinstance(window_minutes, bool)
+        or window_minutes < 1
+    ):
+        raise ValueError('window_minutes must be a positive integer')
+    if not isinstance(limit, int) or isinstance(limit, bool) or limit < 1:
+        raise ValueError('limit must be a positive integer')
+
+    df = _raw_transactions(split)
+    all_rows = (
+        df[df['agent_id'] == agent_id]
+        .sort_values('timestamp', kind='stable')
+        .copy()
+    )
+    if all_rows.empty:
+        return None
+
+    result = {
+        'agent_id': agent_id,
+        'area': all_rows.iloc[-1]['area'],
+        'split': split,
+        'window_minutes': window_minutes,
+        'data_source': 'transaction_ledger',
+        'observed_only': True,
+        'buckets': [],
+    }
+    rows = all_rows
+    if provider is not None:
+        rows = rows[rows['provider'] == provider].copy()
+    if rows.empty:
+        return result
+
+    rows['_bucket_start'] = rows['timestamp'].dt.floor(
+        f'{window_minutes}min'
+    )
+    newest_starts = (
+        rows['_bucket_start']
+        .drop_duplicates()
+        .sort_values()
+        .iloc[-limit:]
+    )
+    selected = rows[rows['_bucket_start'].isin(newest_starts)]
+    result['buckets'] = [
+        _analytics_bucket(bucket_start, bucket_rows, window_minutes)
+        for bucket_start, bucket_rows
+        in selected.groupby('_bucket_start', sort=True)
+    ]
+    return result
 
 
 def agent_balances(split, agent_id):

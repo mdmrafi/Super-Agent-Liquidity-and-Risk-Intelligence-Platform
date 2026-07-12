@@ -5,6 +5,7 @@ import jwt
 from fastapi import Header, HTTPException
 
 from .security import decode_access_token
+from .scope import ensure_complete_scope
 
 
 class CurrentUser:
@@ -25,4 +26,8 @@ def get_current_user(authorization: str | None = Header(default=None)) -> Curren
         claims = decode_access_token(token)
     except jwt.PyJWTError as e:
         raise HTTPException(401, f"invalid token: {e}") from e
-    return CurrentUser(claims)
+    try:
+        current_user = CurrentUser(claims)
+    except KeyError as e:
+        raise HTTPException(401, f"token is missing required identity claim: {e.args[0]}") from e
+    return ensure_complete_scope(current_user)

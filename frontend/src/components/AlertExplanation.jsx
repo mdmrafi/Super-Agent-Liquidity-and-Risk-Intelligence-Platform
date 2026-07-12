@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLanguage } from "../lib/LanguageContext";
+import { useLanguage } from "../lib/language-context";
 
 /** Stage 5: a natural-language sentence derived from the alert object via
  *  explain_alert() (real LLM call, with a server-side plain-template

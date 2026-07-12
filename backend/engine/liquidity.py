@@ -16,7 +16,15 @@ def _build_hourly_series(df, group_cols, before_col, after_col):
     """One row per (group, hour_slot) with net balance change and data-quality signals."""
     d = df.sort_values("timestamp", kind="stable").copy()
     d["delta"] = (d[after_col] - d[before_col]).fillna(0)
-    d["is_dup"] = d.duplicated(subset=["transaction_id"], keep=False)
+    # Exported duplicate rows receive a distinct transaction_id suffix, so use
+    # their observable business fingerprint instead of the synthetic label/id.
+    d["is_dup"] = d.duplicated(
+        subset=[
+            "agent_id", "provider", "timestamp", "txn_type", "amount",
+            "status", "customer_id", before_col, after_col,
+        ],
+        keep=False,
+    )
     d["is_null_balance"] = d[after_col].isna()
 
     agg = d.groupby(group_cols + ["hour_slot"], sort=True).agg(

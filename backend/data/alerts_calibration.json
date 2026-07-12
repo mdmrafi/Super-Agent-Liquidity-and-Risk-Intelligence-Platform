@@ -18,7 +18,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -51,6 +52,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -104,20 +106,21 @@
     "timestamp": "2026-01-06T00:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "medium",
+    "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
-    "confidence": 0.55,
-    "confidence_label": "medium",
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
-    "recommended_action": "contact_agent",
+    "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
@@ -138,7 +141,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 5%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 5%"
     ],
     "confidence": 0.05,
     "confidence_label": "low",
@@ -147,7 +150,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -168,20 +172,21 @@
     "timestamp": "2026-01-06T05:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "medium",
+    "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 53%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 33%"
     ],
-    "confidence": 0.5291666666666667,
-    "confidence_label": "medium",
+    "confidence": 0.32916666666666666,
+    "confidence_label": "low",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
-    "recommended_action": "contact_agent",
+    "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
@@ -200,20 +205,21 @@
     "timestamp": "2026-01-06T06:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "medium",
+    "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 43%"
+      "4 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 23%"
     ],
-    "confidence": 0.42500000000000004,
-    "confidence_label": "medium",
+    "confidence": 0.22500000000000003,
+    "confidence_label": "low",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
-    "recommended_action": "contact_agent",
+    "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
@@ -232,20 +238,21 @@
     "timestamp": "2026-01-06T07:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "medium",
+    "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
-    "confidence": 0.55,
-    "confidence_label": "medium",
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
-    "recommended_action": "contact_agent",
+    "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
@@ -266,7 +273,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 5%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 5%"
     ],
     "confidence": 0.05,
     "confidence_label": "low",
@@ -275,7 +282,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -298,16 +306,17 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 12%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 5%"
     ],
-    "confidence": 0.1208333333333334,
+    "confidence": 0.05,
     "confidence_label": "low",
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -330,7 +339,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 10%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 10%"
     ],
     "confidence": 0.10000000000000003,
     "confidence_label": "low",
@@ -339,7 +348,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -360,20 +370,21 @@
     "timestamp": "2026-01-06T09:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "medium",
+    "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
-    "confidence": 0.55,
-    "confidence_label": "medium",
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
-    "recommended_action": "contact_agent",
+    "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
@@ -394,7 +405,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 30%"
+      "2 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 30%"
     ],
     "confidence": 0.30000000000000004,
     "confidence_label": "low",
@@ -403,7 +414,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -426,16 +438,17 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 30%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 10%"
     ],
-    "confidence": 0.30000000000000004,
+    "confidence": 0.10000000000000003,
     "confidence_label": "low",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -458,7 +471,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 34%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 34%"
     ],
     "confidence": 0.3416666666666667,
     "confidence_label": "low",
@@ -467,7 +480,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -490,7 +504,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -499,7 +513,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -522,7 +537,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 18%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 18%"
     ],
     "confidence": 0.1833333333333334,
     "confidence_label": "low",
@@ -531,7 +546,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -554,7 +570,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -563,7 +579,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -586,7 +603,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 16%"
+      "2 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 16%"
     ],
     "confidence": 0.16250000000000003,
     "confidence_label": "low",
@@ -595,7 +612,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -618,7 +636,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -627,7 +645,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -648,12 +667,12 @@
     "timestamp": "2026-01-06T12:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "medium",
+    "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
-    "confidence": 0.55,
-    "confidence_label": "medium",
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
     "cohort_context": "area_wide",
     "cohort_peer_count": 3,
     "recommended_owner": "area_team",
@@ -661,7 +680,7 @@
       "agent",
       "area_team"
     ],
-    "recommended_action": "contact_agent",
+    "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
@@ -682,7 +701,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -691,7 +710,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -714,16 +734,17 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 62%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 42%"
     ],
-    "confidence": 0.6157913059669169,
+    "confidence": 0.4157913059669169,
     "confidence_label": "medium",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -746,7 +767,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 51%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 51%"
     ],
     "confidence": 0.5083333333333334,
     "confidence_label": "medium",
@@ -755,7 +776,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -778,7 +800,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -787,7 +809,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -810,7 +833,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 47%"
+      "2 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 47%"
     ],
     "confidence": 0.46666666666666673,
     "confidence_label": "medium",
@@ -819,7 +842,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -834,56 +858,25 @@
   },
   {
     "alert_id": "alert_c00027",
-    "agent_id": "agent_14",
+    "agent_id": "agent_12",
     "provider": "bKash",
-    "area": "Shibganj",
-    "timestamp": "2026-01-06T14:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "medium",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 45%"
-    ],
-    "confidence": 0.44583333333333336,
-    "confidence_label": "medium",
-    "cohort_context": "agent_only",
-    "cohort_peer_count": 3,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-06T14:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00028",
-    "agent_id": "agent_10",
-    "provider": "bKash",
-    "area": "Chowhatta",
+    "area": "Ambarkhana",
     "timestamp": "2026-01-06T15:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 30%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 31%"
     ],
-    "confidence": 0.30000000000000004,
+    "confidence": 0.3083333333333334,
     "confidence_label": "low",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -897,39 +890,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00029",
-    "agent_id": "agent_12",
-    "provider": "bKash",
-    "area": "Ambarkhana",
-    "timestamp": "2026-01-06T15:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "medium",
-    "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 51%"
-    ],
-    "confidence": 0.5083333333333334,
-    "confidence_label": "medium",
-    "cohort_context": "agent_only",
-    "cohort_peer_count": 3,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-06T15:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00030",
+    "alert_id": "alert_c00028",
     "agent_id": "agent_09",
     "provider": "bKash",
     "area": "Shibganj",
@@ -938,7 +899,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -947,7 +908,74 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-06T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00029",
+    "agent_id": "agent_11",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-06T16:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "high",
+    "evidence": [
+      "4 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 29%"
+    ],
+    "confidence": 0.28750000000000003,
+    "confidence_label": "low",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-06T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00030",
+    "agent_id": "agent_14",
+    "provider": "bKash",
+    "area": "Shibganj",
+    "timestamp": "2026-01-06T16:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "high",
+    "evidence": [
+      "4 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -962,26 +990,27 @@
   },
   {
     "alert_id": "alert_c00031",
-    "agent_id": "agent_11",
+    "agent_id": "agent_16",
     "provider": "bKash",
     "area": "Zindabazar",
     "timestamp": "2026-01-06T16:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "medium",
+    "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 49%"
+      "6 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
-    "confidence": 0.48750000000000004,
-    "confidence_label": "medium",
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
-    "recommended_action": "contact_agent",
+    "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
@@ -994,70 +1023,6 @@
   },
   {
     "alert_id": "alert_c00032",
-    "agent_id": "agent_14",
-    "provider": "bKash",
-    "area": "Shibganj",
-    "timestamp": "2026-01-06T16:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "medium",
-    "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
-    ],
-    "confidence": 0.55,
-    "confidence_label": "medium",
-    "cohort_context": "agent_only",
-    "cohort_peer_count": 3,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-06T16:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00033",
-    "agent_id": "agent_16",
-    "provider": "bKash",
-    "area": "Zindabazar",
-    "timestamp": "2026-01-06T16:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "medium",
-    "evidence": [
-      "4 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
-    ],
-    "confidence": 0.55,
-    "confidence_label": "medium",
-    "cohort_context": "agent_only",
-    "cohort_peer_count": 3,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-06T16:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00034",
     "agent_id": "agent_06",
     "provider": null,
     "area": "Zindabazar",
@@ -1075,7 +1040,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -1089,39 +1055,40 @@
     ]
   },
   {
-    "alert_id": "alert_c00035",
-    "agent_id": "agent_19",
+    "alert_id": "alert_c00033",
+    "agent_id": "agent_01",
     "provider": "bKash",
-    "area": "Shibganj",
-    "timestamp": "2026-01-06T17:00:00",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-06T18:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "high",
+    "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 30%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 61%"
     ],
-    "confidence": 0.30000000000000004,
-    "confidence_label": "low",
+    "confidence": 0.6144083102492804,
+    "confidence_label": "medium",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
-    "recommended_action": "review_evidence",
+    "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
       {
-        "timestamp": "2026-01-06T17:00:00",
+        "timestamp": "2026-01-06T18:00:00",
         "actor": "system",
         "action": "created (new)"
       }
     ]
   },
   {
-    "alert_id": "alert_c00036",
+    "alert_id": "alert_c00034",
     "agent_id": "agent_09",
     "provider": "bKash",
     "area": "Shibganj",
@@ -1130,7 +1097,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -1139,7 +1106,74 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-06T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00035",
+    "agent_id": "agent_14",
+    "provider": "bKash",
+    "area": "Shibganj",
+    "timestamp": "2026-01-06T18:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-06T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00036",
+    "agent_id": "agent_20",
+    "provider": "bKash",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-06T18:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "high",
+    "evidence": [
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -1154,31 +1188,32 @@
   },
   {
     "alert_id": "alert_c00037",
-    "agent_id": "agent_14",
+    "agent_id": "agent_13",
     "provider": "bKash",
-    "area": "Shibganj",
-    "timestamp": "2026-01-06T18:00:00",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-06T19:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 47%"
     ],
-    "confidence": 0.55,
+    "confidence": 0.46666666666666673,
     "confidence_label": "medium",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
       {
-        "timestamp": "2026-01-06T18:00:00",
+        "timestamp": "2026-01-06T19:00:00",
         "actor": "system",
         "action": "created (new)"
       }
@@ -1186,31 +1221,32 @@
   },
   {
     "alert_id": "alert_c00038",
-    "agent_id": "agent_20",
+    "agent_id": "agent_15",
     "provider": "bKash",
     "area": "Chowhatta",
-    "timestamp": "2026-01-06T18:00:00",
+    "timestamp": "2026-01-06T19:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 66%"
     ],
-    "confidence": 0.55,
+    "confidence": 0.6606338121711498,
     "confidence_label": "medium",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
       {
-        "timestamp": "2026-01-06T18:00:00",
+        "timestamp": "2026-01-06T19:00:00",
         "actor": "system",
         "action": "created (new)"
       }
@@ -1226,7 +1262,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -1235,7 +1271,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -1258,7 +1295,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "2 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -1267,7 +1304,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -1290,7 +1328,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 64%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 64%"
     ],
     "confidence": 0.6418251880033836,
     "confidence_label": "medium",
@@ -1299,7 +1337,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -1320,20 +1359,21 @@
     "timestamp": "2026-01-06T20:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "medium",
+    "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
-    "confidence": 0.55,
-    "confidence_label": "medium",
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
-    "recommended_action": "contact_agent",
+    "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
@@ -1352,20 +1392,21 @@
     "timestamp": "2026-01-06T20:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "medium",
+    "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
-    "confidence": 0.55,
-    "confidence_label": "medium",
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
-    "recommended_action": "contact_agent",
+    "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
@@ -1384,41 +1425,9 @@
     "timestamp": "2026-01-06T20:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "medium",
-    "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
-    ],
-    "confidence": 0.55,
-    "confidence_label": "medium",
-    "cohort_context": "agent_only",
-    "cohort_peer_count": 3,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-06T20:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00045",
-    "agent_id": "agent_14",
-    "provider": "bKash",
-    "area": "Shibganj",
-    "timestamp": "2026-01-06T20:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "2 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -1427,7 +1436,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -1441,32 +1451,65 @@
     ]
   },
   {
-    "alert_id": "alert_c00046",
-    "agent_id": "agent_13",
+    "alert_id": "alert_c00045",
+    "agent_id": "agent_10",
     "provider": "bKash",
-    "area": "Bandarbazar",
-    "timestamp": "2026-01-06T21:00:00",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-06T20:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 59%"
     ],
-    "confidence": 0.55,
+    "confidence": 0.5878739904751469,
     "confidence_label": "medium",
-    "cohort_context": "agent_only",
+    "cohort_context": "provider_wide",
     "cohort_peer_count": 3,
-    "recommended_owner": "field_officer",
+    "recommended_owner": "provider_ops",
     "audience": [
       "agent",
-      "field_officer"
+      "provider_ops"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
       {
-        "timestamp": "2026-01-06T21:00:00",
+        "timestamp": "2026-01-06T20:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00046",
+    "agent_id": "agent_14",
+    "provider": "bKash",
+    "area": "Shibganj",
+    "timestamp": "2026-01-06T20:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "high",
+    "evidence": [
+      "2 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-06T20:00:00",
         "actor": "system",
         "action": "created (new)"
       }
@@ -1474,24 +1517,25 @@
   },
   {
     "alert_id": "alert_c00047",
-    "agent_id": "agent_14",
+    "agent_id": "agent_02",
     "provider": "bKash",
-    "area": "Shibganj",
+    "area": "Ambarkhana",
     "timestamp": "2026-01-06T21:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 69%"
     ],
-    "confidence": 0.55,
+    "confidence": 0.6937923571376265,
     "confidence_label": "medium",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -1506,15 +1550,15 @@
   },
   {
     "alert_id": "alert_c00048",
-    "agent_id": "agent_19",
+    "agent_id": "agent_13",
     "provider": "bKash",
-    "area": "Shibganj",
+    "area": "Bandarbazar",
     "timestamp": "2026-01-06T21:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -1523,7 +1567,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -1538,15 +1583,15 @@
   },
   {
     "alert_id": "alert_c00049",
-    "agent_id": "agent_03",
+    "agent_id": "agent_19",
     "provider": "bKash",
-    "area": "Bandarbazar",
-    "timestamp": "2026-01-06T22:00:00",
+    "area": "Shibganj",
+    "timestamp": "2026-01-06T21:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -1555,14 +1600,15 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
       {
-        "timestamp": "2026-01-06T22:00:00",
+        "timestamp": "2026-01-06T21:00:00",
         "actor": "system",
         "action": "created (new)"
       }
@@ -1570,15 +1616,15 @@
   },
   {
     "alert_id": "alert_c00050",
-    "agent_id": "agent_04",
+    "agent_id": "agent_03",
     "provider": "bKash",
-    "area": "Shibganj",
+    "area": "Bandarbazar",
     "timestamp": "2026-01-06T22:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -1587,7 +1633,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -1602,26 +1649,27 @@
   },
   {
     "alert_id": "alert_c00051",
-    "agent_id": "agent_08",
+    "agent_id": "agent_04",
     "provider": "bKash",
-    "area": "Bandarbazar",
+    "area": "Shibganj",
     "timestamp": "2026-01-06T22:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "medium",
+    "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 45%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
-    "confidence": 0.4540642052925586,
-    "confidence_label": "medium",
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
-    "recommended_action": "contact_agent",
+    "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
@@ -1634,24 +1682,25 @@
   },
   {
     "alert_id": "alert_c00052",
-    "agent_id": "agent_09",
+    "agent_id": "agent_08",
     "provider": "bKash",
-    "area": "Shibganj",
+    "area": "Bandarbazar",
     "timestamp": "2026-01-06T22:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 45%"
     ],
-    "confidence": 0.55,
+    "confidence": 0.4540642052925586,
     "confidence_label": "medium",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -1674,7 +1723,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 23%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 23%"
     ],
     "confidence": 0.22500000000000003,
     "confidence_label": "low",
@@ -1683,7 +1732,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -1698,38 +1748,6 @@
   },
   {
     "alert_id": "alert_c00054",
-    "agent_id": "agent_08",
-    "provider": "bKash",
-    "area": "Bandarbazar",
-    "timestamp": "2026-01-06T23:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "medium",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 48%"
-    ],
-    "confidence": 0.4794023306921846,
-    "confidence_label": "medium",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 1,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-06T23:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00055",
     "agent_id": "agent_09",
     "provider": "bKash",
     "area": "Shibganj",
@@ -1738,7 +1756,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 15%"
+      "2 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 15%"
     ],
     "confidence": 0.15000000000000002,
     "confidence_label": "low",
@@ -1747,7 +1765,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -1761,7 +1780,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00056",
+    "alert_id": "alert_c00055",
     "agent_id": "agent_01",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -1770,7 +1789,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 51%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 51%"
     ],
     "confidence": 0.5083333333333334,
     "confidence_label": "medium",
@@ -1779,7 +1798,41 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T00:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00056",
+    "agent_id": "agent_11",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-07T00:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 47%"
+    ],
+    "confidence": 0.46666666666666673,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -1794,26 +1847,27 @@
   },
   {
     "alert_id": "alert_c00057",
-    "agent_id": "agent_09",
+    "agent_id": "agent_17",
     "provider": "bKash",
-    "area": "Shibganj",
+    "area": "Ambarkhana",
     "timestamp": "2026-01-07T00:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "high",
+    "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "2 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 65%"
     ],
-    "confidence": 0.35000000000000003,
-    "confidence_label": "low",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 2,
+    "confidence": 0.6475852592039073,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
-    "recommended_action": "review_evidence",
+    "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
@@ -1826,102 +1880,6 @@
   },
   {
     "alert_id": "alert_c00058",
-    "agent_id": "agent_11",
-    "provider": "bKash",
-    "area": "Zindabazar",
-    "timestamp": "2026-01-07T00:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "medium",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 47%"
-    ],
-    "confidence": 0.46666666666666673,
-    "confidence_label": "medium",
-    "cohort_context": "agent_only",
-    "cohort_peer_count": 3,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-07T00:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00059",
-    "agent_id": "agent_17",
-    "provider": "bKash",
-    "area": "Ambarkhana",
-    "timestamp": "2026-01-07T00:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "medium",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 65%"
-    ],
-    "confidence": 0.6475852592039073,
-    "confidence_label": "medium",
-    "cohort_context": "agent_only",
-    "cohort_peer_count": 3,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-07T00:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00060",
-    "agent_id": "agent_19",
-    "provider": "bKash",
-    "area": "Shibganj",
-    "timestamp": "2026-01-07T00:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "high",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
-    ],
-    "confidence": 0.35000000000000003,
-    "confidence_label": "low",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 2,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "review_evidence",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-07T00:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00061",
     "agent_id": "agent_02",
     "provider": "bKash",
     "area": "Ambarkhana",
@@ -1930,7 +1888,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -1939,7 +1897,107 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T01:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00059",
+    "agent_id": "agent_06",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-07T01:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "high",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "cohort_peer_count": 2,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T01:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00060",
+    "agent_id": "agent_07",
+    "provider": "bKash",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-07T01:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 47%"
+    ],
+    "confidence": 0.4661795845610382,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T01:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00061",
+    "agent_id": "agent_12",
+    "provider": "bKash",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-07T01:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 43%"
+    ],
+    "confidence": 0.42500000000000004,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -1954,15 +2012,15 @@
   },
   {
     "alert_id": "alert_c00062",
-    "agent_id": "agent_06",
+    "agent_id": "agent_19",
     "provider": "bKash",
-    "area": "Zindabazar",
+    "area": "Shibganj",
     "timestamp": "2026-01-07T01:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -1971,7 +2029,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -1986,198 +2045,6 @@
   },
   {
     "alert_id": "alert_c00063",
-    "agent_id": "agent_07",
-    "provider": "bKash",
-    "area": "Ambarkhana",
-    "timestamp": "2026-01-07T01:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "medium",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 47%"
-    ],
-    "confidence": 0.4661795845610382,
-    "confidence_label": "medium",
-    "cohort_context": "agent_only",
-    "cohort_peer_count": 3,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-07T01:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00064",
-    "agent_id": "agent_09",
-    "provider": "bKash",
-    "area": "Shibganj",
-    "timestamp": "2026-01-07T01:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "high",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
-    ],
-    "confidence": 0.35000000000000003,
-    "confidence_label": "low",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 2,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "review_evidence",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-07T01:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00065",
-    "agent_id": "agent_11",
-    "provider": "bKash",
-    "area": "Zindabazar",
-    "timestamp": "2026-01-07T01:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "high",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
-    ],
-    "confidence": 0.35000000000000003,
-    "confidence_label": "low",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 2,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "review_evidence",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-07T01:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00066",
-    "agent_id": "agent_12",
-    "provider": "bKash",
-    "area": "Ambarkhana",
-    "timestamp": "2026-01-07T01:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "medium",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 43%"
-    ],
-    "confidence": 0.42500000000000004,
-    "confidence_label": "medium",
-    "cohort_context": "agent_only",
-    "cohort_peer_count": 3,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-07T01:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00067",
-    "agent_id": "agent_18",
-    "provider": "bKash",
-    "area": "Bandarbazar",
-    "timestamp": "2026-01-07T01:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "high",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 14%"
-    ],
-    "confidence": 0.14196703172077613,
-    "confidence_label": "low",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 0,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "review_evidence",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-07T01:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00068",
-    "agent_id": "agent_19",
-    "provider": "bKash",
-    "area": "Shibganj",
-    "timestamp": "2026-01-07T01:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "high",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
-    ],
-    "confidence": 0.35000000000000003,
-    "confidence_label": "low",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 2,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "review_evidence",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-07T01:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00069",
     "agent_id": "agent_01",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -2186,7 +2053,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -2195,7 +2062,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -2209,7 +2077,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00070",
+    "alert_id": "alert_c00064",
     "agent_id": "agent_06",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -2218,7 +2086,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 44%"
+      "2 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 44%"
     ],
     "confidence": 0.4426235053413045,
     "confidence_label": "medium",
@@ -2227,7 +2095,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -2241,112 +2110,16 @@
     ]
   },
   {
-    "alert_id": "alert_c00071",
-    "agent_id": "agent_17",
+    "alert_id": "alert_c00065",
+    "agent_id": "agent_09",
     "provider": "bKash",
-    "area": "Ambarkhana",
-    "timestamp": "2026-01-07T02:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "medium",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 43%"
-    ],
-    "confidence": 0.4336590658808119,
-    "confidence_label": "medium",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 0,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-07T02:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00072",
-    "agent_id": "agent_06",
-    "provider": "bKash",
-    "area": "Zindabazar",
-    "timestamp": "2026-01-07T04:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "medium",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 49%"
-    ],
-    "confidence": 0.48973734656356055,
-    "confidence_label": "medium",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 2,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-07T04:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00073",
-    "agent_id": "agent_15",
-    "provider": "bKash",
-    "area": "Chowhatta",
-    "timestamp": "2026-01-07T04:00:00",
+    "area": "Shibganj",
+    "timestamp": "2026-01-07T03:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 27%"
-    ],
-    "confidence": 0.2666666666666667,
-    "confidence_label": "low",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 2,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "review_evidence",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-07T04:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00074",
-    "agent_id": "agent_17",
-    "provider": "bKash",
-    "area": "Ambarkhana",
-    "timestamp": "2026-01-07T04:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "high",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -2355,7 +2128,41 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T03:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00066",
+    "agent_id": "agent_15",
+    "provider": "bKash",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-07T04:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "high",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 27%"
+    ],
+    "confidence": 0.2666666666666667,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "cohort_peer_count": 2,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -2369,7 +2176,40 @@
     ]
   },
   {
-    "alert_id": "alert_c00075",
+    "alert_id": "alert_c00067",
+    "agent_id": "agent_17",
+    "provider": "bKash",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-07T04:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "high",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "cohort_peer_count": 1,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T04:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00068",
     "agent_id": "agent_06",
     "provider": null,
     "area": "Zindabazar",
@@ -2387,7 +2227,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -2401,7 +2242,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00076",
+    "alert_id": "alert_c00069",
     "agent_id": "agent_01",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -2410,7 +2251,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -2419,7 +2260,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -2433,7 +2275,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00077",
+    "alert_id": "alert_c00070",
     "agent_id": "agent_09",
     "provider": "bKash",
     "area": "Shibganj",
@@ -2442,7 +2284,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -2451,7 +2293,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -2465,7 +2308,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00078",
+    "alert_id": "alert_c00071",
     "agent_id": "agent_20",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -2474,7 +2317,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 43%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 43%"
     ],
     "confidence": 0.42500000000000004,
     "confidence_label": "medium",
@@ -2483,7 +2326,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -2497,7 +2341,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00079",
+    "alert_id": "alert_c00072",
     "agent_id": "agent_10",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -2506,7 +2350,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -2515,7 +2359,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -2529,7 +2374,106 @@
     ]
   },
   {
-    "alert_id": "alert_c00080",
+    "alert_id": "alert_c00073",
+    "agent_id": "agent_12",
+    "provider": "bKash",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-07T06:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "high",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 33%"
+    ],
+    "confidence": 0.32916666666666666,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "cohort_peer_count": 1,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T06:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00074",
+    "agent_id": "agent_15",
+    "provider": "bKash",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-07T06:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T06:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00075",
+    "agent_id": "agent_19",
+    "provider": "bKash",
+    "area": "Shibganj",
+    "timestamp": "2026-01-07T06:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 53%"
+    ],
+    "confidence": 0.5291666666666667,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T06:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00076",
     "agent_id": "agent_07",
     "provider": "bKash",
     "area": "Ambarkhana",
@@ -2538,7 +2482,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 51%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 51%"
     ],
     "confidence": 0.5083333333333334,
     "confidence_label": "medium",
@@ -2547,7 +2491,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -2561,39 +2506,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00081",
-    "agent_id": "agent_08",
-    "provider": "bKash",
-    "area": "Bandarbazar",
-    "timestamp": "2026-01-07T07:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "medium",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 62%"
-    ],
-    "confidence": 0.6154300785360826,
-    "confidence_label": "medium",
-    "cohort_context": "agent_only",
-    "cohort_peer_count": 3,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-07T07:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00082",
+    "alert_id": "alert_c00077",
     "agent_id": "agent_16",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -2602,7 +2515,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 38%"
+      "2 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 38%"
     ],
     "confidence": 0.3833333333333334,
     "confidence_label": "low",
@@ -2611,7 +2524,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -2625,57 +2539,26 @@
     ]
   },
   {
-    "alert_id": "alert_c00083",
-    "agent_id": "agent_18",
+    "alert_id": "alert_c00078",
+    "agent_id": "agent_02",
     "provider": "bKash",
-    "area": "Bandarbazar",
-    "timestamp": "2026-01-07T08:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "high",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 34%"
-    ],
-    "confidence": 0.34352312398450063,
-    "confidence_label": "low",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 2,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "review_evidence",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-07T08:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00084",
-    "agent_id": "agent_19",
-    "provider": "bKash",
-    "area": "Shibganj",
+    "area": "Ambarkhana",
     "timestamp": "2026-01-07T08:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 49%"
     ],
-    "confidence": 0.55,
+    "confidence": 0.48750000000000004,
     "confidence_label": "medium",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -2689,16 +2572,49 @@
     ]
   },
   {
-    "alert_id": "alert_c00085",
-    "agent_id": "agent_12",
+    "alert_id": "alert_c00079",
+    "agent_id": "agent_14",
     "provider": "bKash",
-    "area": "Ambarkhana",
-    "timestamp": "2026-01-07T10:00:00",
+    "area": "Shibganj",
+    "timestamp": "2026-01-07T08:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 40%"
+    ],
+    "confidence": 0.4041666666666667,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00080",
+    "agent_id": "agent_19",
+    "provider": "bKash",
+    "area": "Shibganj",
+    "timestamp": "2026-01-07T08:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -2707,7 +2623,173 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T08:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00081",
+    "agent_id": "agent_09",
+    "provider": "bKash",
+    "area": "Shibganj",
+    "timestamp": "2026-01-07T09:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T09:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00082",
+    "agent_id": "agent_11",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-07T09:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 47%"
+    ],
+    "confidence": 0.46666666666666673,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T09:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00083",
+    "agent_id": "agent_20",
+    "provider": "bKash",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-07T09:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T09:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00084",
+    "agent_id": "agent_12",
+    "provider": "bKash",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-07T10:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T10:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00085",
+    "agent_id": "agent_16",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-07T10:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 58%"
+    ],
+    "confidence": 0.5766061561299025,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -2722,31 +2804,32 @@
   },
   {
     "alert_id": "alert_c00086",
-    "agent_id": "agent_13",
+    "agent_id": "agent_10",
     "provider": "bKash",
-    "area": "Bandarbazar",
-    "timestamp": "2026-01-07T10:00:00",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-07T11:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "high",
+    "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 36%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 53%"
     ],
-    "confidence": 0.36250000000000004,
-    "confidence_label": "low",
+    "confidence": 0.5291666666666667,
+    "confidence_label": "medium",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
-    "recommended_action": "review_evidence",
+    "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
       {
-        "timestamp": "2026-01-07T10:00:00",
+        "timestamp": "2026-01-07T11:00:00",
         "actor": "system",
         "action": "created (new)"
       }
@@ -2754,15 +2837,15 @@
   },
   {
     "alert_id": "alert_c00087",
-    "agent_id": "agent_19",
+    "agent_id": "agent_13",
     "provider": "bKash",
-    "area": "Shibganj",
+    "area": "Bandarbazar",
     "timestamp": "2026-01-07T11:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -2771,7 +2854,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -2786,15 +2870,48 @@
   },
   {
     "alert_id": "alert_c00088",
-    "agent_id": "agent_12",
+    "agent_id": "agent_17",
     "provider": "bKash",
     "area": "Ambarkhana",
-    "timestamp": "2026-01-07T12:00:00",
+    "timestamp": "2026-01-07T11:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
+    ],
+    "confidence": 0.5502903090588496,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00089",
+    "agent_id": "agent_19",
+    "provider": "bKash",
+    "area": "Shibganj",
+    "timestamp": "2026-01-07T11:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -2803,7 +2920,41 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T11:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00090",
+    "agent_id": "agent_06",
+    "provider": "bKash",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-07T12:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 47%"
+    ],
+    "confidence": 0.46666666666666673,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -2817,7 +2968,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00089",
+    "alert_id": "alert_c00091",
     "agent_id": "agent_14",
     "provider": "bKash",
     "area": "Shibganj",
@@ -2826,7 +2977,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 62%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 62%"
     ],
     "confidence": 0.6218046293071219,
     "confidence_label": "medium",
@@ -2835,7 +2986,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -2849,7 +3001,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00090",
+    "alert_id": "alert_c00092",
     "agent_id": "agent_10",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -2858,7 +3010,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
     ],
     "confidence": 0.55,
     "confidence_label": "medium",
@@ -2867,7 +3019,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -2881,7 +3034,73 @@
     ]
   },
   {
-    "alert_id": "alert_c00091",
+    "alert_id": "alert_c00093",
+    "agent_id": "agent_14",
+    "provider": "bKash",
+    "area": "Shibganj",
+    "timestamp": "2026-01-07T13:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 70%"
+    ],
+    "confidence": 0.6969261826653846,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00094",
+    "agent_id": "agent_12",
+    "provider": "bKash",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-07T15:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T15:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00095",
     "agent_id": "agent_15",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -2890,7 +3109,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 61%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 61%"
     ],
     "confidence": 0.6084807778941113,
     "confidence_label": "medium",
@@ -2899,7 +3118,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -2913,7 +3133,106 @@
     ]
   },
   {
-    "alert_id": "alert_c00092",
+    "alert_id": "alert_c00096",
+    "agent_id": "agent_19",
+    "provider": "bKash",
+    "area": "Shibganj",
+    "timestamp": "2026-01-07T16:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 53%"
+    ],
+    "confidence": 0.5291666666666667,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00097",
+    "agent_id": "agent_10",
+    "provider": "bKash",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-07T17:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00098",
+    "agent_id": "agent_15",
+    "provider": "bKash",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-07T18:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-07T18:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00099",
     "agent_id": "agent_15",
     "provider": "Nagad",
     "area": "Chowhatta",
@@ -2932,36 +3251,22 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "request_replenishment_support",
-    "display_status": "normal",
-    "case_status": "resolved",
+    "display_status": "constrained — replenishment requested",
+    "case_status": "new",
     "case_history": [
       {
         "timestamp": "2026-01-08T14:00:00",
         "actor": "system",
         "action": "created (new)"
-      },
-      {
-        "timestamp": "2026-01-08T14:15:00",
-        "actor": "field_officer_lima",
-        "action": "new -> acknowledged"
-      },
-      {
-        "timestamp": "2026-01-08T14:40:00",
-        "actor": "field_officer_lima",
-        "action": "acknowledged -> escalated"
-      },
-      {
-        "timestamp": "2026-01-08T16:05:00",
-        "actor": "area_coordinator_chowhatta",
-        "action": "escalated -> resolved"
       }
     ]
   },
   {
-    "alert_id": "alert_c00093",
+    "alert_id": "alert_c00100",
     "agent_id": "agent_03",
     "provider": "Nagad",
     "area": "Bandarbazar",
@@ -2980,6 +3285,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "request_replenishment_support",
@@ -2994,7 +3300,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00094",
+    "alert_id": "alert_c00101",
     "agent_id": "agent_09",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -3013,6 +3319,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -3027,7 +3334,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00095",
+    "alert_id": "alert_c00102",
     "agent_id": "agent_06",
     "provider": null,
     "area": "Zindabazar",
@@ -3045,7 +3352,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3059,7 +3367,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00096",
+    "alert_id": "alert_c00103",
     "agent_id": "agent_16",
     "provider": null,
     "area": "Zindabazar",
@@ -3077,7 +3385,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -3091,7 +3400,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00097",
+    "alert_id": "alert_c00104",
     "agent_id": "agent_18",
     "provider": null,
     "area": "Bandarbazar",
@@ -3109,7 +3418,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3123,7 +3433,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00098",
+    "alert_id": "alert_c00105",
     "agent_id": "agent_03",
     "provider": "Nagad",
     "area": "Bandarbazar",
@@ -3142,6 +3452,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -3156,7 +3467,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00099",
+    "alert_id": "alert_c00106",
     "agent_id": "agent_06",
     "provider": null,
     "area": "Zindabazar",
@@ -3174,7 +3485,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "request_replenishment_support",
     "display_status": "constrained — replenishment requested",
@@ -3188,7 +3500,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00100",
+    "alert_id": "alert_c00107",
     "agent_id": "agent_14",
     "provider": null,
     "area": "Shibganj",
@@ -3206,21 +3518,37 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "request_replenishment_support",
-    "display_status": "constrained — replenishment requested",
-    "case_status": "new",
+    "display_status": "normal",
+    "case_status": "resolved",
     "case_history": [
       {
         "timestamp": "2026-01-11T11:00:00",
         "actor": "system",
         "action": "created (new)"
+      },
+      {
+        "timestamp": "2026-01-11T11:15:00",
+        "actor": "field_officer_lima",
+        "action": "new -> acknowledged"
+      },
+      {
+        "timestamp": "2026-01-11T11:40:00",
+        "actor": "field_officer_lima",
+        "action": "acknowledged -> escalated"
+      },
+      {
+        "timestamp": "2026-01-11T13:05:00",
+        "actor": "area_coordinator_shibganj",
+        "action": "escalated -> resolved"
       }
     ]
   },
   {
-    "alert_id": "alert_c00101",
+    "alert_id": "alert_c00108",
     "agent_id": "agent_01",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -3229,16 +3557,17 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 29%"
+      "4 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 9%"
     ],
-    "confidence": 0.2906368776387909,
+    "confidence": 0.09063687763879091,
     "confidence_label": "low",
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3252,7 +3581,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00102",
+    "alert_id": "alert_c00109",
     "agent_id": "agent_19",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -3271,6 +3600,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -3285,7 +3615,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00103",
+    "alert_id": "alert_c00110",
     "agent_id": "agent_17",
     "provider": "Rocket",
     "area": "Ambarkhana",
@@ -3294,7 +3624,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 5%"
+      "2 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 5%"
     ],
     "confidence": 0.05,
     "confidence_label": "low",
@@ -3303,7 +3633,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3317,7 +3648,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00104",
+    "alert_id": "alert_c00111",
     "agent_id": "agent_03",
     "provider": "Rocket",
     "area": "Bandarbazar",
@@ -3326,7 +3657,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 10%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 10%"
     ],
     "confidence": 0.10000000000000003,
     "confidence_label": "low",
@@ -3335,7 +3666,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3349,7 +3681,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00105",
+    "alert_id": "alert_c00112",
     "agent_id": "agent_12",
     "provider": "Rocket",
     "area": "Ambarkhana",
@@ -3358,16 +3690,17 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 24%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 5%"
     ],
-    "confidence": 0.2378185383049108,
+    "confidence": 0.05,
     "confidence_label": "low",
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3381,27 +3714,28 @@
     ]
   },
   {
-    "alert_id": "alert_c00106",
+    "alert_id": "alert_c00113",
     "agent_id": "agent_16",
     "provider": "Rocket",
     "area": "Zindabazar",
     "timestamp": "2026-01-13T13:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "medium",
+    "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "4 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
-    "confidence": 0.55,
-    "confidence_label": "medium",
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
-    "recommended_action": "contact_agent",
+    "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
@@ -3413,39 +3747,40 @@
     ]
   },
   {
-    "alert_id": "alert_c00107",
-    "agent_id": "agent_17",
+    "alert_id": "alert_c00114",
+    "agent_id": "agent_05",
     "provider": "Rocket",
-    "area": "Ambarkhana",
-    "timestamp": "2026-01-13T15:00:00",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-13T14:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 30%"
     ],
-    "confidence": 0.35000000000000003,
+    "confidence": 0.30000000000000004,
     "confidence_label": "low",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 2,
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
       {
-        "timestamp": "2026-01-13T15:00:00",
+        "timestamp": "2026-01-13T14:00:00",
         "actor": "system",
         "action": "created (new)"
       }
     ]
   },
   {
-    "alert_id": "alert_c00108",
+    "alert_id": "alert_c00115",
     "agent_id": "agent_01",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -3464,6 +3799,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "request_replenishment_support",
@@ -3478,7 +3814,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00109",
+    "alert_id": "alert_c00116",
     "agent_id": "agent_03",
     "provider": "Rocket",
     "area": "Bandarbazar",
@@ -3487,7 +3823,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -3496,7 +3832,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3510,27 +3847,28 @@
     ]
   },
   {
-    "alert_id": "alert_c00110",
+    "alert_id": "alert_c00117",
     "agent_id": "agent_13",
     "provider": "Rocket",
     "area": "Bandarbazar",
     "timestamp": "2026-01-13T16:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "medium",
+    "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 44%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 24%"
     ],
-    "confidence": 0.43594566489765707,
-    "confidence_label": "medium",
+    "confidence": 0.23594566489765706,
+    "confidence_label": "low",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
-    "recommended_action": "contact_agent",
+    "recommended_action": "review_evidence",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
@@ -3542,7 +3880,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00111",
+    "alert_id": "alert_c00118",
     "agent_id": "agent_18",
     "provider": "Rocket",
     "area": "Bandarbazar",
@@ -3551,7 +3889,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 10%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 10%"
     ],
     "confidence": 0.10000000000000003,
     "confidence_label": "low",
@@ -3560,7 +3898,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3574,7 +3913,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00112",
+    "alert_id": "alert_c00119",
     "agent_id": "agent_12",
     "provider": "Rocket",
     "area": "Ambarkhana",
@@ -3583,7 +3922,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 22%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 22%"
     ],
     "confidence": 0.22120014248598951,
     "confidence_label": "low",
@@ -3592,7 +3931,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3606,7 +3946,40 @@
     ]
   },
   {
-    "alert_id": "alert_c00113",
+    "alert_id": "alert_c00120",
+    "agent_id": "agent_14",
+    "provider": "Rocket",
+    "area": "Shibganj",
+    "timestamp": "2026-01-13T17:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 51%"
+    ],
+    "confidence": 0.5083333333333334,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00121",
     "agent_id": "agent_16",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -3615,9 +3988,9 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 62%"
+      "3 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 42%"
     ],
-    "confidence": 0.6188124694442301,
+    "confidence": 0.41881246944423006,
     "confidence_label": "medium",
     "cohort_context": "area_wide",
     "cohort_peer_count": 3,
@@ -3638,7 +4011,40 @@
     ]
   },
   {
-    "alert_id": "alert_c00114",
+    "alert_id": "alert_c00122",
+    "agent_id": "agent_17",
+    "provider": "Rocket",
+    "area": "Ambarkhana",
+    "timestamp": "2026-01-13T17:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "high",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "cohort_peer_count": 2,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T17:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00123",
     "agent_id": "agent_13",
     "provider": "Rocket",
     "area": "Bandarbazar",
@@ -3647,7 +4053,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 42%"
+      "2 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 42%"
     ],
     "confidence": 0.41920298873946965,
     "confidence_label": "medium",
@@ -3656,7 +4062,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -3670,7 +4077,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00115",
+    "alert_id": "alert_c00124",
     "agent_id": "agent_09",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -3679,7 +4086,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 30%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 30%"
     ],
     "confidence": 0.30000000000000004,
     "confidence_label": "low",
@@ -3688,7 +4095,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3702,7 +4110,40 @@
     ]
   },
   {
-    "alert_id": "alert_c00116",
+    "alert_id": "alert_c00125",
+    "agent_id": "agent_20",
+    "provider": "Rocket",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-13T20:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "high",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
+    ],
+    "confidence": 0.35000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "cohort_peer_count": 2,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-13T20:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00126",
     "agent_id": "agent_09",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -3711,7 +4152,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -3720,7 +4161,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3734,7 +4176,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00117",
+    "alert_id": "alert_c00127",
     "agent_id": "agent_19",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -3743,16 +4185,17 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 10%"
+      "2 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 5%"
     ],
-    "confidence": 0.10000000000000003,
+    "confidence": 0.05,
     "confidence_label": "low",
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3766,39 +4209,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00118",
-    "agent_id": "agent_02",
-    "provider": "Rocket",
-    "area": "Ambarkhana",
-    "timestamp": "2026-01-13T23:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "high",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 10%"
-    ],
-    "confidence": 0.10000000000000003,
-    "confidence_label": "low",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 2,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "review_evidence",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-13T23:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00119",
+    "alert_id": "alert_c00128",
     "agent_id": "agent_01",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -3807,7 +4218,7 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 46%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 46%"
     ],
     "confidence": 0.46400558056831426,
     "confidence_label": "medium",
@@ -3816,7 +4227,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -3830,39 +4242,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00120",
-    "agent_id": "agent_05",
-    "provider": "Rocket",
-    "area": "Chowhatta",
-    "timestamp": "2026-01-14T01:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "high",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 20%"
-    ],
-    "confidence": 0.20416666666666666,
-    "confidence_label": "low",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 1,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "review_evidence",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-14T01:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00121",
+    "alert_id": "alert_c00129",
     "agent_id": "agent_14",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -3871,7 +4251,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 27%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 27%"
     ],
     "confidence": 0.2666666666666667,
     "confidence_label": "low",
@@ -3880,7 +4260,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3894,7 +4275,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00122",
+    "alert_id": "alert_c00130",
     "agent_id": "agent_16",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -3903,7 +4284,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 38%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 38%"
     ],
     "confidence": 0.3833802256507058,
     "confidence_label": "low",
@@ -3912,7 +4293,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3926,7 +4308,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00123",
+    "alert_id": "alert_c00131",
     "agent_id": "agent_20",
     "provider": "Rocket",
     "area": "Chowhatta",
@@ -3935,7 +4317,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 31%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 31%"
     ],
     "confidence": 0.3083333333333334,
     "confidence_label": "low",
@@ -3944,7 +4326,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3958,7 +4341,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00124",
+    "alert_id": "alert_c00132",
     "agent_id": "agent_05",
     "provider": "Rocket",
     "area": "Chowhatta",
@@ -3967,7 +4350,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -3976,7 +4359,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -3990,7 +4374,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00125",
+    "alert_id": "alert_c00133",
     "agent_id": "agent_09",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -3999,7 +4383,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 31%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 31%"
     ],
     "confidence": 0.3083333333333334,
     "confidence_label": "low",
@@ -4008,7 +4392,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -4022,7 +4407,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00126",
+    "alert_id": "alert_c00134",
     "agent_id": "agent_14",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -4031,7 +4416,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 35%"
     ],
     "confidence": 0.35000000000000003,
     "confidence_label": "low",
@@ -4040,7 +4425,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -4054,91 +4440,28 @@
     ]
   },
   {
-    "alert_id": "alert_c00127",
-    "agent_id": "agent_06",
-    "provider": "Rocket",
-    "area": "Zindabazar",
-    "timestamp": "2026-01-14T07:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "high",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 10%"
-    ],
-    "confidence": 0.10000000000000003,
-    "confidence_label": "low",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 0,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "review_evidence",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-14T07:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00128",
-    "agent_id": "agent_13",
-    "provider": "Rocket",
-    "area": "Bandarbazar",
-    "timestamp": "2026-01-14T07:00:00",
-    "alert_type": "data_quality",
-    "liquidity_type": null,
-    "severity": "high",
-    "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 35%"
-    ],
-    "confidence": 0.34584295528181813,
-    "confidence_label": "low",
-    "cohort_context": "self_history_fallback",
-    "cohort_peer_count": 2,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer"
-    ],
-    "recommended_action": "review_evidence",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-14T07:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00129",
-    "agent_id": "agent_15",
+    "alert_id": "alert_c00135",
+    "agent_id": "agent_05",
     "provider": "Rocket",
     "area": "Chowhatta",
     "timestamp": "2026-01-14T10:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
-    "severity": "high",
+    "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 37%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 50%"
     ],
-    "confidence": 0.37462766852245855,
-    "confidence_label": "low",
-    "cohort_context": "area_wide",
+    "confidence": 0.5045237012100876,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
     "cohort_peer_count": 3,
-    "recommended_owner": "area_team",
+    "recommended_owner": "field_officer",
     "audience": [
       "agent",
+      "field_officer",
       "area_team"
     ],
-    "recommended_action": "review_evidence",
+    "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
@@ -4150,7 +4473,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00130",
+    "alert_id": "alert_c00136",
     "agent_id": "agent_09",
     "provider": null,
     "area": "Shibganj",
@@ -4168,7 +4491,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -4182,7 +4506,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00131",
+    "alert_id": "alert_c00137",
     "agent_id": "agent_20",
     "provider": "Rocket",
     "area": "Chowhatta",
@@ -4191,7 +4515,7 @@
     "liquidity_type": null,
     "severity": "high",
     "evidence": [
-      "2 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 23%"
+      "2 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 23%"
     ],
     "confidence": 0.22500000000000003,
     "confidence_label": "low",
@@ -4200,7 +4524,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -4214,39 +4539,106 @@
     ]
   },
   {
-    "alert_id": "alert_c00132",
-    "agent_id": "agent_13",
+    "alert_id": "alert_c00138",
+    "agent_id": "agent_01",
     "provider": "Rocket",
-    "area": "Bandarbazar",
-    "timestamp": "2026-01-14T13:00:00",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T14:00:00",
     "alert_type": "data_quality",
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "1 transaction(s) in this window show delayed, duplicated, or missing balance data; confidence reduced to 55%"
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 53%"
     ],
-    "confidence": 0.546308423413938,
+    "confidence": 0.5302207577581025,
     "confidence_label": "medium",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
     "case_status": "new",
     "case_history": [
       {
-        "timestamp": "2026-01-14T13:00:00",
+        "timestamp": "2026-01-14T14:00:00",
         "actor": "system",
         "action": "created (new)"
       }
     ]
   },
   {
-    "alert_id": "alert_c00133",
+    "alert_id": "alert_c00139",
+    "agent_id": "agent_09",
+    "provider": "Rocket",
+    "area": "Shibganj",
+    "timestamp": "2026-01-14T15:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "high",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 18%"
+    ],
+    "confidence": 0.1833333333333334,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "cohort_peer_count": 2,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T15:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00140",
+    "agent_id": "agent_13",
+    "provider": "Rocket",
+    "area": "Bandarbazar",
+    "timestamp": "2026-01-14T15:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "medium",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 49%"
+    ],
+    "confidence": 0.4872007998684941,
+    "confidence_label": "medium",
+    "cohort_context": "self_history_fallback",
+    "cohort_peer_count": 1,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T15:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00141",
     "agent_id": "agent_09",
     "provider": null,
     "area": "Shibganj",
@@ -4264,7 +4656,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -4278,7 +4671,40 @@
     ]
   },
   {
-    "alert_id": "alert_c00134",
+    "alert_id": "alert_c00142",
+    "agent_id": "agent_16",
+    "provider": "Rocket",
+    "area": "Zindabazar",
+    "timestamp": "2026-01-14T22:00:00",
+    "alert_type": "data_quality",
+    "liquidity_type": null,
+    "severity": "high",
+    "evidence": [
+      "1 observable ledger issue(s) in this window: missing balance, duplicate record, or broken balance continuity; confidence reduced to 10%"
+    ],
+    "confidence": 0.10000000000000003,
+    "confidence_label": "low",
+    "cohort_context": "self_history_fallback",
+    "cohort_peer_count": 2,
+    "recommended_owner": "field_officer",
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team"
+    ],
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-14T22:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ]
+  },
+  {
+    "alert_id": "alert_c00143",
     "agent_id": "agent_11",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -4297,6 +4723,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -4311,7 +4738,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00135",
+    "alert_id": "alert_c00144",
     "agent_id": "agent_15",
     "provider": null,
     "area": "Chowhatta",
@@ -4329,7 +4756,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -4343,7 +4771,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00136",
+    "alert_id": "alert_c00145",
     "agent_id": "agent_19",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -4362,6 +4790,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -4376,7 +4805,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00137",
+    "alert_id": "alert_c00146",
     "agent_id": "agent_07",
     "provider": "Nagad",
     "area": "Ambarkhana",
@@ -4395,6 +4824,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -4409,7 +4839,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00138",
+    "alert_id": "alert_c00147",
     "agent_id": "agent_02",
     "provider": null,
     "area": "Ambarkhana",
@@ -4427,7 +4857,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -4441,7 +4872,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00139",
+    "alert_id": "alert_c00148",
     "agent_id": "agent_06",
     "provider": null,
     "area": "Zindabazar",
@@ -4459,7 +4890,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -4473,7 +4905,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00140",
+    "alert_id": "alert_c00149",
     "agent_id": "agent_13",
     "provider": null,
     "area": "Bandarbazar",
@@ -4491,7 +4923,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -4505,7 +4938,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00141",
+    "alert_id": "alert_c00150",
     "agent_id": "agent_16",
     "provider": null,
     "area": "Zindabazar",
@@ -4523,7 +4956,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -4537,7 +4971,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00142",
+    "alert_id": "alert_c00151",
     "agent_id": "agent_11",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -4556,6 +4990,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -4570,7 +5005,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00143",
+    "alert_id": "alert_c00152",
     "agent_id": "agent_13",
     "provider": null,
     "area": "Bandarbazar",
@@ -4588,7 +5023,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "request_replenishment_support",
     "display_status": "constrained — replenishment requested",
@@ -4602,7 +5038,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00144",
+    "alert_id": "alert_c00153",
     "agent_id": "agent_03",
     "provider": "Nagad",
     "area": "Bandarbazar",
@@ -4621,6 +5057,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "request_replenishment_support",
@@ -4635,7 +5072,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00145",
+    "alert_id": "alert_c00154",
     "agent_id": "agent_11",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -4654,6 +5091,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -4668,7 +5106,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00146",
+    "alert_id": "alert_c00155",
     "agent_id": "agent_06",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -4687,6 +5125,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -4701,7 +5140,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00147",
+    "alert_id": "alert_c00156",
     "agent_id": "agent_04",
     "provider": null,
     "area": "Shibganj",
@@ -4719,7 +5158,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -4733,7 +5173,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00148",
+    "alert_id": "alert_c00157",
     "agent_id": "agent_11",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -4752,6 +5192,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "request_replenishment_support",
@@ -4766,7 +5207,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00149",
+    "alert_id": "alert_c00158",
     "agent_id": "agent_19",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -4785,6 +5226,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -4799,7 +5241,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00150",
+    "alert_id": "alert_c00159",
     "agent_id": "agent_07",
     "provider": null,
     "area": "Ambarkhana",
@@ -4817,7 +5259,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -4831,7 +5274,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00151",
+    "alert_id": "alert_c00160",
     "agent_id": "agent_12",
     "provider": "Nagad",
     "area": "Ambarkhana",
@@ -4850,6 +5293,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -4864,7 +5308,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00152",
+    "alert_id": "alert_c00161",
     "agent_id": "agent_11",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -4883,6 +5327,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "request_replenishment_support",
@@ -4897,7 +5342,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00153",
+    "alert_id": "alert_c00162",
     "agent_id": "agent_16",
     "provider": null,
     "area": "Zindabazar",
@@ -4915,7 +5360,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -4929,7 +5375,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00154",
+    "alert_id": "alert_c00163",
     "agent_id": "agent_14",
     "provider": "bKash",
     "area": "Shibganj",
@@ -4948,6 +5394,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -4962,7 +5409,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00155",
+    "alert_id": "alert_c00164",
     "agent_id": "agent_17",
     "provider": "bKash",
     "area": "Ambarkhana",
@@ -4981,6 +5428,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -4995,7 +5443,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00156",
+    "alert_id": "alert_c00165",
     "agent_id": "agent_20",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -5014,6 +5462,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -5028,7 +5477,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00157",
+    "alert_id": "alert_c00166",
     "agent_id": "agent_16",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -5047,6 +5496,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -5061,7 +5511,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00158",
+    "alert_id": "alert_c00167",
     "agent_id": "agent_15",
     "provider": "Nagad",
     "area": "Chowhatta",
@@ -5080,6 +5530,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -5094,7 +5545,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00159",
+    "alert_id": "alert_c00168",
     "agent_id": "agent_03",
     "provider": "bKash",
     "area": "Bandarbazar",
@@ -5113,6 +5564,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -5127,7 +5579,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00160",
+    "alert_id": "alert_c00169",
     "agent_id": "agent_07",
     "provider": null,
     "area": "Ambarkhana",
@@ -5145,7 +5597,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "request_replenishment_support",
     "display_status": "constrained — replenishment requested",
@@ -5159,7 +5612,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00161",
+    "alert_id": "alert_c00170",
     "agent_id": "agent_13",
     "provider": null,
     "area": "Bandarbazar",
@@ -5177,7 +5630,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -5191,7 +5645,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00162",
+    "alert_id": "alert_c00171",
     "agent_id": "agent_11",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -5210,6 +5664,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "request_replenishment_support",
@@ -5224,7 +5679,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00163",
+    "alert_id": "alert_c00172",
     "agent_id": "agent_02",
     "provider": null,
     "area": "Ambarkhana",
@@ -5242,7 +5697,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -5256,7 +5712,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00164",
+    "alert_id": "alert_c00173",
     "agent_id": "agent_14",
     "provider": null,
     "area": "Shibganj",
@@ -5274,7 +5730,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -5288,7 +5745,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00165",
+    "alert_id": "alert_c00174",
     "agent_id": "agent_16",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -5307,6 +5764,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -5321,7 +5779,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00166",
+    "alert_id": "alert_c00175",
     "agent_id": "agent_03",
     "provider": "bKash",
     "area": "Bandarbazar",
@@ -5340,6 +5798,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "request_replenishment_support",
@@ -5354,7 +5813,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00167",
+    "alert_id": "alert_c00176",
     "agent_id": "agent_02",
     "provider": null,
     "area": "Ambarkhana",
@@ -5372,7 +5831,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -5386,7 +5846,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00168",
+    "alert_id": "alert_c00177",
     "agent_id": "agent_05",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -5405,6 +5865,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -5419,7 +5880,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00169",
+    "alert_id": "alert_c00178",
     "agent_id": "agent_03",
     "provider": "bKash",
     "area": "Bandarbazar",
@@ -5438,6 +5899,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -5452,7 +5914,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00170",
+    "alert_id": "alert_c00179",
     "agent_id": "agent_15",
     "provider": "Nagad",
     "area": "Chowhatta",
@@ -5471,6 +5933,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -5485,7 +5948,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00171",
+    "alert_id": "alert_c00180",
     "agent_id": "agent_19",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -5504,6 +5967,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -5518,7 +5982,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00172",
+    "alert_id": "alert_c00181",
     "agent_id": "agent_05",
     "provider": "Nagad",
     "area": "Chowhatta",
@@ -5537,6 +6001,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -5551,7 +6016,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00173",
+    "alert_id": "alert_c00182",
     "agent_id": "agent_07",
     "provider": null,
     "area": "Ambarkhana",
@@ -5569,7 +6034,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -5583,7 +6049,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00174",
+    "alert_id": "alert_c00183",
     "agent_id": "agent_09",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -5602,6 +6068,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -5616,7 +6083,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00175",
+    "alert_id": "alert_c00184",
     "agent_id": "agent_02",
     "provider": null,
     "area": "Ambarkhana",
@@ -5634,7 +6101,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "request_replenishment_support",
     "display_status": "constrained — replenishment requested",
@@ -5648,7 +6116,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00176",
+    "alert_id": "alert_c00185",
     "agent_id": "agent_13",
     "provider": null,
     "area": "Bandarbazar",
@@ -5666,7 +6134,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "request_replenishment_support",
     "display_status": "constrained — replenishment requested",
@@ -5680,7 +6149,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00177",
+    "alert_id": "alert_c00186",
     "agent_id": "agent_06",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -5699,6 +6168,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -5713,7 +6183,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00178",
+    "alert_id": "alert_c00187",
     "agent_id": "agent_14",
     "provider": null,
     "area": "Shibganj",
@@ -5731,7 +6201,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "request_replenishment_support",
     "display_status": "constrained — replenishment requested",
@@ -5745,7 +6216,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00179",
+    "alert_id": "alert_c00188",
     "agent_id": "agent_08",
     "provider": "Rocket",
     "area": "Bandarbazar",
@@ -5764,6 +6235,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -5778,7 +6250,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00180",
+    "alert_id": "alert_c00189",
     "agent_id": "agent_04",
     "provider": null,
     "area": "Shibganj",
@@ -5796,7 +6268,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -5810,7 +6283,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00181",
+    "alert_id": "alert_c00190",
     "agent_id": "agent_09",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -5829,6 +6302,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -5843,7 +6317,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00182",
+    "alert_id": "alert_c00191",
     "agent_id": "agent_19",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -5862,6 +6336,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -5876,7 +6351,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00183",
+    "alert_id": "alert_c00192",
     "agent_id": "agent_19",
     "provider": "bKash",
     "area": "Shibganj",
@@ -5895,6 +6370,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -5909,7 +6385,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00184",
+    "alert_id": "alert_c00193",
     "agent_id": "agent_13",
     "provider": "Rocket",
     "area": "Bandarbazar",
@@ -5928,6 +6404,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "request_replenishment_support",
@@ -5942,7 +6419,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00185",
+    "alert_id": "alert_c00194",
     "agent_id": "agent_14",
     "provider": null,
     "area": "Shibganj",
@@ -5960,7 +6437,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -5974,7 +6452,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00186",
+    "alert_id": "alert_c00195",
     "agent_id": "agent_09",
     "provider": "bKash",
     "area": "Shibganj",
@@ -5993,6 +6471,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -6007,7 +6486,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00187",
+    "alert_id": "alert_c00196",
     "agent_id": "agent_07",
     "provider": null,
     "area": "Ambarkhana",
@@ -6025,7 +6504,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -6039,7 +6519,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00188",
+    "alert_id": "alert_c00197",
     "agent_id": "agent_16",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -6058,6 +6538,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "request_replenishment_support",
@@ -6072,7 +6553,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00189",
+    "alert_id": "alert_c00198",
     "agent_id": "agent_03",
     "provider": null,
     "area": "Bandarbazar",
@@ -6090,7 +6571,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -6104,7 +6586,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00190",
+    "alert_id": "alert_c00199",
     "agent_id": "agent_15",
     "provider": "Nagad",
     "area": "Chowhatta",
@@ -6123,6 +6605,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -6137,7 +6620,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00191",
+    "alert_id": "alert_c00200",
     "agent_id": "agent_19",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -6156,6 +6639,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "request_replenishment_support",
@@ -6170,7 +6654,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00192",
+    "alert_id": "alert_c00201",
     "agent_id": "agent_10",
     "provider": null,
     "area": "Chowhatta",
@@ -6188,7 +6672,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -6202,7 +6687,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00193",
+    "alert_id": "alert_c00202",
     "agent_id": "agent_09",
     "provider": "bKash",
     "area": "Shibganj",
@@ -6221,6 +6706,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -6235,7 +6721,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00194",
+    "alert_id": "alert_c00203",
     "agent_id": "agent_05",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -6254,6 +6740,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -6268,7 +6755,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00195",
+    "alert_id": "alert_c00204",
     "agent_id": "agent_06",
     "provider": "Nagad",
     "area": "Zindabazar",
@@ -6287,6 +6774,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -6301,7 +6789,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00196",
+    "alert_id": "alert_c00205",
     "agent_id": "agent_10",
     "provider": null,
     "area": "Chowhatta",
@@ -6319,7 +6807,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -6333,7 +6822,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00197",
+    "alert_id": "alert_c00206",
     "agent_id": "agent_09",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -6352,6 +6841,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -6366,7 +6856,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00198",
+    "alert_id": "alert_c00207",
     "agent_id": "agent_11",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -6385,6 +6875,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -6399,7 +6890,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00199",
+    "alert_id": "alert_c00208",
     "agent_id": "agent_12",
     "provider": "Nagad",
     "area": "Ambarkhana",
@@ -6418,6 +6909,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -6432,7 +6924,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00200",
+    "alert_id": "alert_c00209",
     "agent_id": "agent_06",
     "provider": null,
     "area": "Zindabazar",
@@ -6450,7 +6942,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -6464,7 +6957,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00201",
+    "alert_id": "alert_c00210",
     "agent_id": "agent_20",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -6483,6 +6976,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -6497,7 +6991,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00202",
+    "alert_id": "alert_c00211",
     "agent_id": "agent_05",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -6516,6 +7010,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -6530,7 +7025,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00203",
+    "alert_id": "alert_c00212",
     "agent_id": "agent_07",
     "provider": "Nagad",
     "area": "Ambarkhana",
@@ -6549,6 +7044,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -6563,7 +7059,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00204",
+    "alert_id": "alert_c00213",
     "agent_id": "agent_14",
     "provider": null,
     "area": "Shibganj",
@@ -6581,7 +7077,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "contact_agent",
     "display_status": "normal",
@@ -6595,7 +7092,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00205",
+    "alert_id": "alert_c00214",
     "agent_id": "agent_09",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -6627,7 +7124,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00206",
+    "alert_id": "alert_c00215",
     "agent_id": "agent_04",
     "provider": null,
     "area": "Shibganj",
@@ -6645,7 +7142,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -6659,7 +7157,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00207",
+    "alert_id": "alert_c00216",
     "agent_id": "agent_01",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -6678,6 +7176,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -6692,7 +7191,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00208",
+    "alert_id": "alert_c00217",
     "agent_id": "agent_05",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -6711,6 +7210,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "contact_agent",
@@ -6725,7 +7225,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00209",
+    "alert_id": "alert_c00218",
     "agent_id": "agent_04",
     "provider": null,
     "area": "Shibganj",
@@ -6743,7 +7243,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
@@ -6757,7 +7258,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00210",
+    "alert_id": "alert_c00219",
     "agent_id": "agent_15",
     "provider": "Rocket",
     "area": "Chowhatta",
@@ -6776,6 +7277,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -6790,7 +7292,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00211",
+    "alert_id": "alert_c00220",
     "agent_id": "agent_15",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -6809,6 +7311,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -6823,7 +7326,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00212",
+    "alert_id": "alert_c00221",
     "agent_id": "agent_20",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -6842,6 +7345,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "review_evidence",
@@ -6856,7 +7360,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00213",
+    "alert_id": "alert_c00222",
     "agent_id": "agent_06",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -6875,6 +7379,7 @@
     "audience": [
       "agent",
       "field_officer",
+      "area_team",
       "provider_ops"
     ],
     "recommended_action": "request_replenishment_support",
@@ -6889,7 +7394,7 @@
     ]
   },
   {
-    "alert_id": "alert_c00214",
+    "alert_id": "alert_c00223",
     "agent_id": "agent_17",
     "provider": null,
     "area": "Ambarkhana",
@@ -6907,7 +7412,8 @@
     "recommended_owner": "field_officer",
     "audience": [
       "agent",
-      "field_officer"
+      "field_officer",
+      "area_team"
     ],
     "recommended_action": "review_evidence",
     "display_status": "normal",
