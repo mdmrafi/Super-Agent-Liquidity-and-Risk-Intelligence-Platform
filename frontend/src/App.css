@@ -731,6 +731,66 @@
   margin-top: 0.3rem;
 }
 
+.case-notes {
+  border-top: 1px dashed var(--gridline);
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  font-size: 0.85rem;
+}
+
+.case-notes__list {
+  margin: var(--space-2) 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  color: var(--ink-secondary);
+  line-height: 1.7;
+}
+
+.case-notes__empty {
+  margin: var(--space-2) 0 0;
+}
+
+.case-notes__form {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.case-notes__form input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--ink-primary);
+  font-size: 0.83rem;
+  transition: border-color var(--transition);
+}
+
+.case-notes__form input:hover {
+  border-color: var(--brand);
+}
+
+.case-notes__form button {
+  border: none;
+  background: var(--brand);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: background var(--transition);
+}
+
+.case-notes__form button:hover:not(:disabled) {
+  background: var(--brand-strong);
+}
+
+.case-notes__form button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 /* ---------------------------------------------------------------------
    Assistant / chat
 ------------------------------------------------------------------------ */

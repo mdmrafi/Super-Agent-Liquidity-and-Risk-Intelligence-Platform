@@ -12,26 +12,30 @@ two never drift apart. `uvicorn api.main:app --reload --port <N>` still
 works directly if you want to override without touching .env.
 """
 import os
+import time
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 from typing import Literal
 
 from dotenv import load_dotenv
-from fastapi import Depends, FastAPI, HTTPException, Query
+from fastapi import Depends, FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
+import obs
 from alerts import lifecycle
 from auth.dependencies import CurrentUser, get_current_user
 from auth.security import create_access_token, verify_password
 from auth.scope import (
     AREA_SCOPED_ROLES,
     PROVIDER_SCOPED_ROLES,
+    alert_is_visible,
     ensure_complete_scope,
     project_balance,
     provider_of,
     require_area_access,
     require_alert_access,
+    require_assignment,
     require_lifecycle_action,
     require_requested_agent,
     require_requested_provider,
@@ -65,6 +69,37 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.middleware("http")
+async def observe_requests(request: Request, call_next):
+    """Structured per-request log line + counters (latency, error rate). This is
+    the runtime observability trace for reliability review -- see
+    docs/RELIABILITY_AND_OBSERVABILITY.md."""
+    start = time.perf_counter()
+    obs.incr("requests")
+    try:
+        response = await call_next(request)
+    except Exception:
+        obs.incr("server_errors")
+        obs.logger.exception("request method=%s path=%s status=500 unhandled", request.method, request.url.path)
+        raise
+    duration_ms = (time.perf_counter() - start) * 1000
+    if response.status_code >= 500:
+        obs.incr("server_errors")
+    obs.logger.info(
+        "request method=%s path=%s status=%s duration_ms=%.1f",
+        request.method, request.url.path, response.status_code, duration_ms,
+    )
+    return response
+
+
+@app.get("/api/health")
+def health():
+    """Liveness + a reliability snapshot (uptime, request count, server-error
+    rate, LLM-fallback count). Unauthenticated on purpose so a monitor can poll
+    it. No agent, provider, or alert data is exposed."""
+    return {"status": "ok", **obs.snapshot()}
 
 
 class LoginRequest(BaseModel):
@@ -122,6 +157,17 @@ class LifecycleAction(BaseModel):
     split: Split = "calibration"
 
 
+class NoteRequest(BaseModel):
+    text: str
+    split: Split = "calibration"
+
+
+class AssignRequest(BaseModel):
+    new_owner: str  # target user's stable username
+    reason: str
+    split: Split = "calibration"
+
+
 class ExplainRequest(BaseModel):
     lang: str = "en"
     split: Split = "calibration"
@@ -161,6 +207,8 @@ def list_alerts(
     area: str | None = None,
     alert_type: str | None = None,
     audience: str | None = None,
+    owner: str | None = None,
+    unassigned: bool = False,
     start: str | None = None,
     end: str | None = None,
     current_user: CurrentUser = Depends(get_current_user),
@@ -179,6 +227,10 @@ def list_alerts(
         alerts = [a for a in alerts if a["area"] == area]
     if alert_type:
         alerts = [a for a in alerts if a["alert_type"] == alert_type]
+    if owner:
+        alerts = [a for a in alerts if a.get("case_owner") == owner]
+    if unassigned:
+        alerts = [a for a in alerts if a.get("case_owner") is None]
     if audience:
         # who should *see* the alert -- e.g. audience=provider_ops returns only
         # alerts a provider operations user is entitled to see (e-money pressure,
@@ -277,6 +329,82 @@ def escalate_alert(alert_id: str, body: LifecycleAction, current_user: CurrentUs
 @app.post("/api/alerts/{alert_id}/resolve")
 def resolve_alert(alert_id: str, body: LifecycleAction, current_user: CurrentUser = Depends(get_current_user)):
     return _apply_lifecycle(alert_id, "resolve", body, current_user)
+
+
+@app.post("/api/alerts/{alert_id}/notes")
+def add_alert_note(alert_id: str, body: NoteRequest, current_user: CurrentUser = Depends(get_current_user)):
+    """Free-text case note, distinct from the case_history lifecycle log --
+    any role that can already see the alert may add analyst commentary, but
+    it never changes case_status or display_status."""
+    text = body.text.strip()
+    if not text:
+        raise HTTPException(422, "note text must not be empty")
+    alerts, alert = store.find_alert(body.split, alert_id)
+    if alert is None:
+        raise HTTPException(404, f"no such alert: {alert_id}")
+    require_alert_access(current_user, alert)
+
+    actor = f"{current_user.display_name} ({current_user.role})"
+    updated = lifecycle.add_note(alert, actor=actor, text=text, at=datetime.now(timezone.utc).isoformat())
+    alerts = [updated if a["alert_id"] == alert_id else a for a in alerts]
+    store.save_alerts(body.split, alerts)
+    return updated
+
+
+@app.get("/api/alerts/{alert_id}/assignees")
+async def list_assignees(alert_id: str, split: Split = "calibration", current_user: CurrentUser = Depends(get_current_user)):
+    """Candidate owners for this alert: users who are themselves in-scope to
+    see it. Powers the assign dropdown so a coordinator can only pick a
+    legitimate assignee, mirroring the server-side check in require_assignment."""
+    _, alert = store.find_alert(split, alert_id)
+    if alert is None:
+        raise HTTPException(404, f"no such alert: {alert_id}")
+    require_alert_access(current_user, alert)
+    candidates = []
+    async for user in User.find_all():
+        if user.role.value == "agent":
+            continue  # agents own their shop, they don't own coordination cases
+        if alert_is_visible(user, alert):
+            candidates.append({
+                "username": user.username,
+                "display_name": user.display_name,
+                "role": user.role.value,
+            })
+    candidates.sort(key=lambda c: c["display_name"])
+    return candidates
+
+
+@app.post("/api/alerts/{alert_id}/assign")
+async def assign_alert(alert_id: str, body: AssignRequest, current_user: CurrentUser = Depends(get_current_user)):
+    """Assign or reassign the accountable owner of a case. Auditable: records
+    previous owner, new owner, actor, timestamp, and the required reason as an
+    append-only case_history event (see alerts/lifecycle.py:assign)."""
+    reason = body.reason.strip()
+    if not reason:
+        raise HTTPException(422, "a reassignment reason is required")
+    alerts, alert = store.find_alert(body.split, alert_id)
+    if alert is None:
+        raise HTTPException(404, f"no such alert: {alert_id}")
+
+    assignee = await User.find_one(User.username == body.new_owner)
+    if assignee is None:
+        raise HTTPException(404, f"no such user: {body.new_owner}")
+    # Authorizes the actor (role + own scope) and the assignee (must be in-scope
+    # for the alert), keeping provider/area boundaries intact.
+    require_assignment(current_user, alert, assignee)
+
+    actor = f"{current_user.display_name} ({current_user.role})"
+    updated = lifecycle.assign(
+        alert,
+        actor=actor,
+        new_owner=assignee.username,
+        new_owner_display=assignee.display_name,
+        reason=reason,
+        at=datetime.now(timezone.utc).isoformat(),
+    )
+    alerts = [updated if a["alert_id"] == alert_id else a for a in alerts]
+    store.save_alerts(body.split, alerts)
+    return updated
 
 
 @app.post("/api/alerts/{alert_id}/explain")

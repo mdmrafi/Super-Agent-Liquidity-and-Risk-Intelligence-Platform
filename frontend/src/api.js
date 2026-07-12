@@ -57,6 +57,30 @@ export const acknowledgeAlert = lifecycleAction("acknowledge");
 export const escalateAlert = lifecycleAction("escalate");
 export const resolveAlert = lifecycleAction("resolve");
 
+export function addAlertNote(alertId, split, text, token) {
+  // actor is derived server-side from the bearer token, same as the
+  // lifecycle actions above.
+  return req(`/alerts/${alertId}/notes`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", ...authHeaders(token) },
+    body: JSON.stringify({ split, text }),
+  });
+}
+
+export function getAlertAssignees(alertId, split, token) {
+  return req(`/alerts/${alertId}/assignees?split=${split}`, { headers: authHeaders(token) });
+}
+
+export function assignAlert(alertId, split, newOwner, reason, token) {
+  // actor is derived server-side from the bearer token; the server authorizes
+  // both the actor's role and that the assignee is in-scope for the alert.
+  return req(`/alerts/${alertId}/assign`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", ...authHeaders(token) },
+    body: JSON.stringify({ split, new_owner: newOwner, reason }),
+  });
+}
+
 export function explainAlert(alertId, lang, split) {
   return req(`/alerts/${alertId}/explain`, {
     method: "POST",

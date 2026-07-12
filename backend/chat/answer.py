@@ -17,6 +17,7 @@ import json
 
 from openai import OpenAI
 
+import obs
 from explain.explain import LANGUAGE_NAMES
 from chat.retrieve import retrieve_relevant_state
 
@@ -159,9 +160,15 @@ def answer_chat_query(
             ],
         )
         text = (response.choices[0].message.content or "").strip()
-        return text or _grounded_fallback(context, language)
-    except Exception:
+        if not text:
+            obs.incr("llm_fallbacks")
+            obs.logger.warning("chat fallback lang=%s reason=empty_completion", language)
+            return _grounded_fallback(context, language)
+        return text
+    except Exception as exc:
         # Never let the LLM layer break the dashboard -- degrade to a grounded
         # restatement of the top alert. Broad catch is intentional at this
         # boundary, as in Stage 5's explain_alert.
+        obs.incr("llm_fallbacks")
+        obs.logger.warning("chat fallback lang=%s reason=%s", language, type(exc).__name__)
         return _grounded_fallback(context, language)

@@ -1,10 +1,14 @@
 """Anomaly rule (spec 6.4 / 5): near-identical amounts, few accounts, short window.
 
-Detection is a greedy per-(agent, provider) scan: starting at each unflagged
-transaction, extend a cluster forward in time only while the next transaction
-both falls inside the window and keeps the cluster's amount spread within
-tolerance. Thresholds are calibrated once on the calibration split (by F1
-against is_injected_anomaly), locked, then run unmodified on held-out.
+Detection is a greedy per-(agent, provider) scan: starting at each unclaimed
+transaction, gather every later transaction within window_minutes whose
+amount keeps the cluster's spread within tolerance. An interleaved
+transaction that doesn't fit the pattern (an ordinary cash-in, an unrelated
+cash-out) is skipped rather than treated as a cluster-breaker -- a customer
+walking up mid-burst for an unrelated errand shouldn't hide a real pattern
+among the surrounding near-identical amounts. Thresholds are calibrated once
+on the calibration split (by F1 against is_injected_anomaly), locked, then
+run unmodified on held-out.
 """
 import pandas as pd
 
@@ -12,31 +16,33 @@ from . import config
 
 
 def _detect_group(g, min_txns, window_minutes, pct_variation, max_accounts):
+    """Return a list of clusters, each a list of row positions into g."""
     n = len(g)
-    windows = []
-    i = 0
-    while i < n:
-        j = i
+    claimed = [False] * n
+    clusters = []
+    for i in range(n):
+        if claimed[i]:
+            continue
+        members = [i]
         amounts = [g.loc[i, "amount"]]
-        accounts = {g.loc[i, "customer_id"]}
-        while j + 1 < n:
-            gap = (g.loc[j + 1, "timestamp"] - g.loc[i, "timestamp"]).total_seconds() / 60
+        for j in range(i + 1, n):
+            gap = (g.loc[j, "timestamp"] - g.loc[i, "timestamp"]).total_seconds() / 60
             if gap > window_minutes:
                 break
-            candidate = amounts + [g.loc[j + 1, "amount"]]
+            if claimed[j]:
+                continue
+            candidate = amounts + [g.loc[j, "amount"]]
             spread = (max(candidate) - min(candidate)) / (sum(candidate) / len(candidate))
             if spread > pct_variation:
-                break
-            j += 1
+                continue
+            members.append(j)
             amounts.append(g.loc[j, "amount"])
-            accounts.add(g.loc[j, "customer_id"])
-        count = j - i + 1
-        if count >= min_txns and len(accounts) <= max_accounts:
-            windows.append((i, j, amounts[:], accounts.copy()))
-            i = j + 1
-        else:
-            i += 1
-    return windows
+        accounts = {g.loc[k, "customer_id"] for k in members}
+        if len(members) >= min_txns and len(accounts) <= max_accounts:
+            clusters.append(members)
+            for k in members:
+                claimed[k] = True
+    return clusters
 
 
 def detect(df, min_txns, window_minutes, pct_variation, max_accounts):
@@ -47,13 +53,14 @@ def detect(df, min_txns, window_minutes, pct_variation, max_accounts):
 
     for (agent_id, provider), g in success.groupby(["agent_id", "provider"], sort=False):
         g = g.sort_values("timestamp", kind="stable").reset_index(drop=True)
-        for i, j, amounts, accounts in _detect_group(
-            g, min_txns, window_minutes, pct_variation, max_accounts
-        ):
-            window_ids = g.loc[i:j, "transaction_id"].tolist()
+        for members in _detect_group(g, min_txns, window_minutes, pct_variation, max_accounts):
+            window_ids = g.loc[members, "transaction_id"].tolist()
             flagged_ids.update(window_ids)
-            txn_types = g.loc[i:j, "txn_type"].unique()
+            amounts = g.loc[members, "amount"].tolist()
+            accounts = set(g.loc[members, "customer_id"])
+            txn_types = g.loc[members, "txn_type"].unique()
             label = f"{txn_types[0]}s" if len(txn_types) == 1 else "transactions"
+            i, j = members[0], members[-1]
             span_minutes = (g.loc[j, "timestamp"] - g.loc[i, "timestamp"]).total_seconds() / 60
             avg_amount = sum(amounts) / len(amounts)
             rows.append({

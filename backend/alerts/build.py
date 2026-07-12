@@ -160,6 +160,14 @@ def _base_alert(row, alert_type, severity, evidence, liquidity_type=None):
         "cohort_context": row["cohort_context"],
         "cohort_peer_count": row["cohort_peer_count"],
         "recommended_owner": owner,
+        # recommended_owner is the *role* routing suggests. case_owner is the
+        # stable user identifier (username) actually accountable for the case,
+        # assigned via the lifecycle assign workflow -- None until a coordinator
+        # takes or hands over ownership. case_owner_display carries the human
+        # label for the UI without a second lookup; case_owner stays the id of
+        # record for auditability.
+        "case_owner": None,
+        "case_owner_display": None,
         "audience": _audience(alert_type, liquidity_type, owner),
         "recommended_action": action,
         "display_status": _display_status(action),
@@ -167,6 +175,7 @@ def _base_alert(row, alert_type, severity, evidence, liquidity_type=None):
         "case_history": [
             {"timestamp": row["timestamp"], "actor": "system", "action": "created (new)"}
         ],
+        "case_notes": [],
     }
 
 

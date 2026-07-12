@@ -17,8 +17,20 @@ CALENDAR = {d["day_index"]: d for d in simulate.day_calendar()}
 # (rounded) so each injection keeps its original relative position -- and,
 # critically, keeps landing on the same side of the calibration/holdout split
 # -- after NUM_DAYS grew to 30.
+# Scenario A (spec §11) has two complementary faces of the same "healthy total
+# hides a real shortage" idea, because cash_in and cash_out move the shared cash
+# drawer and a provider's e-money float in opposite directions:
+#   A  (cash_out burst): drains SHARED PHYSICAL CASH while that provider's own
+#      e-money rises -- the naive per-provider view looks fine, the cash drawer
+#      does not.
+#   A2 (cash_in burst): drains ONE PROVIDER'S E-MONEY while shared cash rises to
+#      offset -- the "add it all up" total looks healthy, but that provider's
+#      float is about to run out. This is the face the spec's Scenario A wording
+#      emphasises ("one provider's e-money is about to run out").
 SCENARIO_A = dict(agent_id="agent_07", provider="bKash", day_index=17,
                    start_hour=10, end_hour=16, cash_out_prob=0.88, rate_multiplier=3.0)
+SCENARIO_A_EMONEY = dict(agent_id="agent_05", provider="bKash", day_index=9,
+                          start_hour=10, end_hour=16, cash_out_prob=0.05, rate_multiplier=5.0)
 SCENARIO_B_PRESSURE = dict(agent_id="agent_14", provider="Nagad", day_index=11,
                             start_hour=9, end_hour=15, cash_out_prob=0.85, rate_multiplier=2.5)
 SCENARIO_B_ANOMALY = dict(agent_id="agent_14", provider="Nagad", day_index=11, hour=13)
@@ -67,6 +79,20 @@ def build_clean_ledger(rng):
                 SCENARIO_A["start_hour"], SCENARIO_A["end_hour"],
                 SCENARIO_A["cash_out_prob"], SCENARIO_A["rate_multiplier"],
                 scenario_tag="A",
+            )
+
+        if agent_id == SCENARIO_A_EMONEY["agent_id"]:
+            day = CALENDAR[SCENARIO_A_EMONEY["day_index"]]
+            # Dedicated RNG so this injection, added after the rest of the
+            # dataset was tuned, does not advance the shared stream and perturb
+            # every later agent/scenario/holdout draw (which would silently move
+            # the locked anomaly thresholds and holdout metrics).
+            a2_rng = np.random.default_rng(config.RANDOM_SEED + 205)
+            events = scenarios.inject_pressure(
+                a2_rng, events, agent_id, area, day, SCENARIO_A_EMONEY["provider"],
+                SCENARIO_A_EMONEY["start_hour"], SCENARIO_A_EMONEY["end_hour"],
+                SCENARIO_A_EMONEY["cash_out_prob"], SCENARIO_A_EMONEY["rate_multiplier"],
+                scenario_tag="A2",
             )
 
         if agent_id == SCENARIO_B_PRESSURE["agent_id"]:

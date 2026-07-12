@@ -25,9 +25,9 @@ This is enforced in behavior, not just stated. The anomaly detector produces an
   `evidence` array and a `confidence` / `confidence_label`; the Risk view shows
   both. Nothing presents an "anomaly score as proof of fraud" (§7).
 
-## 2. Expected false positives
+## 2. Expected false positives & measured evidence
 
-Measured on the held-out split with locked thresholds:
+Measured on the held-out split with locked thresholds (plus latency, measured live):
 
 | Metric | Value |
 |---|---|
@@ -35,8 +35,12 @@ Measured on the held-out split with locked thresholds:
 | Anomaly recall | 0.800 |
 | Anomaly F1 | 0.762 |
 | False-positive rate on normal Eid spikes | 0.137% |
-| Provider-balance forecast MAE | 676 BDT/hour |
+| Provider-balance forecast MAE | 665 BDT/hour |
 | Shortage-detection lead time | 152.0 min (agent_11, holdout) |
+| Alert explanation coverage (evidence + confidence populated) | 100% (holdout) |
+| Batch pipeline processing latency | ~60s for 15,975 transactions (20 agents × 30 days) |
+| API response latency, `GET /api/alerts` (223 alerts) | avg 10.5ms, p50 9.9ms, p95 11.5ms |
+| API response latency, `GET /api/agents/{id}/analytics` | avg 67.4ms, p50 65.9ms, p95 92.0ms |
 
 Precision 0.727 means **roughly 1 in 4 anomaly flags is expected to be a false positive** —
 which is *why* the workflow routes them to a human reviewer rather than acting on
@@ -44,6 +48,11 @@ them. Liquidity alerts are additionally **debounced**: a single-hour EWMA blip i
 suppressed, requiring 2+ consecutive crossings before firing. On this dataset that
 removed ~58 of ~84 high-severity liquidity episodes that were single-hour noise on
 agents never touched by any injection ([alerts/build.py](../backend/alerts/build.py)).
+
+Precision/recall/lead-time/MAE/coverage are reproduced by `python -m engine.main`
+(see [engine/evaluate.py](../backend/engine/evaluate.py)); API latency was measured
+against the running dev server (`GET`, 40 requests/route, warm cache) and is not
+re-measured by that command.
 
 ## 3. Human-in-the-loop by construction
 

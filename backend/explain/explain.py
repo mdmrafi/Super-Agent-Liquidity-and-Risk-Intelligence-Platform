@@ -11,6 +11,8 @@ import json
 
 from openai import OpenAI
 
+import obs
+
 MODEL = "gpt-4o"
 
 LANGUAGE_NAMES = {
@@ -98,11 +100,17 @@ def explain_alert(alert_object, language="en"):
         )
         text = (response.choices[0].message.content or "").strip()
         if not text:
+            obs.incr("llm_fallbacks")
+            obs.logger.warning("explain fallback alert=%s lang=%s reason=empty_completion",
+                               alert_object.get("alert_id"), language)
             return _fallback_explanation(alert_object, language)
         return text
-    except Exception:
+    except Exception as exc:
         # Never let an LLM-layer failure (network, auth, rate limit, timeout,
         # malformed response) block the dashboard -- degrade to the plain
         # template instead. This is the boundary function; a broad catch is
         # intentional here, not a shortcut.
+        obs.incr("llm_fallbacks")
+        obs.logger.warning("explain fallback alert=%s lang=%s reason=%s",
+                           alert_object.get("alert_id"), language, type(exc).__name__)
         return _fallback_explanation(alert_object, language)

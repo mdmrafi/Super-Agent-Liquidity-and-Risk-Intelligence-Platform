@@ -16,6 +16,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -30,7 +32,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00002",
@@ -49,6 +52,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -64,7 +69,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00003",
@@ -83,6 +89,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "risk_team",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "risk_team"
@@ -96,7 +104,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00004",
@@ -115,6 +124,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -129,7 +140,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00005",
@@ -148,6 +160,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -162,7 +176,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00006",
@@ -181,6 +196,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -195,7 +212,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00007",
@@ -214,6 +232,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -228,7 +248,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00008",
@@ -247,6 +268,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -261,7 +284,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00009",
@@ -280,6 +304,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -294,7 +320,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00010",
@@ -313,6 +340,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -327,7 +356,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00011",
@@ -346,6 +376,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -360,7 +392,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00012",
@@ -379,6 +412,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -393,7 +428,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00013",
@@ -412,6 +448,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -426,7 +464,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00014",
@@ -445,6 +484,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -459,7 +500,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00015",
@@ -478,6 +520,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -492,7 +536,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00016",
@@ -511,6 +556,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -525,7 +572,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00017",
@@ -544,6 +592,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -558,7 +608,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00018",
@@ -577,6 +628,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -591,7 +644,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00019",
@@ -610,6 +664,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -624,7 +680,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00020",
@@ -643,6 +700,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -657,7 +716,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00021",
@@ -676,6 +736,8 @@
     "cohort_context": "area_wide",
     "cohort_peer_count": 3,
     "recommended_owner": "area_team",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "area_team"
@@ -689,7 +751,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00022",
@@ -708,6 +771,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -722,7 +787,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00023",
@@ -741,6 +807,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -755,7 +823,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00024",
@@ -774,6 +843,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -788,7 +859,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00025",
@@ -807,6 +879,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -821,7 +895,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00026",
@@ -840,6 +915,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -854,7 +931,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00027",
@@ -873,6 +951,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -887,7 +967,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00028",
@@ -906,6 +987,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -920,7 +1003,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00029",
@@ -939,6 +1023,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -953,7 +1039,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00030",
@@ -972,6 +1059,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -986,7 +1075,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00031",
@@ -1005,6 +1095,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1019,7 +1111,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00032",
@@ -1038,6 +1131,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1052,7 +1147,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00033",
@@ -1071,6 +1167,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1085,7 +1183,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00034",
@@ -1104,6 +1203,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1118,7 +1219,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00035",
@@ -1137,6 +1239,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1151,7 +1255,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00036",
@@ -1170,6 +1275,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1184,7 +1291,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00037",
@@ -1203,6 +1311,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1217,7 +1327,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00038",
@@ -1236,6 +1347,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1250,7 +1363,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00039",
@@ -1269,6 +1383,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1283,7 +1399,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00040",
@@ -1302,6 +1419,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1316,7 +1435,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00041",
@@ -1335,6 +1455,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1349,7 +1471,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00042",
@@ -1368,6 +1491,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1382,7 +1507,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00043",
@@ -1401,6 +1527,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1415,7 +1543,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00044",
@@ -1434,6 +1563,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1448,7 +1579,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00045",
@@ -1467,6 +1599,8 @@
     "cohort_context": "provider_wide",
     "cohort_peer_count": 3,
     "recommended_owner": "provider_ops",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "provider_ops"
@@ -1480,7 +1614,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00046",
@@ -1499,6 +1634,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1513,7 +1650,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00047",
@@ -1532,6 +1670,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1546,7 +1686,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00048",
@@ -1565,6 +1706,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1579,7 +1722,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00049",
@@ -1598,6 +1742,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1612,7 +1758,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00050",
@@ -1631,6 +1778,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1645,7 +1794,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00051",
@@ -1664,6 +1814,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1678,7 +1830,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00052",
@@ -1697,6 +1850,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1711,7 +1866,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00053",
@@ -1730,6 +1886,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1744,7 +1902,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00054",
@@ -1763,6 +1922,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1777,7 +1938,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00055",
@@ -1796,6 +1958,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1810,7 +1974,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00056",
@@ -1829,6 +1994,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1843,7 +2010,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00057",
@@ -1862,6 +2030,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1876,7 +2046,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00058",
@@ -1895,6 +2066,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1909,7 +2082,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00059",
@@ -1928,6 +2102,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1942,7 +2118,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00060",
@@ -1961,6 +2138,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -1975,7 +2154,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00061",
@@ -1994,6 +2174,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2008,7 +2190,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00062",
@@ -2027,6 +2210,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2041,7 +2226,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00063",
@@ -2060,6 +2246,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2074,7 +2262,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00064",
@@ -2093,6 +2282,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2107,7 +2298,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00065",
@@ -2126,6 +2318,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2140,7 +2334,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00066",
@@ -2159,6 +2354,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2173,7 +2370,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00067",
@@ -2192,6 +2390,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2206,7 +2406,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00068",
@@ -2225,6 +2426,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2239,7 +2442,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00069",
@@ -2258,6 +2462,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2272,7 +2478,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00070",
@@ -2291,6 +2498,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2305,7 +2514,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00071",
@@ -2324,6 +2534,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2338,7 +2550,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00072",
@@ -2357,6 +2570,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2371,7 +2586,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00073",
@@ -2390,6 +2606,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2404,7 +2622,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00074",
@@ -2423,6 +2642,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2437,7 +2658,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00075",
@@ -2456,6 +2678,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2470,7 +2694,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00076",
@@ -2489,6 +2714,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2503,7 +2730,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00077",
@@ -2522,6 +2750,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2536,7 +2766,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00078",
@@ -2555,6 +2786,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2569,7 +2802,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00079",
@@ -2588,6 +2822,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2602,7 +2838,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00080",
@@ -2621,6 +2858,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2635,7 +2874,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00081",
@@ -2654,6 +2894,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2668,7 +2910,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00082",
@@ -2687,6 +2930,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2701,7 +2946,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00083",
@@ -2720,6 +2966,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2734,7 +2982,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00084",
@@ -2753,6 +3002,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2767,7 +3018,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00085",
@@ -2786,6 +3038,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2800,7 +3054,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00086",
@@ -2819,6 +3074,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2833,7 +3090,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00087",
@@ -2852,6 +3110,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2866,7 +3126,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00088",
@@ -2885,6 +3146,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2899,7 +3162,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00089",
@@ -2918,6 +3182,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2932,7 +3198,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00090",
@@ -2951,6 +3218,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2965,7 +3234,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00091",
@@ -2984,6 +3254,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -2998,7 +3270,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00092",
@@ -3017,6 +3290,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3031,7 +3306,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00093",
@@ -3050,6 +3326,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3064,7 +3342,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00094",
@@ -3083,6 +3362,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3097,7 +3378,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00095",
@@ -3116,6 +3398,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3130,7 +3414,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00096",
@@ -3149,6 +3434,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3163,7 +3450,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00097",
@@ -3182,6 +3470,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3196,7 +3486,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00098",
@@ -3215,6 +3506,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3229,7 +3522,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00099",
@@ -3248,6 +3542,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3263,7 +3559,8 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00100",
@@ -3282,6 +3579,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3297,10 +3596,47 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
     "alert_id": "alert_c00101",
+    "agent_id": "agent_05",
+    "provider": "bKash",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-09T12:00:00",
+    "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
+    "severity": "high",
+    "evidence": [
+      "bKash e-money balance: burn_rate -15,211 BDT/hour, time_to_shortage 0 minutes, confidence 71%"
+    ],
+    "confidence": 0.708950931320565,
+    "confidence_label": "high",
+    "cohort_context": "area_wide",
+    "cohort_peer_count": 3,
+    "recommended_owner": "area_team",
+    "case_owner": null,
+    "case_owner_display": null,
+    "audience": [
+      "agent",
+      "area_team",
+      "provider_ops"
+    ],
+    "recommended_action": "request_replenishment_support",
+    "display_status": "constrained — replenishment requested",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-09T12:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ],
+    "case_notes": []
+  },
+  {
+    "alert_id": "alert_c00102",
     "agent_id": "agent_09",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -3316,6 +3652,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3331,10 +3669,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00102",
+    "alert_id": "alert_c00103",
     "agent_id": "agent_06",
     "provider": null,
     "area": "Zindabazar",
@@ -3350,6 +3689,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3364,10 +3705,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00103",
+    "alert_id": "alert_c00104",
     "agent_id": "agent_16",
     "provider": null,
     "area": "Zindabazar",
@@ -3383,6 +3725,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3397,10 +3741,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00104",
+    "alert_id": "alert_c00105",
     "agent_id": "agent_18",
     "provider": null,
     "area": "Bandarbazar",
@@ -3416,6 +3761,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3430,10 +3777,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00105",
+    "alert_id": "alert_c00106",
     "agent_id": "agent_03",
     "provider": "Nagad",
     "area": "Bandarbazar",
@@ -3449,6 +3797,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3464,10 +3814,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00106",
+    "alert_id": "alert_c00107",
     "agent_id": "agent_06",
     "provider": null,
     "area": "Zindabazar",
@@ -3483,6 +3834,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3497,10 +3850,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00107",
+    "alert_id": "alert_c00108",
     "agent_id": "agent_14",
     "provider": null,
     "area": "Shibganj",
@@ -3516,6 +3870,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": "areateam",
+    "case_owner_display": "Shibganj Area Team",
     "audience": [
       "agent",
       "field_officer",
@@ -3531,6 +3887,14 @@
         "action": "created (new)"
       },
       {
+        "timestamp": "2026-01-11T11:05:00",
+        "actor": "field_officer_lima",
+        "action": "owner assigned: unassigned -> fieldofficer",
+        "previous_owner": null,
+        "new_owner": "fieldofficer",
+        "reason": "Nearest field officer to Shibganj; taking ownership of the shared-cash case."
+      },
+      {
         "timestamp": "2026-01-11T11:15:00",
         "actor": "field_officer_lima",
         "action": "new -> acknowledged"
@@ -3541,14 +3905,58 @@
         "action": "acknowledged -> escalated"
       },
       {
+        "timestamp": "2026-01-11T12:50:00",
+        "actor": "field_officer_lima",
+        "action": "owner reassigned: fieldofficer -> areateam",
+        "previous_owner": "fieldofficer",
+        "new_owner": "areateam",
+        "reason": "Escalated for replenishment support; area coordinator owns closure."
+      },
+      {
         "timestamp": "2026-01-11T13:05:00",
         "actor": "area_coordinator_shibganj",
         "action": "escalated -> resolved"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00108",
+    "alert_id": "alert_c00109",
+    "agent_id": "agent_14",
+    "provider": "Nagad",
+    "area": "Shibganj",
+    "timestamp": "2026-01-11T13:00:00",
+    "alert_type": "unusual_activity",
+    "liquidity_type": null,
+    "severity": "high",
+    "evidence": [
+      "4 cash_outs, avg 5,211 BDT, 2 account(s), 8-minute window"
+    ],
+    "confidence": 0.7441509481302497,
+    "confidence_label": "high",
+    "cohort_context": "provider_wide",
+    "cohort_peer_count": 3,
+    "recommended_owner": "risk_team",
+    "case_owner": null,
+    "case_owner_display": null,
+    "audience": [
+      "agent",
+      "risk_team"
+    ],
+    "recommended_action": "review_evidence",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-11T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ],
+    "case_notes": []
+  },
+  {
+    "alert_id": "alert_c00110",
     "agent_id": "agent_01",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -3564,6 +3972,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3578,10 +3988,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00109",
+    "alert_id": "alert_c00111",
     "agent_id": "agent_19",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -3597,6 +4008,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3612,10 +4025,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00110",
+    "alert_id": "alert_c00112",
     "agent_id": "agent_17",
     "provider": "Rocket",
     "area": "Ambarkhana",
@@ -3631,6 +4045,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3645,10 +4061,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00111",
+    "alert_id": "alert_c00113",
     "agent_id": "agent_03",
     "provider": "Rocket",
     "area": "Bandarbazar",
@@ -3664,6 +4081,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3678,10 +4097,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00112",
+    "alert_id": "alert_c00114",
     "agent_id": "agent_12",
     "provider": "Rocket",
     "area": "Ambarkhana",
@@ -3697,6 +4117,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3711,10 +4133,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00113",
+    "alert_id": "alert_c00115",
     "agent_id": "agent_16",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -3730,6 +4153,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3744,10 +4169,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00114",
+    "alert_id": "alert_c00116",
     "agent_id": "agent_05",
     "provider": "Rocket",
     "area": "Chowhatta",
@@ -3763,6 +4189,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3777,10 +4205,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00115",
+    "alert_id": "alert_c00117",
     "agent_id": "agent_01",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -3796,6 +4225,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3811,10 +4242,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00116",
+    "alert_id": "alert_c00118",
     "agent_id": "agent_03",
     "provider": "Rocket",
     "area": "Bandarbazar",
@@ -3830,6 +4262,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3844,10 +4278,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00117",
+    "alert_id": "alert_c00119",
     "agent_id": "agent_13",
     "provider": "Rocket",
     "area": "Bandarbazar",
@@ -3863,6 +4298,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3877,10 +4314,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00118",
+    "alert_id": "alert_c00120",
     "agent_id": "agent_18",
     "provider": "Rocket",
     "area": "Bandarbazar",
@@ -3896,6 +4334,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3910,10 +4350,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00119",
+    "alert_id": "alert_c00121",
     "agent_id": "agent_12",
     "provider": "Rocket",
     "area": "Ambarkhana",
@@ -3929,6 +4370,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3943,10 +4386,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00120",
+    "alert_id": "alert_c00122",
     "agent_id": "agent_14",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -3962,6 +4406,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -3976,10 +4422,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00121",
+    "alert_id": "alert_c00123",
     "agent_id": "agent_16",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -3995,6 +4442,8 @@
     "cohort_context": "area_wide",
     "cohort_peer_count": 3,
     "recommended_owner": "area_team",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "area_team"
@@ -4008,10 +4457,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00122",
+    "alert_id": "alert_c00124",
     "agent_id": "agent_17",
     "provider": "Rocket",
     "area": "Ambarkhana",
@@ -4027,6 +4477,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4041,10 +4493,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00123",
+    "alert_id": "alert_c00125",
     "agent_id": "agent_13",
     "provider": "Rocket",
     "area": "Bandarbazar",
@@ -4060,6 +4513,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4074,10 +4529,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00124",
+    "alert_id": "alert_c00126",
     "agent_id": "agent_09",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -4093,6 +4549,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4107,10 +4565,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00125",
+    "alert_id": "alert_c00127",
     "agent_id": "agent_20",
     "provider": "Rocket",
     "area": "Chowhatta",
@@ -4126,6 +4585,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4140,10 +4601,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00126",
+    "alert_id": "alert_c00128",
     "agent_id": "agent_09",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -4159,6 +4621,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4173,10 +4637,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00127",
+    "alert_id": "alert_c00129",
     "agent_id": "agent_19",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -4192,6 +4657,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4206,10 +4673,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00128",
+    "alert_id": "alert_c00130",
     "agent_id": "agent_01",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -4225,6 +4693,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4239,10 +4709,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00129",
+    "alert_id": "alert_c00131",
     "agent_id": "agent_14",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -4258,6 +4729,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4272,10 +4745,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00130",
+    "alert_id": "alert_c00132",
     "agent_id": "agent_16",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -4291,6 +4765,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4305,10 +4781,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00131",
+    "alert_id": "alert_c00133",
     "agent_id": "agent_20",
     "provider": "Rocket",
     "area": "Chowhatta",
@@ -4324,6 +4801,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4338,10 +4817,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00132",
+    "alert_id": "alert_c00134",
     "agent_id": "agent_05",
     "provider": "Rocket",
     "area": "Chowhatta",
@@ -4357,6 +4837,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4371,10 +4853,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00133",
+    "alert_id": "alert_c00135",
     "agent_id": "agent_09",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -4390,6 +4873,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4404,10 +4889,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00134",
+    "alert_id": "alert_c00136",
     "agent_id": "agent_14",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -4423,6 +4909,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4437,10 +4925,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00135",
+    "alert_id": "alert_c00137",
     "agent_id": "agent_05",
     "provider": "Rocket",
     "area": "Chowhatta",
@@ -4456,6 +4945,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4470,10 +4961,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00136",
+    "alert_id": "alert_c00138",
     "agent_id": "agent_09",
     "provider": null,
     "area": "Shibganj",
@@ -4489,6 +4981,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4503,10 +4997,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00137",
+    "alert_id": "alert_c00139",
     "agent_id": "agent_20",
     "provider": "Rocket",
     "area": "Chowhatta",
@@ -4522,6 +5017,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4536,10 +5033,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00138",
+    "alert_id": "alert_c00140",
     "agent_id": "agent_01",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -4555,6 +5053,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4569,10 +5069,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00139",
+    "alert_id": "alert_c00141",
     "agent_id": "agent_09",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -4588,6 +5089,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4602,10 +5105,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00140",
+    "alert_id": "alert_c00142",
     "agent_id": "agent_13",
     "provider": "Rocket",
     "area": "Bandarbazar",
@@ -4621,6 +5125,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4635,10 +5141,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00141",
+    "alert_id": "alert_c00143",
     "agent_id": "agent_09",
     "provider": null,
     "area": "Shibganj",
@@ -4654,6 +5161,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4668,10 +5177,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00142",
+    "alert_id": "alert_c00144",
     "agent_id": "agent_16",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -4687,6 +5197,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4701,10 +5213,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00143",
+    "alert_id": "alert_c00145",
     "agent_id": "agent_11",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -4720,6 +5233,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4735,10 +5250,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00144",
+    "alert_id": "alert_c00146",
     "agent_id": "agent_15",
     "provider": null,
     "area": "Chowhatta",
@@ -4754,6 +5270,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4768,10 +5286,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00145",
+    "alert_id": "alert_c00147",
     "agent_id": "agent_19",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -4787,6 +5306,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4802,10 +5323,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00146",
+    "alert_id": "alert_c00148",
     "agent_id": "agent_07",
     "provider": "Nagad",
     "area": "Ambarkhana",
@@ -4821,6 +5343,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4836,10 +5360,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00147",
+    "alert_id": "alert_c00149",
     "agent_id": "agent_02",
     "provider": null,
     "area": "Ambarkhana",
@@ -4855,6 +5380,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4869,10 +5396,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00148",
+    "alert_id": "alert_c00150",
     "agent_id": "agent_06",
     "provider": null,
     "area": "Zindabazar",
@@ -4888,6 +5416,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4902,10 +5432,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00149",
+    "alert_id": "alert_c00151",
     "agent_id": "agent_13",
     "provider": null,
     "area": "Bandarbazar",
@@ -4921,6 +5452,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4935,10 +5468,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00150",
+    "alert_id": "alert_c00152",
     "agent_id": "agent_16",
     "provider": null,
     "area": "Zindabazar",
@@ -4954,6 +5488,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -4968,10 +5504,48 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00151",
+    "alert_id": "alert_c00153",
+    "agent_id": "agent_05",
+    "provider": "bKash",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-16T13:00:00",
+    "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
+    "severity": "medium",
+    "evidence": [
+      "bKash e-money balance: burn_rate -2,347 BDT/hour, time_to_shortage 105 minutes, confidence 67%"
+    ],
+    "confidence": 0.6678600692378377,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team",
+      "provider_ops"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-16T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ],
+    "case_notes": []
+  },
+  {
+    "alert_id": "alert_c00154",
     "agent_id": "agent_11",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -4987,6 +5561,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5002,10 +5578,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00152",
+    "alert_id": "alert_c00155",
     "agent_id": "agent_13",
     "provider": null,
     "area": "Bandarbazar",
@@ -5021,6 +5598,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5035,10 +5614,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00153",
+    "alert_id": "alert_c00156",
     "agent_id": "agent_03",
     "provider": "Nagad",
     "area": "Bandarbazar",
@@ -5054,6 +5634,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5069,10 +5651,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00154",
+    "alert_id": "alert_c00157",
     "agent_id": "agent_11",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -5088,6 +5671,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5103,10 +5688,48 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00155",
+    "alert_id": "alert_c00158",
+    "agent_id": "agent_05",
+    "provider": "bKash",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-16T20:00:00",
+    "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
+    "severity": "medium",
+    "evidence": [
+      "bKash e-money balance: burn_rate -1,324 BDT/hour, time_to_shortage 239 minutes, confidence 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team",
+      "provider_ops"
+    ],
+    "recommended_action": "contact_agent",
+    "display_status": "normal",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-16T20:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ],
+    "case_notes": []
+  },
+  {
+    "alert_id": "alert_c00159",
     "agent_id": "agent_06",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -5122,6 +5745,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5137,10 +5762,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00156",
+    "alert_id": "alert_c00160",
     "agent_id": "agent_04",
     "provider": null,
     "area": "Shibganj",
@@ -5156,6 +5782,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5170,10 +5798,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00157",
+    "alert_id": "alert_c00161",
     "agent_id": "agent_11",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -5189,6 +5818,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5204,10 +5835,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00158",
+    "alert_id": "alert_c00162",
     "agent_id": "agent_19",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -5223,6 +5855,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5238,10 +5872,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00159",
+    "alert_id": "alert_c00163",
     "agent_id": "agent_07",
     "provider": null,
     "area": "Ambarkhana",
@@ -5257,6 +5892,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5271,10 +5908,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00160",
+    "alert_id": "alert_c00164",
     "agent_id": "agent_12",
     "provider": "Nagad",
     "area": "Ambarkhana",
@@ -5290,6 +5928,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5305,10 +5945,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00161",
+    "alert_id": "alert_c00165",
     "agent_id": "agent_11",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -5324,6 +5965,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5339,10 +5982,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00162",
+    "alert_id": "alert_c00166",
     "agent_id": "agent_16",
     "provider": null,
     "area": "Zindabazar",
@@ -5358,6 +6002,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5372,10 +6018,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00163",
+    "alert_id": "alert_c00167",
     "agent_id": "agent_14",
     "provider": "bKash",
     "area": "Shibganj",
@@ -5391,6 +6038,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5406,10 +6055,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00164",
+    "alert_id": "alert_c00168",
     "agent_id": "agent_17",
     "provider": "bKash",
     "area": "Ambarkhana",
@@ -5425,6 +6075,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5440,10 +6092,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00165",
+    "alert_id": "alert_c00169",
     "agent_id": "agent_20",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -5459,6 +6112,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5474,10 +6129,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00166",
+    "alert_id": "alert_c00170",
     "agent_id": "agent_16",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -5493,6 +6149,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5508,10 +6166,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00167",
+    "alert_id": "alert_c00171",
     "agent_id": "agent_15",
     "provider": "Nagad",
     "area": "Chowhatta",
@@ -5527,6 +6186,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5542,10 +6203,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00168",
+    "alert_id": "alert_c00172",
     "agent_id": "agent_03",
     "provider": "bKash",
     "area": "Bandarbazar",
@@ -5561,6 +6223,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5576,10 +6240,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00169",
+    "alert_id": "alert_c00173",
     "agent_id": "agent_07",
     "provider": null,
     "area": "Ambarkhana",
@@ -5595,6 +6260,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5609,10 +6276,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00170",
+    "alert_id": "alert_c00174",
     "agent_id": "agent_13",
     "provider": null,
     "area": "Bandarbazar",
@@ -5628,6 +6296,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5642,10 +6312,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00171",
+    "alert_id": "alert_c00175",
     "agent_id": "agent_11",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -5661,6 +6332,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5676,10 +6349,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00172",
+    "alert_id": "alert_c00176",
     "agent_id": "agent_02",
     "provider": null,
     "area": "Ambarkhana",
@@ -5695,6 +6369,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5709,10 +6385,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00173",
+    "alert_id": "alert_c00177",
     "agent_id": "agent_14",
     "provider": null,
     "area": "Shibganj",
@@ -5728,6 +6405,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5742,10 +6421,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00174",
+    "alert_id": "alert_c00178",
     "agent_id": "agent_16",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -5761,6 +6441,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5776,10 +6458,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00175",
+    "alert_id": "alert_c00179",
     "agent_id": "agent_03",
     "provider": "bKash",
     "area": "Bandarbazar",
@@ -5795,6 +6478,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5810,10 +6495,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00176",
+    "alert_id": "alert_c00180",
     "agent_id": "agent_02",
     "provider": null,
     "area": "Ambarkhana",
@@ -5829,6 +6515,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5843,33 +6531,36 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00177",
+    "alert_id": "alert_c00181",
     "agent_id": "agent_05",
     "provider": "bKash",
     "area": "Chowhatta",
     "timestamp": "2026-01-18T18:00:00",
     "alert_type": "liquidity_shortage",
     "liquidity_type": "provider_emoney",
-    "severity": "low",
+    "severity": "high",
     "evidence": [
-      "bKash e-money balance: burn_rate -6,562 BDT/hour, time_to_shortage 280 minutes, confidence 68%"
+      "bKash e-money balance: burn_rate -6,562 BDT/hour, time_to_shortage 0 minutes, confidence 68%"
     ],
-    "confidence": 0.6779702056600374,
+    "confidence": 0.6779702056607328,
     "confidence_label": "medium",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
       "area_team",
       "provider_ops"
     ],
-    "recommended_action": "review_evidence",
-    "display_status": "normal",
+    "recommended_action": "request_replenishment_support",
+    "display_status": "constrained — replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -5877,10 +6568,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00178",
+    "alert_id": "alert_c00182",
     "agent_id": "agent_03",
     "provider": "bKash",
     "area": "Bandarbazar",
@@ -5896,6 +6588,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5911,10 +6605,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00179",
+    "alert_id": "alert_c00183",
     "agent_id": "agent_15",
     "provider": "Nagad",
     "area": "Chowhatta",
@@ -5930,6 +6625,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5945,10 +6642,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00180",
+    "alert_id": "alert_c00184",
     "agent_id": "agent_19",
     "provider": "Rocket",
     "area": "Shibganj",
@@ -5964,6 +6662,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -5979,10 +6679,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00181",
+    "alert_id": "alert_c00185",
     "agent_id": "agent_05",
     "provider": "Nagad",
     "area": "Chowhatta",
@@ -5998,6 +6699,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6013,10 +6716,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00182",
+    "alert_id": "alert_c00186",
     "agent_id": "agent_07",
     "provider": null,
     "area": "Ambarkhana",
@@ -6032,6 +6736,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6046,10 +6752,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00183",
+    "alert_id": "alert_c00187",
     "agent_id": "agent_09",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -6065,6 +6772,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 0,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6080,10 +6789,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00184",
+    "alert_id": "alert_c00188",
     "agent_id": "agent_02",
     "provider": null,
     "area": "Ambarkhana",
@@ -6099,6 +6809,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6113,10 +6825,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00185",
+    "alert_id": "alert_c00189",
     "agent_id": "agent_13",
     "provider": null,
     "area": "Bandarbazar",
@@ -6132,6 +6845,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6146,10 +6861,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00186",
+    "alert_id": "alert_c00190",
     "agent_id": "agent_06",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -6165,6 +6881,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6180,10 +6898,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00187",
+    "alert_id": "alert_c00191",
     "agent_id": "agent_14",
     "provider": null,
     "area": "Shibganj",
@@ -6199,6 +6918,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6213,10 +6934,48 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00188",
+    "alert_id": "alert_c00192",
+    "agent_id": "agent_05",
+    "provider": "bKash",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-19T16:00:00",
+    "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
+    "severity": "high",
+    "evidence": [
+      "bKash e-money balance: burn_rate -801 BDT/hour, time_to_shortage 0 minutes, confidence 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team",
+      "provider_ops"
+    ],
+    "recommended_action": "request_replenishment_support",
+    "display_status": "constrained — replenishment requested",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-19T16:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ],
+    "case_notes": []
+  },
+  {
+    "alert_id": "alert_c00193",
     "agent_id": "agent_08",
     "provider": "Rocket",
     "area": "Bandarbazar",
@@ -6232,6 +6991,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6247,10 +7008,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00189",
+    "alert_id": "alert_c00194",
     "agent_id": "agent_04",
     "provider": null,
     "area": "Shibganj",
@@ -6266,6 +7028,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6280,10 +7044,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00190",
+    "alert_id": "alert_c00195",
     "agent_id": "agent_09",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -6299,6 +7064,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6314,10 +7081,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00191",
+    "alert_id": "alert_c00196",
     "agent_id": "agent_19",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -6333,6 +7101,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6348,10 +7118,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00192",
+    "alert_id": "alert_c00197",
     "agent_id": "agent_19",
     "provider": "bKash",
     "area": "Shibganj",
@@ -6367,6 +7138,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6382,10 +7155,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00193",
+    "alert_id": "alert_c00198",
     "agent_id": "agent_13",
     "provider": "Rocket",
     "area": "Bandarbazar",
@@ -6401,6 +7175,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6416,10 +7192,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00194",
+    "alert_id": "alert_c00199",
     "agent_id": "agent_14",
     "provider": null,
     "area": "Shibganj",
@@ -6435,6 +7212,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6449,10 +7228,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00195",
+    "alert_id": "alert_c00200",
     "agent_id": "agent_09",
     "provider": "bKash",
     "area": "Shibganj",
@@ -6468,6 +7248,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6483,10 +7265,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00196",
+    "alert_id": "alert_c00201",
     "agent_id": "agent_07",
     "provider": null,
     "area": "Ambarkhana",
@@ -6502,6 +7285,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6516,10 +7301,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00197",
+    "alert_id": "alert_c00202",
     "agent_id": "agent_16",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -6535,6 +7321,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6550,10 +7338,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00198",
+    "alert_id": "alert_c00203",
     "agent_id": "agent_03",
     "provider": null,
     "area": "Bandarbazar",
@@ -6569,6 +7358,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6583,10 +7374,48 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00199",
+    "alert_id": "alert_c00204",
+    "agent_id": "agent_05",
+    "provider": "bKash",
+    "area": "Chowhatta",
+    "timestamp": "2026-01-20T13:00:00",
+    "alert_type": "liquidity_shortage",
+    "liquidity_type": "provider_emoney",
+    "severity": "high",
+    "evidence": [
+      "bKash e-money balance: burn_rate -804 BDT/hour, time_to_shortage 0 minutes, confidence 55%"
+    ],
+    "confidence": 0.55,
+    "confidence_label": "medium",
+    "cohort_context": "agent_only",
+    "cohort_peer_count": 3,
+    "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
+    "audience": [
+      "agent",
+      "field_officer",
+      "area_team",
+      "provider_ops"
+    ],
+    "recommended_action": "request_replenishment_support",
+    "display_status": "constrained — replenishment requested",
+    "case_status": "new",
+    "case_history": [
+      {
+        "timestamp": "2026-01-20T13:00:00",
+        "actor": "system",
+        "action": "created (new)"
+      }
+    ],
+    "case_notes": []
+  },
+  {
+    "alert_id": "alert_c00205",
     "agent_id": "agent_15",
     "provider": "Nagad",
     "area": "Chowhatta",
@@ -6602,6 +7431,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6617,10 +7448,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00200",
+    "alert_id": "alert_c00206",
     "agent_id": "agent_19",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -6636,6 +7468,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6651,10 +7485,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00201",
+    "alert_id": "alert_c00207",
     "agent_id": "agent_10",
     "provider": null,
     "area": "Chowhatta",
@@ -6670,6 +7505,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6684,10 +7521,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00202",
+    "alert_id": "alert_c00208",
     "agent_id": "agent_09",
     "provider": "bKash",
     "area": "Shibganj",
@@ -6703,6 +7541,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6718,44 +7558,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00203",
-    "agent_id": "agent_05",
-    "provider": "bKash",
-    "area": "Chowhatta",
-    "timestamp": "2026-01-20T17:00:00",
-    "alert_type": "liquidity_shortage",
-    "liquidity_type": "provider_emoney",
-    "severity": "medium",
-    "evidence": [
-      "bKash e-money balance: burn_rate -7,213 BDT/hour, time_to_shortage 148 minutes, confidence 68%"
-    ],
-    "confidence": 0.6814394264189731,
-    "confidence_label": "medium",
-    "cohort_context": "agent_only",
-    "cohort_peer_count": 3,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer",
-      "area_team",
-      "provider_ops"
-    ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-20T17:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00204",
+    "alert_id": "alert_c00209",
     "agent_id": "agent_06",
     "provider": "Nagad",
     "area": "Zindabazar",
@@ -6771,6 +7578,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6786,10 +7595,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00205",
+    "alert_id": "alert_c00210",
     "agent_id": "agent_10",
     "provider": null,
     "area": "Chowhatta",
@@ -6805,6 +7615,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6819,10 +7631,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00206",
+    "alert_id": "alert_c00211",
     "agent_id": "agent_09",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -6838,6 +7651,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6853,10 +7668,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00207",
+    "alert_id": "alert_c00212",
     "agent_id": "agent_11",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -6872,6 +7688,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6887,10 +7705,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00208",
+    "alert_id": "alert_c00213",
     "agent_id": "agent_12",
     "provider": "Nagad",
     "area": "Ambarkhana",
@@ -6906,6 +7725,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6921,10 +7742,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00209",
+    "alert_id": "alert_c00214",
     "agent_id": "agent_06",
     "provider": null,
     "area": "Zindabazar",
@@ -6940,6 +7762,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6954,10 +7778,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00210",
+    "alert_id": "alert_c00215",
     "agent_id": "agent_20",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -6973,6 +7798,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 2,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -6988,44 +7815,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00211",
-    "agent_id": "agent_05",
-    "provider": "bKash",
-    "area": "Chowhatta",
-    "timestamp": "2026-01-21T10:00:00",
-    "alert_type": "liquidity_shortage",
-    "liquidity_type": "provider_emoney",
-    "severity": "low",
-    "evidence": [
-      "bKash e-money balance: burn_rate -2,044 BDT/hour, time_to_shortage 369 minutes, confidence 55%"
-    ],
-    "confidence": 0.55,
-    "confidence_label": "medium",
-    "cohort_context": "agent_only",
-    "cohort_peer_count": 3,
-    "recommended_owner": "field_officer",
-    "audience": [
-      "agent",
-      "field_officer",
-      "area_team",
-      "provider_ops"
-    ],
-    "recommended_action": "review_evidence",
-    "display_status": "normal",
-    "case_status": "new",
-    "case_history": [
-      {
-        "timestamp": "2026-01-21T10:00:00",
-        "actor": "system",
-        "action": "created (new)"
-      }
-    ]
-  },
-  {
-    "alert_id": "alert_c00212",
+    "alert_id": "alert_c00216",
     "agent_id": "agent_07",
     "provider": "Nagad",
     "area": "Ambarkhana",
@@ -7041,6 +7835,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -7056,10 +7852,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00213",
+    "alert_id": "alert_c00217",
     "agent_id": "agent_14",
     "provider": null,
     "area": "Shibganj",
@@ -7075,6 +7872,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -7089,10 +7888,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00214",
+    "alert_id": "alert_c00218",
     "agent_id": "agent_09",
     "provider": "Nagad",
     "area": "Shibganj",
@@ -7101,13 +7901,15 @@
     "liquidity_type": null,
     "severity": "medium",
     "evidence": [
-      "4 cash_outs, avg 4,273 BDT, 2 account(s), 3-minute window"
+      "4 cash_outs, avg 4,334 BDT, 2 account(s), 5-minute window"
     ],
     "confidence": 0.5083333333333334,
     "confidence_label": "medium",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "risk_team",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "risk_team"
@@ -7121,10 +7923,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00215",
+    "alert_id": "alert_c00219",
     "agent_id": "agent_04",
     "provider": null,
     "area": "Shibganj",
@@ -7140,6 +7943,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -7154,10 +7959,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00216",
+    "alert_id": "alert_c00220",
     "agent_id": "agent_01",
     "provider": "bKash",
     "area": "Zindabazar",
@@ -7173,6 +7979,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -7188,33 +7996,36 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00217",
+    "alert_id": "alert_c00221",
     "agent_id": "agent_05",
     "provider": "bKash",
     "area": "Chowhatta",
     "timestamp": "2026-01-21T15:00:00",
     "alert_type": "liquidity_shortage",
     "liquidity_type": "provider_emoney",
-    "severity": "medium",
+    "severity": "high",
     "evidence": [
-      "bKash e-money balance: burn_rate -3,582 BDT/hour, time_to_shortage 65 minutes, confidence 59%"
+      "bKash e-money balance: burn_rate -3,582 BDT/hour, time_to_shortage 0 minutes, confidence 59%"
     ],
-    "confidence": 0.5887639878783616,
+    "confidence": 0.5887639878783608,
     "confidence_label": "medium",
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
       "area_team",
       "provider_ops"
     ],
-    "recommended_action": "contact_agent",
-    "display_status": "normal",
+    "recommended_action": "request_replenishment_support",
+    "display_status": "constrained — replenishment requested",
     "case_status": "new",
     "case_history": [
       {
@@ -7222,10 +8033,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00218",
+    "alert_id": "alert_c00222",
     "agent_id": "agent_04",
     "provider": null,
     "area": "Shibganj",
@@ -7241,6 +8053,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -7255,10 +8069,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00219",
+    "alert_id": "alert_c00223",
     "agent_id": "agent_15",
     "provider": "Rocket",
     "area": "Chowhatta",
@@ -7274,6 +8089,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -7289,10 +8106,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00220",
+    "alert_id": "alert_c00224",
     "agent_id": "agent_15",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -7308,6 +8126,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -7323,10 +8143,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00221",
+    "alert_id": "alert_c00225",
     "agent_id": "agent_20",
     "provider": "bKash",
     "area": "Chowhatta",
@@ -7342,6 +8163,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -7357,10 +8180,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00222",
+    "alert_id": "alert_c00226",
     "agent_id": "agent_06",
     "provider": "Rocket",
     "area": "Zindabazar",
@@ -7376,6 +8200,8 @@
     "cohort_context": "self_history_fallback",
     "cohort_peer_count": 1,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -7391,10 +8217,11 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   },
   {
-    "alert_id": "alert_c00223",
+    "alert_id": "alert_c00227",
     "agent_id": "agent_17",
     "provider": null,
     "area": "Ambarkhana",
@@ -7410,6 +8237,8 @@
     "cohort_context": "agent_only",
     "cohort_peer_count": 3,
     "recommended_owner": "field_officer",
+    "case_owner": null,
+    "case_owner_display": null,
     "audience": [
       "agent",
       "field_officer",
@@ -7424,6 +8253,7 @@
         "actor": "system",
         "action": "created (new)"
       }
-    ]
+    ],
+    "case_notes": []
   }
 ]

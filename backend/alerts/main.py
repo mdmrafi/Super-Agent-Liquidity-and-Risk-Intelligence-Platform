@@ -93,8 +93,24 @@ def check_hand_check_scenarios():
 def _walk_lifecycle(alert):
     t0 = pd.Timestamp(alert["timestamp"])
     resolver = f"area_coordinator_{alert['area'].lower()}" if alert.get("area") else "area_coordinator"
+    # Ownership is assigned to a stable user id (username) with a reason, before
+    # the status transitions -- so the shipped example demonstrates the full
+    # auditable assignment trail, not just status changes.
+    alert = lifecycle.assign(
+        alert, actor="field_officer_lima", new_owner="fieldofficer",
+        new_owner_display="Field Officer Lima",
+        reason="Nearest field officer to Shibganj; taking ownership of the shared-cash case.",
+        at=(t0 + pd.Timedelta(minutes=5)).isoformat(),
+    )
     alert = lifecycle.acknowledge(alert, actor="field_officer_lima", at=(t0 + pd.Timedelta(minutes=15)).isoformat())
     alert = lifecycle.escalate(alert, actor="field_officer_lima", at=(t0 + pd.Timedelta(minutes=40)).isoformat())
+    # Reassign to the area coordinator on escalation, again with a reason.
+    alert = lifecycle.assign(
+        alert, actor="field_officer_lima", new_owner="areateam",
+        new_owner_display="Shibganj Area Team",
+        reason="Escalated for replenishment support; area coordinator owns closure.",
+        at=(t0 + pd.Timedelta(hours=1, minutes=50)).isoformat(),
+    )
     alert = lifecycle.resolve(alert, actor=resolver, at=(t0 + pd.Timedelta(hours=2, minutes=5)).isoformat())
     return alert
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AlertExplanation from "./AlertExplanation";
-import { acknowledgeAlert, escalateAlert, resolveAlert } from "../api";
+import { acknowledgeAlert, addAlertNote, escalateAlert, resolveAlert } from "../api";
 import { useAuth } from "../lib/auth-context";
 import {
   formatDateTime, describeCohortContext,
@@ -47,6 +47,8 @@ export default function AlertCard({ alert, availableActions = [], split, onChang
   const [current, setCurrent] = useState(alert);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState(null);
+  const [noteText, setNoteText] = useState("");
+  const [noteBusy, setNoteBusy] = useState(false);
 
   const nextAction = NEXT_STATUS[current.case_status];
   const canAct = nextAction && availableActions.includes(nextAction);
@@ -62,6 +64,24 @@ export default function AlertCard({ alert, availableActions = [], split, onChang
       setError(e.message);
     } finally {
       setBusy(false);
+    }
+  }
+
+  async function submitNote(e) {
+    e.preventDefault();
+    const text = noteText.trim();
+    if (!text || !token) return;
+    setNoteBusy(true);
+    setError(null);
+    try {
+      const updated = await addAlertNote(current.alert_id, split, text, token);
+      setCurrent(updated);
+      setNoteText("");
+      onChange?.(updated);
+    } catch (e) {
+      setError(e.message);
+    } finally {
+      setNoteBusy(false);
     }
   }
 
@@ -127,6 +147,35 @@ export default function AlertCard({ alert, availableActions = [], split, onChang
             </li>
           ))}
         </ol>
+
+        <div className="case-notes">
+          <strong>Case notes</strong>
+          {current.case_notes?.length > 0 ? (
+            <ol className="case-notes__list">
+              {current.case_notes.map((n, i) => (
+                <li key={i}>
+                  <span className="muted">{formatDateTime(n.timestamp)}</span> — {n.actor}: {n.text}
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <p className="muted case-notes__empty">No notes yet.</p>
+          )}
+          {token && (
+            <form className="case-notes__form" onSubmit={submitNote}>
+              <input
+                type="text"
+                value={noteText}
+                onChange={(e) => setNoteText(e.target.value)}
+                placeholder="Add a note for coordination (e.g. context, contact made, blocker)…"
+                disabled={noteBusy}
+              />
+              <button type="submit" disabled={noteBusy || !noteText.trim()}>
+                {noteBusy ? "…" : "Add note"}
+              </button>
+            </form>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -107,7 +107,9 @@ def inject_data_faults(rng, df, provider, day_date, scenario_tag="C",
     """
     df = df.copy()
     mask = (df["provider"] == provider) & (df["timestamp"].dt.date == day_date)
-    idx = df[mask].index.to_numpy()
+    # .to_numpy() can return a read-only view on recent numpy; copy so
+    # rng.shuffle (which mutates in place) has a writable array.
+    idx = df[mask].index.to_numpy().copy()
     rng.shuffle(idx)
 
     n = len(idx)

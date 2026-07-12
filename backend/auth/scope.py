@@ -21,6 +21,11 @@ LIFECYCLE_ACTIONS = {
     "admin": frozenset({"acknowledge", "escalate", "resolve"}),
 }
 
+# Coordinating roles may assign/reassign case ownership; agents never can (they
+# operate their own shop, they don't coordinate cases). This is the *actor*
+# capability; the assignee must additionally be in-scope for the alert.
+ASSIGNING_ROLES = frozenset({"field_officer", "area_team", "provider_ops", "risk_team", "admin"})
+
 
 def _value(value):
     """Return a str enum's value while remaining friendly to JWT strings."""
@@ -95,6 +100,28 @@ def require_lifecycle_action(user, action: str):
     ensure_complete_scope(user)
     if action not in LIFECYCLE_ACTIONS.get(role_of(user), frozenset()):
         raise HTTPException(403, f"role cannot {action} alerts")
+
+
+def require_assignment(actor, alert: dict, assignee):
+    """Authorize an ownership assignment.
+
+    Three gates, all server-side:
+      1. the actor's role may assign at all (ASSIGNING_ROLES);
+      2. the actor can already see this alert (its own scope) -- reuses
+         require_alert_access, so an out-of-scope alert 404s rather than
+         confirming it exists;
+      3. the *assignee* is themselves in-scope for the alert. This is what
+         keeps provider/area boundaries intact: you can never hand a
+         physical-cash or other-provider case to someone who could not
+         legitimately see it.
+    """
+    ensure_complete_scope(actor)
+    if role_of(actor) not in ASSIGNING_ROLES:
+        raise HTTPException(403, "role cannot assign case ownership")
+    require_alert_access(actor, alert)
+    if not alert_is_visible(assignee, alert):
+        raise HTTPException(403, "assignee is outside this alert's provider/area scope")
+    return assignee
 
 
 def require_requested_provider(user, requested_provider: str | None):

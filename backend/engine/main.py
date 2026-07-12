@@ -95,7 +95,7 @@ def main():
     a7_window = a7[(pd.to_datetime(a7["timestamp"]) >= "2026-01-08 09:00") & (pd.to_datetime(a7["timestamp"]) <= "2026-01-08 17:00")]
     print(a7_window[["provider", "timestamp", "burn_rate", "time_to_shortage_minutes", "confidence", "cohort_z", "cohort_context", "recommended_owner"]].to_string(index=False))
 
-    print("\nHand-check: Scenario B anomaly (agent_14, Nagad, calibration day 5)")
+    print("\nHand-check: Scenario B anomaly (agent_14, Nagad, calibration day 11)")
     b14 = calibration_scored[
         (calibration_scored["agent_id"] == "agent_14") & (calibration_scored["is_anomalous"])
     ]

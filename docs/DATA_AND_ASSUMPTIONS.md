@@ -47,15 +47,23 @@ clean stream so the analytics can be measured:
 
 | Scenario | What it is | Where | Rows |
 |---|---|---|---|
-| **A** — hidden shortage | cash-out burst on one provider drains shared cash while that provider's own balance looks healthy | agent_07 / bKash, day 8 | 38 |
-| **B** — pressure + anomaly | a liquidity burst **and** a near-identical-amount anomaly on the same agent/day | agent_14 / Nagad, day 5 | 41 |
-| **C** — data inconsistency | delayed / duplicated / null-balance rows in one provider's feed for one day (applied *after* reconciliation, deliberately breaking the invariant) | Rocket, day 6 | 36 |
+| **A** — hidden *shared-cash* shortage | cash-out burst on one provider drains shared cash while that provider's own e-money balance looks healthy | agent_07 / bKash, day 17 | 38 |
+| **A2** — hidden *provider e-money* shortage | cash-in burst drains one provider's e-money while shared cash rises to offset — the "add it all up" total looks healthy, but that provider's float is about to run out (the face the spec's Scenario A wording emphasises) | agent_05 / bKash, day 9 | 71 |
+| **B** — pressure + anomaly | a liquidity burst **and** a near-identical-amount anomaly on the same agent/day | agent_14 / Nagad, day 11 | 41 |
+| **C** — data inconsistency | delayed / duplicated / null-balance rows in one provider's feed for one day (applied *after* reconciliation, deliberately breaking the invariant) | Rocket, day 13 | 36 |
 | **D** — coordination | routing / case-lifecycle only; needs no injected data | see below | — |
 | General anomaly bursts | 4 extra labeled anomalies across both splits | agents 02/09/03/18 | included in 25 anomaly rows |
-| General data faults | 2 extra provider-feed faults | bKash day 3, Nagad day 14 | included in 455 labeled fault rows |
-| General liquidity pressure | a holdout-day shortage so held-out lead-time is measurable | agent_11 / Nagad, day 12 | — |
+| General data faults | 2 extra provider-feed faults | bKash day 6, Nagad day 30 | included in 455 labeled fault rows |
+| General liquidity pressure | a holdout-day shortage so held-out lead-time is measurable | agent_11 / Nagad, day 26 | — |
 
-**Current generated totals:** calibration 10,334 txns (15 anomaly rows, 144
+Scenarios **A** and **A2** are two faces of the same "healthy total hides a real
+shortage" idea: because `cash_out` and `cash_in` move the shared cash drawer and a
+provider's e-money float in opposite directions, a burst of one drains the drawer
+(A) and a burst of the other drains a single provider's float (A2). A2 uses a
+dedicated RNG so adding it did not perturb the rest of the dataset's draws, and the
+locked anomaly thresholds / held-out metrics are unchanged.
+
+**Current generated totals:** calibration 10,405 txns (15 anomaly rows, 144
 data-fault labels); holdout 5,641 txns (10 anomaly rows, 311 data-fault labels).
 Labels are retained strictly for evaluation. Data-quality alerts are generated
 from observable null balances, duplicate record fingerprints, and balance-
