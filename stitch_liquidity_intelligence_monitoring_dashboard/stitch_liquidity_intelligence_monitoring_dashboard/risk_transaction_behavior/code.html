@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Risk Alerts - Liquidity Risk AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#111c2d",
+                        "tertiary": "#041528",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#8590a6",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#303032",
+                        "surface": "#fbf8fa",
+                        "on-surface-variant": "#45474c",
+                        "secondary-container": "#e0e3e5",
+                        "on-primary-fixed-variant": "#3c475a",
+                        "background": "#fbf8fa",
+                        "surface-variant": "#e4e2e3",
+                        "on-secondary-fixed-variant": "#444749",
+                        "inverse-on-surface": "#f3f0f2",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#d8e3fb",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#1b1b1d",
+                        "surface-bright": "#fbf8fa",
+                        "surface-container-highest": "#e4e2e3",
+                        "on-tertiary-container": "#8191a9",
+                        "secondary-fixed": "#e0e3e5",
+                        "surface-container-low": "#f5f3f4",
+                        "secondary-fixed-dim": "#c4c7c9",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#1e293b",
+                        "outline": "#75777d",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#545f73",
+                        "tertiary-fixed-dim": "#b7c8e1",
+                        "secondary": "#5c5f61",
+                        "on-background": "#1b1b1d",
+                        "primary-fixed-dim": "#bcc7de",
+                        "surface-container": "#f0edef",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#d3e4fe",
+                        "inverse-primary": "#bcc7de",
+                        "outline-variant": "#c5c6cd",
+                        "on-secondary-container": "#626567",
+                        "surface-container-high": "#eae7e9",
+                        "tertiary-container": "#1a2a3e",
+                        "surface-dim": "#dcd9db",
+                        "on-tertiary-fixed-variant": "#38485d",
+                        "primary": "#091426",
+                        "on-tertiary-fixed": "#0b1c30",
+                        "on-secondary-fixed": "#191c1e",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "container-max": "1440px",
+                        "base": "4px",
+                        "lg": "24px",
+                        "gutter": "20px",
+                        "xs": "4px",
+                        "md": "16px",
+                        "xl": "32px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "data-mono": ["Inter"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "label-caps": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "data-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                        "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .sparkline-up { stroke: #10b981; stroke-width: 2; fill: none; }
+        .sparkline-down { stroke: #f43f5e; stroke-width: 2; fill: none; }
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md h-screen flex overflow-hidden">
+<!-- SideNavBar -->
+<nav class="hidden md:flex bg-tertiary text-on-tertiary flex-col h-full py-lg w-60 shadow-xl shrink-0 z-20">
+<div class="px-md mb-xl flex items-center gap-sm">
+<span class="material-symbols-outlined text-on-tertiary text-[28px]" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+<span class="text-headline-sm font-headline-sm text-on-tertiary">MFS Operations</span>
+</div>
+<div class="px-md mb-lg">
+<p class="text-label-caps font-label-caps text-on-tertiary-container mb-xs">Agent Profile</p>
+<p class="text-body-sm font-body-sm opacity-80">Vigilant Monitoring</p>
+</div>
+<button class="mx-md mb-xl bg-primary-container text-on-primary-container hover:bg-tertiary-container transition-all py-sm px-md rounded-lg flex items-center justify-center gap-sm border border-outline-variant/20">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span class="text-body-md font-body-md font-medium">New Analysis</span>
+</button>
+<div class="flex-1 overflow-y-auto hide-scroll flex flex-col gap-xs">
+<a class="text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container transition-all py-sm px-md rounded-lg mx-2 flex items-center gap-md group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform">dashboard</span>
+<span class="text-body-md font-body-md">Overview</span>
+</a>
+<a class="text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container transition-all py-sm px-md rounded-lg mx-2 flex items-center gap-md group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform">account_balance_wallet</span>
+<span class="text-body-md font-body-md">Liquidity</span>
+</a>
+<a class="bg-primary-container text-on-primary-container rounded-lg mx-2 py-sm px-md flex items-center gap-md translate-x-1 duration-150 relative" href="#">
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-1/2 bg-error rounded-r-full"></div>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="text-body-md font-body-md font-medium">Risk Alerts</span>
+<span class="ml-auto bg-error/20 text-error text-label-caps font-label-caps px-2 py-0.5 rounded-full">12</span>
+</a>
+<a class="text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container transition-all py-sm px-md rounded-lg mx-2 flex items-center gap-md group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform">receipt_long</span>
+<span class="text-body-md font-body-md">Transactions</span>
+</a>
+<a class="text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container transition-all py-sm px-md rounded-lg mx-2 flex items-center gap-md group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform">groups</span>
+<span class="text-body-md font-body-md">Stakeholders</span>
+</a>
+<a class="text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container transition-all py-sm px-md rounded-lg mx-2 flex items-center gap-md group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform">smart_toy</span>
+<span class="text-body-md font-body-md">AI Assistant</span>
+</a>
+</div>
+<div class="mt-auto pt-lg flex flex-col gap-xs border-t border-tertiary-container/50">
+<a class="text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container transition-all py-sm px-md rounded-lg mx-2 flex items-center gap-md group" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<span class="text-body-md font-body-md">Settings</span>
+</a>
+<a class="text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container transition-all py-sm px-md rounded-lg mx-2 flex items-center gap-md group" href="#">
+<span class="material-symbols-outlined text-[20px]">cloud_done</span>
+<span class="text-body-md font-body-md">Sync Status</span>
+</a>
+</div>
+</nav>
+<div class="flex-1 flex flex-col h-full overflow-hidden relative">
+<!-- TopNavBar (Mobile Only for Navigation, acts as utility bar on Desktop) -->
+<header class="bg-surface border-b border-outline-variant flex justify-between items-center w-full px-md md:px-xl h-16 shrink-0 z-10 md:hidden">
+<div class="flex items-center gap-sm">
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<span class="text-headline-sm font-headline-sm font-bold text-primary">Liquidity Risk AI</span>
+</div>
+<div class="flex items-center gap-md">
+<button class="text-on-surface-variant hover:bg-surface-container-high p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 overflow-y-auto bg-surface-container-lowest p-md md:p-xl flex flex-col gap-lg md:flex-row">
+<!-- Left Column: Flagged Transactions List -->
+<div class="w-full md:w-5/12 lg:w-1/3 flex flex-col gap-md">
+<div class="flex justify-between items-end mb-sm">
+<div>
+<h1 class="text-headline-md font-headline-md text-on-surface">Unusual Behavior</h1>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">12 Active Alerts requiring review</p>
+</div>
+<button class="text-primary hover:bg-primary-fixed/20 p-2 rounded-md transition-colors">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+</div>
+<div class="flex flex-col gap-sm overflow-y-auto hide-scroll pb-24">
+<!-- Alert Card 1 (Active) -->
+<div class="bg-surface-container-lowest border border-primary ring-1 ring-primary/20 rounded-lg p-md cursor-pointer relative shadow-[0_4px_6px_-1px_rgb(0,0,0,0.1)] transition-all transform scale-[1.02]">
+<div class="absolute top-0 right-0 w-2 h-full bg-error rounded-r-lg"></div>
+<div class="flex items-start justify-between mb-sm">
+<div class="flex items-center gap-sm">
+<img alt="bKash" class="w-8 h-8 rounded-md object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqhaC9Snruco58XSvW6tOELlEDtADrmxYnu3MolrZg3chpR2U1vLWlfJwXf0l2DUFpghvMtc_Q3eOgzG8Csplg_1GNE1RQKvrAa5ihkNrUt0FdVnncJTkb5orj-mx2tjnejfps8Bl7WHPZVCSrPkLaWNAkzr78QtcIic3k6EovcR3A_-_EXaTyFhfRn_S7LhsYp2nBhcQhr5Mba5fTUsHTqDcs09AndgJfu02rpy9fSNubkrxXygbQyw"/>
+<div>
+<h3 class="text-body-md font-body-md font-medium text-on-surface">bKash (Dhaka North)</h3>
+<p class="text-label-caps font-label-caps text-on-surface-variant mt-0.5">ID: TXN-8924A</p>
+</div>
+</div>
+<span class="bg-error/10 text-error text-[10px] font-label-caps px-2 py-1 rounded border border-error/20 flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">warning</span> High
+                            </span>
+</div>
+<div class="flex items-end justify-between mt-md">
+<div>
+<p class="text-label-caps font-label-caps text-on-surface-variant mb-1">Anomaly Type</p>
+<p class="text-body-sm font-body-sm text-error font-medium">Volume Surge (Cash-Out)</p>
+</div>
+<div class="text-right">
+<p class="text-data-mono font-data-mono text-lg font-semibold text-on-surface">5,000 BDT</p>
+<p class="text-label-caps font-label-caps text-on-surface-variant mt-1">2 mins ago</p>
+</div>
+</div>
+</div>
+<!-- Alert Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant hover:border-outline hover:shadow-[0_4px_6px_-1px_rgb(0,0,0,0.05)] rounded-lg p-md cursor-pointer transition-all">
+<div class="flex items-start justify-between mb-sm">
+<div class="flex items-center gap-sm">
+<img alt="Nagad" class="w-8 h-8 rounded-md object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbeVI-ghhvuFSmXVzPC7s1suNWWmA-eJv5qI7Ge8R1AN_tZ_t0lswth2KJEzzTgOLkPcm9tkK8O6xFYKpSuoR8N7L_jPIgF7VOoLGhGtj7sZH8w-IjgCk_UuvcCId4lCzQP81LaCkGhyZH__R_yf3hXgCulOf9JJcyR-j0lttPMfK6V1iCDTX9Ew4an7T32IpiKyAStyZpRCqxa7c6nBKHGhAwrmEu8lAc33mhxuMLUpQ-dpDk1TIpdw"/>
+<div>
+<h3 class="text-body-md font-body-md font-medium text-on-surface">Nagad (Sylhet Area)</h3>
+<p class="text-label-caps font-label-caps text-on-surface-variant mt-0.5">ID: TXN-3319B</p>
+</div>
+</div>
+<span class="bg-surface-tint/10 text-surface-tint text-[10px] font-label-caps px-2 py-1 rounded border border-surface-tint/20 flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">info</span> Med
+                            </span>
+</div>
+<div class="flex items-end justify-between mt-md">
+<div>
+<p class="text-label-caps font-label-caps text-on-surface-variant mb-1">Anomaly Type</p>
+<p class="text-body-sm font-body-sm text-surface-tint font-medium">Velocity Mismatch</p>
+</div>
+<div class="text-right">
+<p class="text-data-mono font-data-mono text-lg font-semibold text-on-surface">12,500 BDT</p>
+<p class="text-label-caps font-label-caps text-on-surface-variant mt-1">15 mins ago</p>
+</div>
+</div>
+</div>
+<!-- Alert Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant hover:border-outline hover:shadow-[0_4px_6px_-1px_rgb(0,0,0,0.05)] rounded-lg p-md cursor-pointer transition-all">
+<div class="flex items-start justify-between mb-sm">
+<div class="flex items-center gap-sm">
+<img alt="Rocket" class="w-8 h-8 rounded-md object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuvPTTKF5w9BaLfpoGOmXYZj-Gv2EegfVR9pNTwXRUg966IjktHlYW5nJmFhreBOwhlszyeLaC-RmlOOoc5tWTCAC2Xb3cEgZb4rkT9NdD10N87EReDFJ44Hk1kPkZi2zVj6hwkUTky3ifnI3bf0b2J3v7P67rhzrW5A8E1RAlcSmsIuXgg11aB5ffjIiuw9LB5yjkUo6BwrGv2cyERaarjo7BCiH41jIrNcUxckJ2AiXOrVWwvjsCSg"/>
+<div>
+<h3 class="text-body-md font-body-md font-medium text-on-surface">Rocket (Chittagong Port)</h3>
+<p class="text-label-caps font-label-caps text-on-surface-variant mt-0.5">ID: TXN-1102C</p>
+</div>
+</div>
+<span class="bg-error/10 text-error text-[10px] font-label-caps px-2 py-1 rounded border border-error/20 flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">warning</span> High
+                            </span>
+</div>
+<div class="flex items-end justify-between mt-md">
+<div>
+<p class="text-label-caps font-label-caps text-on-surface-variant mb-1">Anomaly Type</p>
+<p class="text-body-sm font-body-sm text-error font-medium">Geographic Jump</p>
+</div>
+<div class="text-right">
+<p class="text-data-mono font-data-mono text-lg font-semibold text-on-surface">8,200 BDT</p>
+<p class="text-label-caps font-label-caps text-on-surface-variant mt-1">1 hr ago</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: AI Detail Panel -->
+<div class="w-full md:w-7/12 lg:w-2/3 flex flex-col h-full bg-surface border border-outline-variant rounded-xl overflow-hidden shadow-sm">
+<!-- Utility / Lang Toggle Bar -->
+<div class="bg-surface-container-low border-b border-outline-variant px-md py-sm flex justify-between items-center">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span class="text-label-caps font-label-caps">AI Analysis Detail</span>
+</div>
+<!-- Language Toggle -->
+<div class="flex bg-surface-variant rounded-md p-0.5 border border-outline-variant/30">
+<button class="px-3 py-1 text-label-caps font-label-caps rounded-sm bg-primary-container text-on-primary-container shadow-sm transition-all">English</button>
+<button class="px-3 py-1 text-label-caps font-label-caps rounded-sm text-on-surface-variant hover:text-on-surface transition-all">বাংলা</button>
+<button class="px-3 py-1 text-label-caps font-label-caps rounded-sm text-on-surface-variant hover:text-on-surface transition-all">Banglish</button>
+</div>
+</div>
+<!-- Panel Content -->
+<div class="flex-1 overflow-y-auto p-lg flex flex-col gap-lg">
+<!-- Header Info -->
+<div class="flex justify-between items-start border-b border-outline-variant/50 pb-md">
+<div>
+<div class="flex items-center gap-sm mb-xs">
+<span class="bg-error/10 text-error text-label-caps font-label-caps px-2 py-0.5 rounded-full border border-error/20">Critical Alert</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">TXN-8924A</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface mt-2">Sudden surge in 5000 BDT cash-outs</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Dhaka North Region
+                            </p>
+</div>
+<img alt="bKash" class="w-12 h-12 rounded-lg object-contain border border-outline-variant/30 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqhaC9Snruco58XSvW6tOELlEDtADrmxYnu3MolrZg3chpR2U1vLWlfJwXf0l2DUFpghvMtc_Q3eOgzG8Csplg_1GNE1RQKvrAa5ihkNrUt0FdVnncJTkb5orj-mx2tjnejfps8Bl7WHPZVCSrPkLaWNAkzr78QtcIic3k6EovcR3A_-_EXaTyFhfRn_S7LhsYp2nBhcQhr5Mba5fTUsHTqDcs09AndgJfu02rpy9fSNubkrxXygbQyw"/>
+</div>
+<!-- AI Explanation & Evidence Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-md">
+<!-- AI Reasoning Block -->
+<div class="bg-slate-50 border border-outline-variant/40 rounded-lg p-md relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-primary-fixed"></div>
+<div class="flex items-center gap-2 mb-sm text-primary">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+<h3 class="text-body-md font-body-md font-semibold">Why this occurred</h3>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface leading-relaxed">
+                                The system detected 14 consecutive cash-out requests of exactly 5,000 BDT within a 3-minute window from a single cluster of agent points in Dhaka North. This pattern strongly deviates from historical behavioral baselines for this time of day.
+                            </p>
+<div class="mt-md pt-md border-t border-outline-variant/30">
+<div class="flex justify-between items-center mb-1">
+<span class="text-label-caps font-label-caps text-on-surface-variant">AI Confidence Level</span>
+<span class="text-data-mono font-data-mono text-primary font-semibold">92%</span>
+</div>
+<div class="w-full bg-surface-variant rounded-full h-1.5">
+<div class="bg-primary h-1.5 rounded-full" style="width: 92%"></div>
+</div>
+</div>
+</div>
+<!-- Evidence / Metrics Block -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-lg p-md">
+<div class="flex items-center gap-2 mb-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">troubleshoot</span>
+<h3 class="text-body-md font-body-md font-semibold text-on-surface">Evidence: Vol vs 7-Day Avg</h3>
+</div>
+<div class="flex items-end justify-between mb-sm">
+<div>
+<p class="text-display-lg font-display-lg text-error">70k <span class="text-headline-sm font-headline-sm text-on-surface-variant">BDT</span></p>
+<p class="text-label-caps font-label-caps text-on-surface-variant mt-1">Current 10m Window</p>
+</div>
+<div class="text-right">
+<p class="text-data-mono font-data-mono text-on-surface">Avg: 12.5k BDT</p>
+<span class="flex items-center gap-1 text-error text-body-sm font-body-sm font-medium mt-1">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +460%
+                                    </span>
+</div>
+</div>
+<!-- Simplified Sparkline Chart -->
+<div class="w-full h-16 mt-md relative border-b border-l border-outline-variant/20 flex items-end">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 40">
+<path class="sparkline-up opacity-30" d="M0 35 L20 32 L40 33 L60 30 L80 34" stroke="#94a3b8"></path>
+<path class="sparkline-down" d="M80 34 L85 20 L90 10 L95 5 L100 2"></path>
+</svg>
+<div class="absolute bottom-0 right-0 h-full w-1/5 bg-error/5 border-l border-error/20"></div>
+</div>
+</div>
+</div>
+<!-- Action & Status Area -->
+<div class="mt-auto pt-lg border-t border-outline-variant/50 flex flex-col md:flex-row justify-between items-center gap-md">
+<div class="flex items-center gap-md">
+<div class="bg-secondary-container text-on-secondary-container w-10 h-10 rounded-full flex items-center justify-center font-headline-sm">
+                                AH
+                            </div>
+<div>
+<p class="text-label-caps font-label-caps text-on-surface-variant mb-0.5">Responsible Stakeholder</p>
+<p class="text-body-md font-body-md font-medium text-on-surface">Arif Hossain (Field Officer)</p>
+</div>
+</div>
+<div class="flex items-center gap-sm">
+<div class="bg-surface-tint/10 px-3 py-2 rounded-md border border-surface-tint/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint text-[18px]">gavel</span>
+<span class="text-body-sm font-body-sm text-surface-tint font-medium">Status: Human Review Recommended</span>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-on-primary px-4 py-2 rounded-md text-body-sm font-body-sm font-medium transition-colors shadow-sm">
+                                Initiate Freeze
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

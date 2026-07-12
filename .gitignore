@@ -9,3 +9,6 @@ build/
 userInfo.txt
 *.log
 backend/ml/models/*.joblib
+
+.git-rewrite/
+tmp/

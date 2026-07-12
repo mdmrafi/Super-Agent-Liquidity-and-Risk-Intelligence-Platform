@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Liquidity Risk AI - Shortage Prediction</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed": "#111c2d",
+                      "tertiary": "#041528",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-container": "#8590a6",
+                      "on-secondary": "#ffffff",
+                      "inverse-surface": "#303032",
+                      "surface": "#fbf8fa",
+                      "on-surface-variant": "#45474c",
+                      "secondary-container": "#e0e3e5",
+                      "on-primary-fixed-variant": "#3c475a",
+                      "background": "#fbf8fa",
+                      "surface-variant": "#e4e2e3",
+                      "on-secondary-fixed-variant": "#444749",
+                      "inverse-on-surface": "#f3f0f2",
+                      "on-primary": "#ffffff",
+                      "primary-fixed": "#d8e3fb",
+                      "error-container": "#ffdad6",
+                      "on-surface": "#1b1b1d",
+                      "surface-bright": "#fbf8fa",
+                      "surface-container-highest": "#e4e2e3",
+                      "on-tertiary-container": "#8191a9",
+                      "secondary-fixed": "#e0e3e5",
+                      "surface-container-low": "#f5f3f4",
+                      "secondary-fixed-dim": "#c4c7c9",
+                      "on-tertiary": "#ffffff",
+                      "primary-container": "#1e293b",
+                      "outline": "#75777d",
+                      "on-error-container": "#93000a",
+                      "surface-tint": "#545f73",
+                      "tertiary-fixed-dim": "#b7c8e1",
+                      "secondary": "#5c5f61",
+                      "on-background": "#1b1b1d",
+                      "primary-fixed-dim": "#bcc7de",
+                      "surface-container": "#f0edef",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed": "#d3e4fe",
+                      "inverse-primary": "#bcc7de",
+                      "outline-variant": "#c5c6cd",
+                      "on-secondary-container": "#626567",
+                      "surface-container-high": "#eae7e9",
+                      "tertiary-container": "#1a2a3e",
+                      "surface-dim": "#dcd9db",
+                      "on-tertiary-fixed-variant": "#38485d",
+                      "primary": "#091426",
+                      "on-tertiary-fixed": "#0b1c30",
+                      "on-secondary-fixed": "#191c1e",
+                      "on-error": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sm": "8px",
+                      "container-max": "1440px",
+                      "base": "4px",
+                      "lg": "24px",
+                      "gutter": "20px",
+                      "xs": "4px",
+                      "md": "16px",
+                      "xl": "32px"
+              },
+              "fontFamily": {
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-sm": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "data-mono": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "body-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "data-mono": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "36px",
+                              {
+                                      "lineHeight": "44px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "11px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+          .chart-line { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: draw 2s ease forwards; }
+          @keyframes draw { to { stroke-dashoffset: 0; } }
+          .glow-pulse { animation: pulse-shadow 2s infinite; }
+          @keyframes pulse-shadow { 0% { box-shadow: 0 0 0 0 rgba(186, 26, 26, 0.4); } 70% { box-shadow: 0 0 0 10px rgba(186, 26, 26, 0); } 100% { box-shadow: 0 0 0 0 rgba(186, 26, 26, 0); } }
+      </style>
+</head>
+<body class="bg-background text-on-surface antialiased flex h-screen overflow-hidden">
+<!-- SideNavBar -->
+<nav class="hidden md:flex flex-col h-full py-lg bg-tertiary dark:bg-tertiary text-on-tertiary dark:text-on-tertiary shadow-lg docked fixed left-0 w-[240px] z-20">
+<div class="px-md mb-xl flex items-center gap-sm">
+<img alt="Agent Profile" class="w-8 h-8 rounded-full bg-surface-container object-cover" data-alt="A small, stylized profile avatar or logo placeholder in a sleek corporate fintech aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAyArKppxc-SMZNhAEKPU9l6BTL2OIhnu9nQC7mR_dkj2dNB5AQfzkm1p5SuVhlzfAfgvjWG5atSRn8yYstd5Mb4WPcyNC6d_ZtsHWhaogcfEq9m-C2_QWupYD2lOYrl7YridgPXNQGssYTfjPp-GafkgLMGAu2L22owzktHxWtKFhqDakWJ_5m6bIA0iLtgogFyNEG6Fu0C1_xJo0vuRlruMgNvwjMtnTgTtxp-kFAIzS9BddNYgSNw"/>
+<div>
+<div class="text-headline-sm font-headline-sm text-on-tertiary">MFS Operations</div>
+<div class="text-label-caps font-label-caps text-on-tertiary-container">Vigilant Monitoring</div>
+</div>
+</div>
+<div class="px-md mb-lg">
+<button class="w-full bg-primary-fixed text-on-primary-fixed hover:bg-primary-fixed-dim font-body-md py-2 rounded-lg flex items-center justify-center gap-xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span> New Analysis
+            </button>
+</div>
+<ul class="flex-1 space-y-2 px-sm text-body-md font-body-md">
+<li>
+<a class="flex items-center gap-md px-md py-2 text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container dark:hover:bg-tertiary-container transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">dashboard</span> Overview
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-md px-md py-2 text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container dark:hover:bg-tertiary-container transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span> Liquidity
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-md px-md py-2 bg-primary-container text-on-primary-container rounded-lg translate-x-1 duration-150 mx-2" href="#">
+<span class="material-symbols-outlined">warning</span> Risk Alerts
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-md px-md py-2 text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container dark:hover:bg-tertiary-container transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">receipt_long</span> Transactions
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-md px-md py-2 text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container dark:hover:bg-tertiary-container transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">groups</span> Stakeholders
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-md px-md py-2 text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container dark:hover:bg-tertiary-container transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">smart_toy</span> AI Assistant
+                </a>
+</li>
+</ul>
+<div class="mt-auto px-sm text-body-md font-body-md border-t border-tertiary-container pt-sm">
+<a class="flex items-center gap-md px-md py-2 text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span> Settings
+            </a>
+<a class="flex items-center gap-md px-md py-2 text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">
+<span class="material-symbols-outlined">cloud_done</span> Sync Status
+            </a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col md:ml-[240px] relative w-full h-full">
+<!-- TopNavBar -->
+<header class="flex justify-between items-center w-full px-md md:px-xl h-16 bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline flat no shadows z-10 sticky top-0">
+<div class="flex items-center gap-4">
+<span class="text-headline-md font-headline-md font-bold text-primary dark:text-inverse-primary">Liquidity Risk AI</span>
+<div class="hidden md:flex items-center bg-surface-container rounded-lg p-1">
+<span class="material-symbols-outlined text-outline px-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-sm font-body-sm w-48 text-on-surface placeholder-outline" placeholder="Search predictions..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-sm">
+<!-- Language Toggle -->
+<div class="hidden lg:flex bg-surface-container rounded-full p-1 text-label-caps font-label-caps border border-outline-variant">
+<button class="px-3 py-1 rounded-full bg-primary text-on-primary">ENG</button>
+<button class="px-3 py-1 rounded-full text-on-surface-variant hover:bg-surface-container-high transition-colors">BENG</button>
+</div>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors">
+<span class="material-symbols-outlined">language</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span>
+</button>
+<img alt="User profile" class="w-8 h-8 rounded-full border border-outline-variant object-cover ml-2" data-alt="User profile thumbnail in top nav, modern corporate style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7ypucEP2nfCYTKNDkJ0lLtJ48WfH_yZ5WQwsFH4ErfyQpE7zZX_zEG_qYvpSr3hyd_MUggtJy1JEV9z0c7o1LYDx9euXEjGPPHM5HqwTWYjahpxhEJESx_oFJttpHek65RzyrpEz5jaowYuRdUnxA88JL7WQEMc5xZnMhQBFNSs0-o6YVmkg8AD-SfmMFy37lHHz9ortKITTTSbJA5rQsMuFIgELSB9v22nn_4U3SYugGjj6OciNqRw"/>
+</div>
+</header>
+<!-- Main Scrollable Canvas -->
+<main class="flex-1 overflow-y-auto p-md md:p-xl space-y-lg pb-24">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-sm mb-lg">
+<div>
+<h1 class="text-display-lg font-display-lg text-on-surface">Shortage Prediction</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant mt-1">AI-driven liquidity forecasting across key providers for the next 48 hours.</p>
+</div>
+<div class="flex items-center gap-2 bg-error-container text-on-error-container px-3 py-1.5 rounded-full border border-[#ffb4ab]">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span class="text-label-caps font-label-caps font-bold">1 Critical Alert</span>
+</div>
+</div>
+<!-- Bento Layout Container -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-lg">
+<!-- Main Chart Area (Spans 8 cols on XL) -->
+<div class="xl:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-xl p-md md:p-lg shadow-[0_4px_6px_-1px_rgb(0,0,0,0.1)] flex flex-col relative overflow-hidden">
+<div class="flex justify-between items-center mb-md z-10">
+<h2 class="text-headline-sm font-headline-sm text-on-surface">48-Hour Liquidity Forecast</h2>
+<div class="flex gap-4 text-label-caps font-label-caps text-on-surface-variant">
+<div class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-[#f43f5e]"></span> bKash</div>
+<div class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-[#f59e0b]"></span> Nagad</div>
+<div class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-[#8b5cf6]"></span> Rocket</div>
+</div>
+</div>
+<!-- Simulated Chart Area -->
+<div class="flex-1 min-h-[300px] relative w-full mt-4 border-l border-b border-surface-variant z-10">
+<!-- Y-Axis labels -->
+<div class="absolute -left-8 top-0 h-full flex flex-col justify-between text-label-caps text-outline h-[calc(100%-20px)]">
+<span>2B</span>
+<span>1.5B</span>
+<span>1B</span>
+<span>500M</span>
+<span>0</span>
+</div>
+<!-- Grid Lines -->
+<div class="absolute inset-0 flex flex-col justify-between w-full h-[calc(100%-20px)] pointer-events-none">
+<div class="w-full border-t border-surface-variant border-dashed"></div>
+<div class="w-full border-t border-surface-variant border-dashed"></div>
+<div class="w-full border-t border-surface-variant border-dashed"></div>
+<div class="w-full border-t border-surface-variant border-dashed"></div>
+</div>
+<!-- Critical Window Highlight -->
+<div class="absolute top-0 bottom-5 left-[30%] w-[15%] bg-error/10 border-l border-r border-error/20 z-0">
+<div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-error whitespace-nowrap bg-error-container px-2 py-0.5 rounded">CRITICAL WINDOW</div>
+</div>
+<!-- SVG Chart Lines (Simulated Recharts) -->
+<svg class="absolute inset-0 w-full h-[calc(100%-20px)] overflow-visible z-10" preserveaspectratio="none" viewbox="0 0 1000 300">
+<!-- Safe Threshold Line -->
+<line stroke="#75777d" stroke-dasharray="4" stroke-width="1" x1="0" x2="1000" y1="200" y2="200"></line>
+<text fill="#75777d" font-family="Inter" font-size="10" x="10" y="195">Safe Threshold</text>
+<!-- Rocket (Stable) -->
+<path class="chart-line" d="M0,100 C150,110 250,90 400,100 C600,120 800,90 1000,100" fill="none" stroke="#8b5cf6" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Nagad (High) -->
+<path class="chart-line" d="M0,50 C200,60 300,40 450,70 C600,60 800,40 1000,50" fill="none" stroke="#f59e0b" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- bKash (Plummeting into danger) -->
+<path class="chart-line" d="M0,80 C150,90 250,150 350,220 C400,260 450,280 600,250 C800,180 1000,150" fill="none" stroke="#f43f5e" stroke-linecap="round" stroke-width="3"></path>
+<!-- Danger Node -->
+<circle class="glow-pulse" cx="350" cy="220" fill="#ffffff" r="5" stroke="#f43f5e" stroke-width="2"></circle>
+</svg>
+<!-- X-Axis labels -->
+<div class="absolute bottom-[-24px] w-full flex justify-between text-label-caps text-outline px-2">
+<span>Now</span>
+<span>+12h</span>
+<span>+24h</span>
+<span>+36h</span>
+<span>+48h</span>
+</div>
+</div>
+</div>
+<!-- Action Panel (Spans 4 cols on XL) -->
+<div class="xl:col-span-4 space-y-md flex flex-col h-full">
+<!-- Alert Card -->
+<div class="bg-error-container border border-[#ffb4ab] rounded-xl p-md shadow-sm relative overflow-hidden flex-shrink-0">
+<div class="absolute top-0 right-0 p-2 opacity-10">
+<span class="material-symbols-outlined text-6xl">warning</span>
+</div>
+<div class="flex items-start gap-sm mb-sm relative z-10">
+<span class="material-symbols-outlined text-error">trending_down</span>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-error-container">bKash Predicted Shortage</h3>
+<p class="text-body-sm font-body-sm text-on-error-container mt-1">Projected to hit critical levels in <strong class="font-bold">4 hours</strong>.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest/50 rounded p-sm mt-md relative z-10 backdrop-blur-sm border border-white/20">
+<div class="flex justify-between items-center text-body-sm font-body-sm mb-1">
+<span class="text-on-surface-variant">Current Balance</span>
+<span class="text-data-mono font-data-mono font-bold text-on-surface">৳ 1.2B</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Predicted Low</span>
+<span class="text-data-mono font-data-mono font-bold text-error">৳ 250M</span>
+</div>
+</div>
+</div>
+<!-- Explainable AI Panel -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl flex-1 flex flex-col shadow-sm">
+<div class="p-md border-b border-surface-variant bg-tertiary rounded-t-xl text-on-tertiary flex justify-between items-center">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span class="text-body-md font-body-md font-bold">AI Reasoning</span>
+</div>
+<div class="flex items-center gap-1 bg-[#1e293b] px-2 py-0.5 rounded text-label-caps">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span> 92% Confidence
+                            </div>
+</div>
+<div class="p-md flex-1 text-body-sm font-body-sm space-y-sm text-on-surface-variant overflow-y-auto">
+<p>Prediction based on historical payout patterns leading into upcoming national holiday.</p>
+<div class="bg-[#f1f5f9] p-sm rounded border border-surface-variant mt-2 text-xs">
+<strong class="text-on-surface block mb-1">Key Factors:</strong>
+<ul class="list-disc pl-4 space-y-1">
+<li>Unusual spike in merchant withdrawals (+45% vs avg).</li>
+<li>Incoming corporate salary disbursements scheduled for 18:00.</li>
+<li>Historical precedent (Eid 2023) shows similar velocity curve.</li>
+</ul>
+</div>
+</div>
+<!-- Recommended Action -->
+<div class="p-md border-t border-surface-variant bg-surface-container-low rounded-b-xl mt-auto">
+<div class="text-label-caps font-label-caps text-on-surface-variant mb-2">RECOMMENDED ACTION</div>
+<button class="w-full bg-primary text-on-primary hover:bg-surface-tint font-body-md py-3 rounded-lg flex items-center justify-center gap-sm transition-all shadow-[0_4px_6px_-1px_rgb(0,0,0,0.1)] active:scale-[0.98]">
+<span class="material-symbols-outlined">sync_alt</span>
+                                Transfer funds from Nagad to bKash
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Data Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Data Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md">
+<div class="flex justify-between items-center mb-2">
+<span class="text-label-caps font-label-caps text-on-surface-variant">NAGAD SURPLUS</span>
+<span class="material-symbols-outlined text-emerald-600">trending_up</span>
+</div>
+<div class="text-display-lg font-display-lg text-data-mono text-on-surface">৳ 3.4B</div>
+<div class="text-body-sm text-on-surface-variant mt-2">Available for reallocation.</div>
+</div>
+<!-- Data Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md">
+<div class="flex justify-between items-center mb-2">
+<span class="text-label-caps font-label-caps text-on-surface-variant">NETWORK VELOCITY</span>
+<span class="material-symbols-outlined text-on-surface-variant">speed</span>
+</div>
+<div class="text-display-lg font-display-lg text-data-mono text-on-surface">12k/s</div>
+<div class="text-body-sm text-on-surface-variant mt-2">+15% vs hourly average.</div>
+</div>
+<!-- Data Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md">
+<div class="flex justify-between items-center mb-2">
+<span class="text-label-caps font-label-caps text-on-surface-variant">AI MODEL STATUS</span>
+<span class="material-symbols-outlined text-emerald-600">check_circle</span>
+</div>
+<div class="text-headline-md font-headline-md text-on-surface mt-2">Nominal</div>
+<div class="text-body-sm text-on-surface-variant mt-2">Last updated 2 mins ago.</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col md:flex-row justify-between items-center px-md py-sm w-full bg-surface-container-low dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline flat no shadows mt-auto sticky bottom-0 z-10">
+<div class="text-body-sm font-body-sm text-secondary dark:text-on-secondary-container">
+                © 2024 Liquidity Systems. All APIs Operational.
+            </div>
+<div class="text-label-caps font-label-caps text-secondary mt-2 md:mt-0 flex gap-4">
+<a class="text-secondary hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">System Health</a>
+<a class="text-secondary hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Data Policy</a>
+</div>
+</footer>
+</div>
+</body></html>

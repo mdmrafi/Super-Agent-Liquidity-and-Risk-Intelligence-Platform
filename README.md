@@ -30,48 +30,50 @@ human-review workflow.
 
 ## Architecture
 
-```mermaid
-flowchart TB
-    subgraph S1["Stage 1 · data_generation/"]
-        SIM["simulate + inject scenarios<br/>A · A2 · B · C · D"] --> CSV[("transactions CSV<br/>per split")]
-    end
-    subgraph S2["Stage 2 · engine/"]
-        LIQ["liquidity forecast<br/>EWMA burn_rate · time_to_shortage · confidence"]
-        COH["cohort z-score<br/>(peer comparison)"]
-        ANO["anomaly detection<br/>near-identical amounts"]
-        FC[("forecast JSON<br/>per split")]
-        CSV --> LIQ --> FC
-        CSV --> COH --> FC
-        CSV --> ANO --> FC
-    end
-    subgraph S2B["Stage 2b · ml/ (comparison only)"]
-        ML["HistGradientBoosting<br/>residual model"]
-    end
-    subgraph S3["Stage 3 · alerts/"]
-        BLD["build alerts · routing · severity"]
-        LC["lifecycle<br/>assign / ack / escalate / resolve / notes"]
-        AJ[("alerts JSON<br/>per split")]
-        FC --> BLD --> LC --> AJ
-    end
-    subgraph API["API · api/ + auth/ + db/ + obs.py"]
-        STORE["store.py<br/>file-backed reads"]
-        AUTH["JWT + scope.py<br/>role · area · provider boundaries"]
-        LLM["explain/ + chat/<br/>OpenAI + grounded fallback"]
-        HEALTH["request logging<br/>+ /api/health"]
-    end
-    subgraph FE["Frontend · web/ (role dashboards)"]
-        DASH["Agent cockpit · Network / Provider / Risk command · Assistant"]
-    end
-    MONGO[("MongoDB<br/>users + txn mirror")]
-
-    CSV -.-> ML
-    AJ --> STORE
-    CSV --> STORE
-    STORE --> AUTH
-    MONGO --> AUTH
-    AUTH --> DASH
-    LLM --> DASH
-```
+💾 SYSTEM ARCHITECTURE
+│
+├── [Stage 1 · data_generation/]
+│   └── ⚙️ simulate + inject scenarios (A, A2, B, C, D)
+│       └── ───► [transactions CSV (per split)]
+│                    │
+│                    ├───► [Stage 2 · engine/]
+│                    │     ├── ⚙️ liquidity forecast (EWMA burn_rate) ──┐
+│                    │     ├── ⚙️ cohort z-score (peer comparison) ─────┤
+│                    │     └── ⚙️ anomaly detection (near-identical) ────┤
+│                    │                                                   ▼
+│                    │                                       [forecast JSON]
+│                    │                                               │
+│                    │                                               ▼
+│                    │                                     [Stage 3 · alerts/]
+│                    │                                       └── ⚙️ build alerts
+│                    │                                           └── ⚙️ lifecycle
+│                    │                                               │
+│                    │                                               ▼
+│                    │                                         [alerts JSON]
+│                    │                                               │
+│                    ├───► [Stage 2b · ml/ (comparison only)]        │
+│                    │     └── ⚙️ HistGradientBoosting residual      │
+│                    │                                               │
+│                    └─────────────────────────────────┐             │
+│                                                      ▼             ▼
+├── [API · api/ + auth/ + db/ + obs.py]             ┌──────────────────┐
+│   ├── 📄 store.py ◄───────────────────────────────┤ file-backed reads│
+│   │     │                                         └──────────────────┘
+│   │     ▼
+│   ├── 🔑 JWT + scope.py (role/area boundaries) ◄─── [MongoDB (users + txns)]
+│   │     │
+│   │     ▼
+│   ├── 🧠 explain/ + chat/ (OpenAI + fallback) ───┐
+│   │                                               │
+│   └──  request logging + /api/health            │
+│                                                   │
+│                                                   ▼
+└── [Frontend · web/ (role dashboards)] ◄───────────┘
+    └──  Agent cockpit
+          ├──  Network Command
+          ├──  Provider Command
+          ├──  Risk Command
+          └──  AI Assistant
 
 The file pipeline (`data_generation/` → `engine/` → `alerts/`) is deterministic and
 reproducible from one seed; the CSV/JSON artifacts are the source of truth the API

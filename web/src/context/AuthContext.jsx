@@ -12,17 +12,16 @@ const TOKEN = 'super_agent_token';
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
+  // Always open on the login page. We deliberately do NOT silently restore a
+  // persisted session into a dashboard on load -- a returning visitor should
+  // sign in explicitly rather than land straight in whatever role they last
+  // used. Any stale token from a previous visit is cleared here so the app
+  // opens unauthenticated (Guard then redirects to /login).
   useEffect(() => {
-    if (!localStorage.getItem(TOKEN)) {
-      setLoading(false);
-      return;
-    }
-    api.me()
-      .then(setUser)
-      .catch(() => localStorage.removeItem(TOKEN))
-      .finally(() => setLoading(false));
+    localStorage.removeItem(TOKEN);
+    sessionStorage.removeItem('super_agent_session');
   }, []);
 
   const value = useMemo(() => ({

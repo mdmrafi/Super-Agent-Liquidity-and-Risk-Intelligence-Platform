@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Liquidity Risk AI - AI Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed": "#111c2d",
+                      "tertiary": "#041528",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-container": "#8590a6",
+                      "on-secondary": "#ffffff",
+                      "inverse-surface": "#303032",
+                      "surface": "#fbf8fa",
+                      "on-surface-variant": "#45474c",
+                      "secondary-container": "#e0e3e5",
+                      "on-primary-fixed-variant": "#3c475a",
+                      "background": "#fbf8fa",
+                      "surface-variant": "#e4e2e3",
+                      "on-secondary-fixed-variant": "#444749",
+                      "inverse-on-surface": "#f3f0f2",
+                      "on-primary": "#ffffff",
+                      "primary-fixed": "#d8e3fb",
+                      "error-container": "#ffdad6",
+                      "on-surface": "#1b1b1d",
+                      "surface-bright": "#fbf8fa",
+                      "surface-container-highest": "#e4e2e3",
+                      "on-tertiary-container": "#8191a9",
+                      "secondary-fixed": "#e0e3e5",
+                      "surface-container-low": "#f5f3f4",
+                      "secondary-fixed-dim": "#c4c7c9",
+                      "on-tertiary": "#ffffff",
+                      "primary-container": "#1e293b",
+                      "outline": "#75777d",
+                      "on-error-container": "#93000a",
+                      "surface-tint": "#545f73",
+                      "tertiary-fixed-dim": "#b7c8e1",
+                      "secondary": "#5c5f61",
+                      "on-background": "#1b1b1d",
+                      "primary-fixed-dim": "#bcc7de",
+                      "surface-container": "#f0edef",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed": "#d3e4fe",
+                      "inverse-primary": "#bcc7de",
+                      "outline-variant": "#c5c6cd",
+                      "on-secondary-container": "#626567",
+                      "surface-container-high": "#eae7e9",
+                      "tertiary-container": "#1a2a3e",
+                      "surface-dim": "#dcd9db",
+                      "on-tertiary-fixed-variant": "#38485d",
+                      "primary": "#091426",
+                      "on-tertiary-fixed": "#0b1c30",
+                      "on-secondary-fixed": "#191c1e",
+                      "on-error": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sm": "8px",
+                      "container-max": "1440px",
+                      "base": "4px",
+                      "lg": "24px",
+                      "gutter": "20px",
+                      "xs": "4px",
+                      "md": "16px",
+                      "xl": "32px"
+              },
+              "fontFamily": {
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-sm": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "data-mono": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "body-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "data-mono": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "36px",
+                              {
+                                      "lineHeight": "44px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "11px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+      </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md h-full overflow-hidden flex flex-col md:flex-row">
+<!-- SideNavBar -->
+<nav aria-label="Sidebar Navigation" class="hidden md:flex bg-tertiary text-on-tertiary flex-col h-full py-lg w-60 flex-shrink-0 z-20 shadow-xl">
+<div class="px-md mb-8">
+<h1 class="text-headline-sm font-headline-sm text-on-tertiary flex items-center gap-2">
+<span class="material-symbols-outlined">water_drop</span>
+                MFS Operations
+            </h1>
+<p class="text-body-sm font-body-sm text-on-tertiary-container mt-1">Vigilant Monitoring</p>
+</div>
+<div class="px-md mb-6">
+<button class="w-full bg-primary-container text-on-primary-container text-body-md font-body-md py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-tertiary-container transition-all">
+<span class="material-symbols-outlined">add</span>
+                New Analysis
+            </button>
+</div>
+<ul class="flex-1 flex flex-col gap-2 px-md overflow-y-auto">
+<li>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="text-body-md font-body-md">Overview</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="text-body-md font-body-md">Liquidity</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="warning">warning</span>
+<span class="text-body-md font-body-md">Risk Alerts</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="text-body-md font-body-md">Transactions</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="text-body-md font-body-md">Stakeholders</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 bg-primary-container text-on-primary-container rounded-lg mx-2 translate-x-1 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span>
+<span class="text-body-md font-body-md">AI Assistant</span>
+</a>
+</li>
+</ul>
+<div class="mt-auto px-md pt-4 border-t border-on-tertiary-fixed-variant border-opacity-20">
+<ul class="flex flex-col gap-2">
+<li>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="text-body-md font-body-md">Settings</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-tertiary-container hover:text-on-tertiary hover:bg-tertiary-container transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="cloud_done">cloud_done</span>
+<span class="text-body-md font-body-md">Sync Status</span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col h-full min-w-0 overflow-hidden relative bg-surface">
+<!-- TopNavBar (Mobile) -->
+<header class="md:hidden bg-surface flex justify-between items-center w-full px-md h-16 border-b border-outline-variant z-10 flex-shrink-0">
+<div class="flex items-center gap-3">
+<button class="text-on-surface-variant p-2 -ml-2 rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<span class="text-headline-sm font-headline-sm font-bold text-primary">Liquidity Risk AI</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-on-surface-variant p-2 rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</button>
+<button class="text-on-surface-variant p-2 rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<img class="w-8 h-8 rounded-full border border-outline-variant object-cover ml-2" data-alt="A small, circular user profile picture showing a professional looking agent in a well-lit office setting. Corporate modern aesthetic, high contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2HOy1OfY0qBYScIO0zvRfIzCmPJDv_tr5-ehb3VnzqaJJ14UdEbsERK0HPkBDE5Npfx23USr3cSwy8fGxtNZNcXqspi2xqkVPi2WaAE0SgJO0JtMJdyrRztSJCRtX4k2ZHbbs19B5F3d_45PfdveFP5pttg6Ni7eN5qiHEN8vq7OGk1zuE6tQQaBIjD7tyc9DeryfqlnhKMI68w4u6LMJAJh1Xu2Oh_hTOztmJzRjzmofGhOZ1gdeZQ"/>
+</div>
+</header>
+<!-- Split View Content -->
+<main class="flex-1 flex flex-col lg:flex-row h-full overflow-hidden p-md md:p-xl gap-xl max-w-container-max mx-auto w-full">
+<!-- Left: Active Issue Tracking -->
+<section class="flex-1 flex flex-col h-full bg-surface-container-lowest border border-surface-variant rounded-xl shadow-sm overflow-hidden min-h-[400px]">
+<div class="p-lg border-b border-surface-variant flex justify-between items-center bg-surface-container-low">
+<div>
+<h2 class="text-headline-md font-headline-md text-primary">Active Issues</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Real-time stakeholder coordination</p>
+</div>
+<button class="p-2 text-primary hover:bg-surface-container-high rounded-full transition-colors" title="Filter Issues">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+</div>
+<div class="flex-1 overflow-auto p-4">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-surface-variant">
+<th class="text-label-caps font-label-caps text-on-surface-variant py-3 px-4 uppercase tracking-wider">Issue Owner</th>
+<th class="text-label-caps font-label-caps text-on-surface-variant py-3 px-4 uppercase tracking-wider">Provider</th>
+<th class="text-label-caps font-label-caps text-on-surface-variant py-3 px-4 uppercase tracking-wider">Escalation</th>
+<th class="text-label-caps font-label-caps text-on-surface-variant py-3 px-4 uppercase tracking-wider">Status</th>
+</tr>
+</thead>
+<tbody class="text-body-sm font-body-sm">
+<tr class="border-b border-surface-variant hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-xs">AH</div>
+<span class="font-medium text-on-surface">Aminul Hasan</span>
+</td>
+<td class="py-3 px-4 text-on-surface-variant font-data-mono">bKash</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-[#ffdad6] text-[#93000a] bg-opacity-20">
+<span class="material-symbols-outlined text-[14px]">priority_high</span>
+                                         Critical
+                                     </span>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1 text-[#b3261e]">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                                        In Progress
+                                    </span>
+</td>
+</tr>
+<tr class="border-b border-surface-variant hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs">SR</div>
+<span class="font-medium text-on-surface">Sarah Rahman</span>
+</td>
+<td class="py-3 px-4 text-on-surface-variant font-data-mono">Nagad</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-[#f5d97d] text-[#705c15] bg-opacity-20">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                                         Elevated
+                                     </span>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1 text-[#705c15]">
+<span class="material-symbols-outlined text-[14px]">hourglass_empty</span>
+                                        Pending
+                                    </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-tint text-on-primary flex items-center justify-center font-bold text-xs">TJ</div>
+<span class="font-medium text-on-surface">Tariq Jamil</span>
+</td>
+<td class="py-3 px-4 text-on-surface-variant font-data-mono">Rocket</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-variant text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">info</span>
+                                         Low
+                                     </span>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1 text-[#146c2e]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                                        Resolved
+                                    </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Right: AI Chat Assistant -->
+<section class="flex-1 flex flex-col h-full bg-surface-container-lowest border border-surface-variant rounded-xl shadow-md overflow-hidden z-10 relative">
+<!-- Chat Header -->
+<div class="bg-primary-container text-on-primary-container p-4 flex justify-between items-center flex-shrink-0">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-inverse-primary fill">smart_toy</span>
+</div>
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-primary">MFS Analyst AI</h2>
+<p class="text-body-sm font-body-sm text-inverse-primary opacity-80 flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#146c2e] inline-block"></span>
+                                Online &amp; Monitoring
+                            </p>
+</div>
+</div>
+<!-- Language Toggle within Chat UI -->
+<div class="flex bg-tertiary-container rounded-lg p-1 border border-outline-variant border-opacity-20 shadow-inner">
+<button class="px-3 py-1 rounded text-body-sm font-body-sm text-on-primary bg-primary shadow-sm transition-colors">EN</button>
+<button class="px-3 py-1 rounded text-body-sm font-body-sm text-on-tertiary-container hover:text-on-tertiary transition-colors">BN</button>
+</div>
+</div>
+<!-- Chat History Area -->
+<div class="flex-1 overflow-y-auto p-lg flex flex-col gap-6 bg-surface-bright relative">
+<!-- Ambient Background Pattern -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#1e293b 1px, transparent 1px); background-size: 20px 20px;"></div>
+<!-- User Message -->
+<div class="flex justify-end relative z-10">
+<div class="bg-surface-container-high text-on-surface p-4 rounded-2xl rounded-tr-sm max-w-[85%] shadow-sm border border-surface-variant">
+<p class="text-body-lg font-body-lg">Why is bKash at risk?</p>
+<span class="text-label-caps font-label-caps text-on-surface-variant mt-2 block text-right">10:42 AM</span>
+</div>
+</div>
+<!-- AI Response -->
+<div class="flex justify-start relative z-10">
+<div class="bg-surface-container-lowest border border-outline-variant p-5 rounded-2xl rounded-tl-sm max-w-[90%] shadow-sm relative">
+<!-- Confidence Level Meter -->
+<div class="absolute -top-3 left-4 bg-surface-container-lowest border border-outline-variant px-2 py-0.5 rounded-full flex items-center gap-1 text-label-caps font-label-caps text-on-surface-variant shadow-sm">
+<span class="material-symbols-outlined text-[12px] text-[#146c2e]">check_circle</span>
+                                Confidence: 92%
+                             </div>
+<p class="text-body-md font-body-md text-on-surface mb-4 leading-relaxed">
+<strong class="text-primary font-semibold">bKash liquidity is predicted to hit a critical low by 4 PM</strong> due to high Friday payout volume exceeding current replenishment rates.
+                            </p>
+<!-- Evidence Block -->
+<div class="bg-[#f1f5f9] p-4 rounded-lg border border-surface-variant">
+<h4 class="text-label-caps font-label-caps text-on-surface-variant uppercase tracking-wider mb-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">policy</span>
+                                    Evidence Matrix
+                                </h4>
+<ul class="text-body-sm font-body-sm text-on-surface space-y-2">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-error mt-0.5">trending_down</span>
+<span>Current Drain Rate: <span class="font-data-mono font-bold">৳ 45M/hr</span> (150% above 30-day avg)</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">account_balance</span>
+<span>Agent Float: Reached lower bound threshold at 10:15 AM.</span>
+</li>
+</ul>
+</div>
+<span class="text-label-caps font-label-caps text-on-surface-variant mt-3 block">10:43 AM</span>
+</div>
+</div>
+<!-- Safe Fallback Indicator (Data Delay) -->
+<div class="flex justify-center relative z-10 mt-2">
+<div class="bg-[#f5d97d] bg-opacity-20 border border-[#f5d97d] px-4 py-2 rounded-full flex items-center gap-2 max-w-[80%] shadow-sm">
+<span class="material-symbols-outlined text-[#705c15] text-[18px]">warning</span>
+<p class="text-body-sm font-body-sm text-[#705c15] text-center">
+<strong>Nagad Data Delay:</strong> API sync lagging by 15 mins. Confidence reduced to 65% for comparative analysis.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Chat Input -->
+<div class="p-4 border-t border-surface-variant bg-surface-container-lowest flex-shrink-0">
+<div class="relative flex items-center">
+<button class="absolute left-3 text-on-surface-variant hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined">attach_file</span>
+</button>
+<input class="w-full bg-surface-container-low border border-surface-variant text-on-surface text-body-md font-body-md rounded-xl pl-12 pr-14 py-4 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-shadow placeholder-on-surface-variant" placeholder="Ask about liquidity trends, anomalies, or agent status..." type="text"/>
+<button class="absolute right-3 bg-primary text-on-primary w-8 h-8 rounded-full flex items-center justify-center hover:bg-tertiary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+<p class="text-center text-label-caps font-label-caps text-on-surface-variant mt-2 opacity-70">AI analysis is assistive. Verify critical alerts via direct dashboards.</p>
+</div>
+</section>
+</main>
+<!-- Footer (Hidden on mobile for focus, shown on large screens if needed, but per instructions maybe keep hidden for focused journey. Including based on JSON but styling as minimal utility bar) -->
+<footer class="hidden md:flex bg-surface-container-low text-secondary flex-row justify-between items-center px-md py-sm w-full border-t border-outline-variant z-10 flex-shrink-0">
+<div class="flex items-center gap-4">
+<span class="text-label-caps font-label-caps text-secondary font-bold">LIQUIDITY SYSTEMS</span>
+<span class="text-body-sm font-body-sm">© 2024 Liquidity Systems. All APIs Operational.</span>
+</div>
+<div class="flex gap-4 text-data-mono font-data-mono">
+<a class="text-secondary hover:text-primary transition-colors text-sm" href="#">System Health</a>
+<a class="text-secondary hover:text-primary transition-colors text-sm" href="#">Data Policy</a>
+</div>
+</footer>
+</div>
+</body></html>
